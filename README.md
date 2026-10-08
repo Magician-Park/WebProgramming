@@ -1,3 +1,3 @@
-# Claude_AI_APP
+# WebProgramming
 
-Claude AI 앱 프로젝트 저장소입니다.
+WebProgramming 프로젝트 저장소입니다.
