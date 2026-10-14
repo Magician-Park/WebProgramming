@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding="utf-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Body>
+        <m:cssvalidationresponse
+            env:encodingStyle="http://www.w3.org/2003/05/soap-encoding"
+            xmlns:m="http://www.w3.org/2005/07/css-validator">
+            <m:uri>style.css</m:uri>
+            <m:checkedby>http://jigsaw.w3.org/css-validator/</m:checkedby>
+            <m:csslevel>css3</m:csslevel>
+            <m:date>2026-10-14T03:36:01Z</m:date>
+            <m:validity>true</m:validity>
+            <m:result>
+                <m:errors xml:lang="en">
+                    <m:errorcount>0</m:errorcount>
+    
+                </m:errors>
+                <m:warnings xml:lang="en">
+                    <m:warningcount>1</m:warningcount>
+            
+                    <m:warninglist>
+                        <m:uri>file://localhost/style.css</m:uri>
+        
+                        <m:warning>
+                            <m:line>94</m:line>
+                            <m:level>0</m:level>
+                            <m:message>The property “clip” is deprecated</m:message>
+                            <m:type>deprecatedproperty</m:type>
+                        </m:warning>
+    
+                    </m:warninglist>
+                </m:warnings>
+            </m:result>
+        </m:cssvalidationresponse>
+    </env:Body>
+</env:Envelope>
+

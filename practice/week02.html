@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lec02 HTML5 문서 기본 2~44쪽을 정리한 문서 구조, 요소·속성, 문자 참조와 텍스트 의미 학습 기록입니다.">
+  <title>2주차 | HTML5 문서의 기본</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="practice.css">
+  <script src="editor.js" defer></script>
+  <script src="../page-loader.js" defer></script>
+</head>
+<body id="top">
+  <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+  </div>
+
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div class="draft-note"><span class="draft-mark">2주차 강의 정리</span> Lec02. HTML5 문서 기본 2~44쪽을 주제별로 정리했습니다.</div>
+  <header class="wrap practice-header lesson-header">
+    <a class="return-link" href="../index.html#weekly">← 이력서 학습 기록</a>
+    <p class="eyebrow">WEEK 02 / HTML5 DOCUMENT BASICS</p>
+    <h1>HTML5 문서의 구조와 의미</h1>
+    <p class="introduction">인터넷과 웹의 기본 개념을 복습하고, 요소·속성·메타데이터와 텍스트의 의미를 바탕으로 HTML 문서를 작성한다.</p>
+    <nav class="lesson-nav" aria-label="2주차 학습 목차"><a href="#background">배경 복습</a><a href="#html5">HTML5</a><a href="#network">인터넷·브라우저</a><a href="#document">문서 구조</a><a href="#elements">태그·속성</a><a href="#characters">특수문자</a><a href="#text">텍스트</a><a href="#review">복습</a></nav>
+  </header>
+<section class="wrap document-editor" aria-labelledby="document-editor-title" hidden>
+  <div class="editor-heading"><h2 id="document-editor-title">문서 편집</h2><p>‘문서 수정’을 누른 뒤 제목·본문·코드 예시를 클릭해 바꾸세요.</p></div>
+  <div class="editor-actions">
+    <button type="button" data-editor-action="edit">문서 수정</button>
+    <button type="button" data-editor-action="save" hidden>저장</button>
+    <button type="button" data-editor-action="cancel" class="secondary" hidden>취소</button>
+    <button type="button" data-editor-action="download" class="secondary">수정한 HTML 다운로드</button>
+  </div>
+  <p class="editor-help">저장은 이 브라우저에만 적용됩니다. 제출 파일에 반영하려면 HTML을 내려받아 practice 폴더의 같은 이름 파일을 교체하세요.</p>
+  <p class="editor-status" role="status" aria-live="polite"></p>
+</section>
+<main id="main" class="wrap practice-main lesson-main">
+  <section class="lesson-overview" aria-labelledby="overview-title">
+    <h2 id="overview-title" class="sr-only">2주차 학습 목표</h2>
+    <div class="lesson-cards">
+      <article class="demo-card"><h3>전체 구조 만들기</h3><p>DOCTYPE, html, head, body의 역할을 구분하고 기본 HTML 문서를 작성한다.</p></article>
+      <article class="demo-card"><h3>태그와 속성 읽기</h3><p>요소·시작 태그·내용·종료 태그를 구분하고 속성으로 추가 정보를 지정한다.</p></article>
+      <article class="demo-card"><h3>의미에 맞게 표현하기</h3><p>제목·문단·인용·강조 요소를 목적에 맞게 선택하고 외형은 CSS로 분리한다.</p></article>
+    </div>
+  </section>
+
+  <section id="background" class="lesson-section" aria-labelledby="background-title">
+    <p class="eyebrow">01 / FROM THE WEB TO HTML5</p>
+    <h2 id="background-title">1주차 복습에서 HTML5로</h2>
+    <p class="lesson-source">강의자료 2~13쪽</p>
+    <p>인터넷은 서로 다른 네트워크의 연결 기반이다. 웹은 그 위에서 하이퍼링크로 문서와 자원을 탐색하는 서비스이며, HTML·HTTP·URL은 각각 문서 구조·요청과 응답·자원의 위치를 담당한다.</p>
+    <ol class="lesson-steps">
+      <li>1969년 ARPANET에서 시작해 TCP/IP와 NSFNET을 통해 네트워크 연결이 확대됐다.</li>
+      <li>1989년 CERN의 팀 버너스리가 정보 공유를 위해 웹을 제안했다.</li>
+      <li>모자이크와 넷스케이프 같은 브라우저의 보급으로 웹의 사용이 확산됐다.</li>
+      <li>1994년 W3C가 출범해 공통된 웹 기술과 표준의 발전을 추진했다.</li>
+    </ol>
+    <p>마크업은 문서에 의미와 구조를 더하는 표식이다. 초기 HTML은 SGML을 바탕으로 정의됐고, XML·XHTML을 거쳐 HTML5 개발로 이어졌다. HTML 2.0은 1995년, WHATWG 설립은 2004년으로 정리한다.</p>
+    <p class="lesson-citation">관련 내용: <a href="week01.html#web-history">1주차 웹의 역사</a> · <a href="week01.html#html-history">HTML 발전 연표와 연도 근거</a></p>
+    <div class="lesson-callout"><h3>역사 자료를 읽는 기준</h3><p>1982년 TCP/IP 표준 채택과 1983년 ARPANET의 실제 전환을 구분한다. 초기 ARPANET이 처음부터 IP를 사용했다고 이해하지 않는다. 자료의 2007·2013년 지도와 당시 W3C 조직 정보는 그 시점의 자료다.</p></div>
+  </section>
+
+  <section id="html5" class="lesson-section" aria-labelledby="html5-title">
+    <p class="eyebrow">02 / HTML5 &amp; THE WEB PLATFORM</p>
+    <h2 id="html5-title">문서에서 웹 애플리케이션으로</h2>
+    <p class="lesson-source">강의자료 14~18쪽</p>
+    <p>HTML5의 방향은 의미 있는 구조, 더 편리한 입력, 멀티미디어와 웹 애플리케이션 지원이다. HTML은 구조, CSS는 표현, JavaScript는 동작을 맡는다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="HTML5의 특징 정리 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>강의자료에서 소개한 네 가지 변화</caption>
+        <thead><tr><th scope="col">영역</th><th scope="col">주요 내용</th><th scope="col">이해할 점</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">의미 있는 구조</th><td>header, nav, section, article, aside, footer</td><td>문서의 영역과 역할을 표현한다. 단순한 색상·배치와는 구분한다.</td></tr>
+          <tr><th scope="row">입력과 미디어</th><td>date·number·color·file 입력, video·audio·canvas, SVG·MathML</td><td>표준 요소와 기능으로 다양한 입력과 미디어를 다룬다.</td></tr>
+          <tr><th scope="row">CSS의 발전</th><td>모서리·그림자·다단·변환·전환·애니메이션</td><td>HTML 문서에 연결한 스타일시트가 표현을 담당한다. 기능별 브라우저 지원을 확인한다.</td></tr>
+          <tr><th scope="row">API와 모바일</th><td>저장·파일·위치정보·백그라운드 작업·통신 등의 API</td><td>JavaScript로 기능을 사용하며, 여러 API는 별도의 웹 표준으로 정의된다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>API는 프로그램이 특정 기능을 사용하기 위한 인터페이스다. 위치정보·저장·오프라인 기능 등이 모바일 환경에 도움이 되지만, 지원 여부와 사용 조건은 기능마다 다르다. 이 페이지는 개념을 설명하며 위치정보나 파일 접근을 자동 요청하지 않는다.</p>
+    <div class="lesson-callout"><h3>‘HTML5’와 모든 웹 기술을 동일시하지 않기</h3><p>자료에서 HTML5라는 이름으로 함께 소개한 기능도 실제로는 HTML·CSS·JavaScript와 개별 API 표준이 협력하는 구조다. 자료의 Application Cache는 역사적 기술이며 새 예제에 사용하지 않는다.</p></div>
+    <p class="lesson-citation">현행 기준: <a href="https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features">WHATWG의 오래된 기능 안내</a></p>
+  </section>
+
+  <section id="network" class="lesson-section" aria-labelledby="network-title">
+    <p class="eyebrow">03 / NETWORK BASICS</p>
+    <h2 id="network-title">요청이 서버까지 전달되는 과정</h2>
+    <p class="lesson-source">강의자료 19~24쪽</p>
+    <p>클라이언트인 브라우저가 자원을 요청하면 서버가 응답한다. 서버에는 Apache·IIS 같은 서비스 프로그램이 필요하고, 브라우저는 응답받은 문서를 화면에 표현한다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="인터넷 기본 개념 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>비슷해 보이는 용어의 역할 구분</caption>
+        <thead><tr><th scope="col">용어</th><th scope="col">역할</th><th scope="col">기억할 점</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">TCP</th><td>순서·흐름·재전송 등을 관리해 신뢰성 있는 데이터 전달을 제공</td><td>전달이 제대로 이뤄졌는가?</td></tr>
+          <tr><th scope="row">IP</th><td>주소를 바탕으로 패킷을 목적지 방향으로 전달</td><td>IP 자체는 도착과 순서를 보장하지 않는다.</td></tr>
+          <tr><th scope="row">HTTP</th><td>웹 자원의 요청·응답 규칙</td><td>문서 구조 언어인 HTML과 다르다.</td></tr>
+          <tr><th scope="row">DNS</th><td>도메인에 대응하는 IP 주소 등의 정보 조회</td><td>도메인과 IP가 항상 하나씩 대응하지는 않는다.</td></tr>
+          <tr><th scope="row">URL</th><td>자원의 위치를 표현</td><td>스킴·도메인·경로 등을 포함한다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>IPv4는 32비트(4바이트), IPv6는 128비트(16바이트)다. 주소 공간은 각각 2³²개와 2¹²⁸개이므로 비트 길이와 가능한 주소 개수의 증가를 구분한다.</p>
+    <pre><code>https://example.com/learn/week02.html
+https          사용할 방식(스킴)
+example.com    도메인 이름
+/learn/week02.html    자원의 경로</code></pre>
+    <p>위 주소는 설명용이다. URL 경로가 항상 실제 폴더나 파일을 뜻하지는 않는다. 도메인의 단계 수 역시 모든 이름에서 동일하게 고정되지 않는다.</p>
+    <p class="lesson-citation"><a href="week01.html#ip-address">1주차 IP·DNS·URL 비교표</a>에서 자세한 내용을 확인할 수 있다.</p>
+  </section>
+
+  <section id="browsers" class="lesson-section" aria-labelledby="browsers-title">
+    <p class="eyebrow">04 / WEB BROWSERS</p>
+    <h2 id="browsers-title">같은 문서를 여러 환경에서 읽기</h2>
+    <p class="lesson-source">강의자료 25~29쪽</p>
+    <p>브라우저는 문서 표시뿐 아니라 링크 이동, 탭, 즐겨찾기, 저장·인쇄, 소스 보기와 보안 관리 등을 제공하는 클라이언트 프로그램이다. 같은 웹 문서라도 브라우저와 버전에 따라 지원 기능과 화면이 다를 수 있다.</p>
+    <ul class="lesson-list"><li>넷스케이프와 Internet Explorer: 초기 상용 브라우저 보급과 경쟁의 흐름을 이해하는 사례다.</li><li>Chrome, Firefox, Safari, Opera: 강의자료에 소개된 다양한 브라우저의 사례다.</li><li>자료의 점유율 그래프와 ‘선두’ 등의 표현은 당시 설명이며 현재 순위나 추천 기준으로 사용하지 않는다.</li><li>문서는 표준에 맞춰 작성하고, 실제 이용할 브라우저와 화면 크기에서 확인한다.</li></ul>
+  </section>
+
+  <section id="document" class="lesson-section" aria-labelledby="document-title">
+    <p class="eyebrow">05 / DOCUMENT STRUCTURE</p>
+    <h2 id="document-title">기본 HTML 문서 만들기</h2>
+    <p class="lesson-source">강의자료 30~32·35~36쪽</p>
+    <p>문서 형식 선언 다음에 루트 요소인 html을 두고, 그 안을 head와 body로 구분한다. head에는 문서 정보와 외부 자원의 연결을, body에는 사용자가 읽고 사용하는 콘텐츠를 작성한다.</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;meta name="description" content="HTML 기본 문서 학습 기록"&gt;
+  &lt;title&gt;2주차 학습 기록&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;main&gt;
+    &lt;h1&gt;HTML 기본 문서&lt;/h1&gt;
+    &lt;p&gt;문서의 구조를 작성합니다.&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="HTML 기본 구조와 메타데이터 역할 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>코드에서 확인할 항목</caption>
+        <thead><tr><th scope="col">항목</th><th scope="col">역할</th></tr></thead>
+        <tbody><tr><th scope="row">DOCTYPE</th><td>문서가 표준 HTML 문서임을 선언한다. HTML 요소나 화면에 보이는 제목이 아니다.</td></tr><tr><th scope="row">html lang="ko"</th><td>문서의 기본 언어가 한국어임을 지정한다.</td></tr><tr><th scope="row">head / title</th><td>문서의 메타정보와 브라우저 탭 등에 쓰이는 제목을 정한다.</td></tr><tr><th scope="row">meta charset</th><td>UTF-8 같은 문자 인코딩을 지정한다.</td></tr><tr><th scope="row">meta name / content</th><td>description·author·keywords 등의 종류와 값을 지정한다.</td></tr><tr><th scope="row">body</th><td>제목·문단·링크 등 문서의 콘텐츠를 작성한다.</td></tr></tbody>
+      </table>
+    </div>
+    <div class="lesson-callout"><h3>메타데이터 이름을 정확하게 쓰기</h3><p>자료의 meta authors나 meta keyword 같은 예제를 그대로 사용하지 않는다. 저자는 name="author", 키워드는 name="keywords"와 content를 사용한다. 문서 인코딩은 meta charset="UTF-8"로 지정한다.</p></div>
+    <p class="lesson-citation">문서 정보 확인: <a href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element">WHATWG meta 요소</a></p>
+  </section>
+
+  <section id="elements" class="lesson-section" aria-labelledby="elements-title">
+    <p class="eyebrow">06 / ELEMENTS &amp; ATTRIBUTES</p>
+    <h2 id="elements-title">요소·태그·속성의 차이</h2>
+    <p class="lesson-source">강의자료 33~34쪽</p>
+    <pre><code>&lt;a href="../index.html#weekly" class="study-link"&gt;학습 기록&lt;/a&gt;
+│                  │                                  │
+시작 태그         속성                              내용 + 종료 태그</code></pre>
+    <ul class="lesson-list"><li>요소는 시작 태그·내용·종료 태그 등으로 표현하는 문서 구성 단위다.</li><li>속성은 시작 태그 안에 추가하며 여러 속성은 공백으로 구분한다. 값에는 보통 따옴표를 사용한다.</li><li>HTML 태그 이름은 대소문자를 구분하지 않지만 일관된 소문자로 작성하면 읽기 쉽다.</li><li>br·hr·img 같은 빈 요소는 종료 태그를 쓰지 않는다. HTML에서 마지막 /는 필수가 아니다.</li><li>요소는 허용된 자식 구조에 맞춰 중첩한다. 태그가 교차해 닫히거나 p 안에 h2를 넣는 구조는 피한다.</li></ul>
+    <div class="lesson-example-grid">
+      <article><h3>문단 안의 강조</h3><pre><code>&lt;p&gt;이 문장은 &lt;strong&gt;중요합니다&lt;/strong&gt;.&lt;/p&gt;</code></pre></article>
+      <article><h3>제목과 문단은 나란히</h3><pre><code>&lt;h2&gt;문서 제목&lt;/h2&gt;
+&lt;p&gt;제목 아래의 설명입니다.&lt;/p&gt;</code></pre></article>
+    </div>
+    <p>링크의 href는 이동할 주소다. 새 창이나 탭에 여는 예약된 target 값은 _blank이며, 이름이 blank인 창을 지정하는 값과 구분한다. 표의 테두리 같은 외형은 border 속성 대신 외부 CSS로 작성한다.</p>
+    <p class="lesson-citation">문법 확인: <a href="https://html.spec.whatwg.org/multipage/syntax.html#elements-2">WHATWG 요소와 빈 요소</a></p>
+  </section>
+
+  <section id="characters" class="lesson-section" aria-labelledby="characters-title">
+    <p class="eyebrow">07 / CHARACTERS &amp; COMMENTS</p>
+    <h2 id="characters-title">태그처럼 보이는 문자를 글자로 표시하기</h2>
+    <p class="lesson-source">강의자료 37쪽</p>
+    <p>HTML에서 특별한 의미로 사용되는 문자나 키보드로 쓰기 어려운 문자는 문자 참조로 표시할 수 있다. 공백과 들여쓰기 배치는 CSS로 관리하고, 줄바꿈하지 않는 공백은 필요한 경우에만 사용한다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="문자 참조 예시 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>표현과 화면 결과</caption>
+        <thead><tr><th scope="col">HTML에 적는 표현</th><th scope="col">화면에서 읽는 내용</th><th scope="col">용도</th></tr></thead>
+        <tbody><tr><th scope="row">&amp;lt;</th><td>&lt;</td><td>작음 기호</td></tr><tr><th scope="row">&amp;gt;</th><td>&gt;</td><td>큼 기호</td></tr><tr><th scope="row">&amp;amp;</th><td>&amp;</td><td>앰퍼샌드</td></tr><tr><th scope="row">&amp;quot;</th><td>"</td><td>큰따옴표</td></tr><tr><th scope="row">&amp;nbsp;</th><td>줄바꿈하지 않는 공백</td><td>필요한 공백 구분</td></tr><tr><th scope="row">&amp;#169;</th><td>©</td><td>10진수 코드의 저작권 기호</td></tr><tr><th scope="row">&amp;#x00A2;</th><td>¢</td><td>16진수 코드의 센트 기호</td></tr></tbody>
+      </table>
+    </div>
+    <pre><code>&lt;!-- 화면에 본문으로 표시하지 않는 설명입니다. --&gt;
+&lt;p&gt;&amp;lt;h1&amp;gt;은 제목 요소를 나타냅니다.&lt;/p&gt;</code></pre>
+    <p>주석은 코드를 설명할 때 사용한다. 화면에는 본문으로 보이지 않아도 소스를 열면 읽을 수 있으므로 비밀 정보를 적는 공간으로 사용하지 않는다.</p>
+  </section>
+
+  <section id="text" class="lesson-section" aria-labelledby="text-title">
+    <p class="eyebrow">08 / TEXT &amp; MEANING</p>
+    <h2 id="text-title">문단과 텍스트를 의미에 맞게 선택하기</h2>
+    <p class="lesson-source">강의자료 38~44쪽</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="제목, 문단, 텍스트 요소의 의미 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>모양보다 먼저 생각할 역할</caption>
+        <thead><tr><th scope="col">요소</th><th scope="col">의미와 사용</th><th scope="col">기억할 점</th></tr></thead>
+        <tbody><tr><th scope="row">h1~h6</th><td>제목의 계층</td><td>크기를 고르는 대신 문서의 제목 순서를 표현한다.</td></tr><tr><th scope="row">p / br</th><td>문단 / 문단 안의 줄바꿈</td><td>새 문단은 p, 같은 문단의 필요한 줄바꿈은 br.</td></tr><tr><th scope="row">hr</th><td>주제나 내용의 전환</td><td>단순한 장식 선은 CSS로 표현할 수 있다.</td></tr><tr><th scope="row">pre</th><td>공백과 줄바꿈 형식 유지</td><td>코드 예시는 pre와 code를 함께 사용할 수 있다.</td></tr><tr><th scope="row">blockquote</th><td>다른 출처에서 인용한 블록</td><td>들여쓰기만 만들기 위한 요소가 아니다.</td></tr><tr><th scope="row">em / strong</th><td>강세 강조 / 중요성</td><td>기울임·굵기라는 모양과 의미를 구분한다.</td></tr><tr><th scope="row">small</th><td>부연 설명이나 작은 글씨로 쓰이는 주석성 내용</td><td>글자 크기만 줄일 때는 CSS를 사용한다.</td></tr><tr><th scope="row">mark</th><td>현재 문맥에서 관련된 부분 표시</td><td>검색 결과나 학습 중 주목하는 부분에 사용할 수 있다.</td></tr><tr><th scope="row">sub / sup</th><td>아래첨자 / 위첨자</td><td>화학식·수식처럼 해당 표기가 필요한 내용에 사용한다.</td></tr></tbody>
+      </table>
+    </div>
+    <div class="lesson-example-grid">
+      <article><h3>코드 예시</h3><pre><code>&lt;h3&gt;텍스트의 의미&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;강조&lt;/em&gt;와 &lt;strong&gt;중요성&lt;/strong&gt;을 구분합니다.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;복습할 부분&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;학습용 예시입니다.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;물: H&lt;sub&gt;2&lt;/sub&gt;O, 제곱: x&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</code></pre></article>
+      <article><h3>출력 예시</h3><div class="demo-card live-demo" data-editor-readonly><h4>텍스트의 의미</h4><p><em>강조</em>와 <strong>중요성</strong>을 구분합니다.</p><p><mark>복습할 부분</mark></p><p><small>학습용 예시입니다.</small></p><p>물: H<sub>2</sub>O, 제곱: x<sup>2</sup></p></div></article>
+    </div>
+    <div class="lesson-example-grid">
+      <article><h3>문단과 줄바꿈</h3><pre><code>&lt;p&gt;하나의 문단입니다.&lt;br&gt;같은 문단의 다음 줄입니다.&lt;/p&gt;
+&lt;p&gt;이 부분은 별도의 문단입니다.&lt;/p&gt;</code></pre><div class="demo-card live-demo" data-editor-readonly><p>하나의 문단입니다.<br>같은 문단의 다음 줄입니다.</p><p>이 부분은 별도의 문단입니다.</p></div></article>
+      <article><h3>형식 유지와 인용 형태</h3><pre><code>&lt;pre&gt;첫째 줄
+  둘째 줄&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;여기에 인용문을 작성합니다.&lt;/p&gt;&lt;/blockquote&gt;</code></pre><div class="demo-card live-demo" data-editor-readonly><pre>첫째 줄
+  둘째 줄</pre><blockquote><p>인용문이 표시되는 형태를 설명하기 위한 예시입니다.</p></blockquote></div></article>
+    </div>
+    <div class="lesson-callout"><h3>비권장 요소 목록은 구분해서 읽기</h3><p>자료 43쪽의 목록 중 font·center·blink는 새 문서에서 사용하지 않는다. b·i·u는 현행 HTML에서도 특정 의미로 사용하는 유효한 요소이므로 모두 폐기됐다고 이해하지 않는다. 단순한 굵기·기울임·밑줄은 CSS로 표현한다.</p></div>
+    <p class="lesson-citation">의미 확인: <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html">WHATWG 텍스트 요소</a> · <a href="https://html.spec.whatwg.org/multipage/obsolete.html">오래된 요소 목록</a></p>
+  </section>
+
+  <section id="review" class="lesson-section" aria-labelledby="review-title">
+    <p class="eyebrow">09 / QUICK REVIEW</p>
+    <h2 id="review-title">핵심 내용을 확인하기</h2>
+    <p>질문을 누르면 답을 확인할 수 있다.</p>
+    <details><summary>head의 title과 body의 h1은 무엇이 다른가?</summary><p>title은 문서 제목으로 브라우저 탭 등에 사용되고, h1은 화면에 표시되는 문서의 주요 제목이다.</p></details>
+    <details><summary>요소와 속성은 어떻게 구분하는가?</summary><p>요소는 문서를 구성하는 단위다. 속성은 시작 태그 안에 적는 이름과 값으로, 링크 주소나 언어 같은 추가 정보를 지정한다.</p></details>
+    <details><summary>br과 p 중 무엇으로 새 문단을 만드는가?</summary><p>새 문단은 p로 만든다. br은 문단 안에서 줄만 바꿀 때 사용한다.</p></details>
+    <details><summary>&lt;h1&gt;이라는 글자를 화면에 표시하려면?</summary><p>소스에 &amp;lt;h1&amp;gt;를 적으면 태그로 해석되지 않고 &lt;h1&gt;이라는 문자로 표시된다.</p></details>
+    <details><summary>small은 단순히 글자 크기를 줄이는 요소인가?</summary><p>부연 설명 같은 의미를 가진 요소다. 의미와 관계없이 크기만 조절하려면 CSS를 사용한다.</p></details>
+    <details><summary>HTML5 문서면 모든 기능이 모든 브라우저에서 같은가?</summary><p>요소·CSS·API의 지원은 브라우저와 버전에 따라 다르다. 표준 문법 검사와 실제 환경의 동작 확인을 함께 진행한다.</p></details>
+  </section>
+
+  <section id="sources" class="lesson-section lesson-references" aria-labelledby="sources-title">
+    <h2 id="sources-title">참고 자료와 예제 보완</h2>
+    <p>주요 학습자료: 「[웹프로그래밍] Lec02. HTML5 문서 기본」 PDF 2~44쪽. 역사·통신 복습과 기본 문서·텍스트 요소를 주제별로 재구성했다. 45쪽 이후의 내용은 이번 정리 범위에 포함하지 않았다.</p>
+    <ul class="lesson-list"><li>자료 11·12쪽의 HTML 2.0과 WHATWG 연도는 1주차와 같은 공식 연표 기준을 적용했다.</li><li>자료 33쪽의 중첩 예제를 유효한 문단·제목 구조로 다시 작성했다.</li><li>자료 34~36쪽의 예제는 속성 따옴표, _blank, author·keywords와 외부 CSS 방식으로 보완했다.</li><li>자료 43쪽의 b·i·u를 모두 비권장으로 묶은 설명은 현재의 요소 의미와 구분했다.</li><li>브라우저 점유율과 지원성 비교는 당시 자료로 취급한다. HTML5·CSS·API 전체의 완전 지원을 일반화하지 않았다.</li></ul>
+    <p class="lesson-citation">참고 표준: <a href="https://html.spec.whatwg.org/multipage/semantics.html">문서의 메타데이터</a> · <a href="https://html.spec.whatwg.org/multipage/syntax.html">HTML 문법</a> · <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html">텍스트의 의미</a> · <a href="https://html.spec.whatwg.org/multipage/obsolete.html">오래된 기능</a></p>
+  </section>
+</main>
+<footer class="wrap site-footer"><p>Lec02 2~44쪽 학습 정리 · 2주차</p><a class="back-top" href="../index.html#weekly">학습 기록으로 ↗</a></footer>
+</body>
+</html>

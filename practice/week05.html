@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lec04 2~16쪽의 CSS 기초와 웹페이지 제작 전 Git 초기 설정, 스테이징·커밋·GitHub 업로드 과정을 정리한 5주차 기록입니다.">
+  <title>5주차 | CSS 기초와 Git·GitHub 작업 흐름</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="practice.css">
+  <script src="editor.js" defer></script>
+  <script src="../page-loader.js" defer></script>
+</head>
+<body id="top">
+  <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+  </div>
+
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div class="draft-note"><span class="draft-mark">5주차 학습 기록</span> Lec04 2~16쪽과 Git 초기 설정·커밋·GitHub 업로드 과정을 정리했습니다.</div>
+  <header class="wrap practice-header lesson-header">
+    <a class="return-link" href="../index.html#weekly">← 이력서 학습 기록</a>
+    <p class="eyebrow">WEEK 05 / CSS &amp; VERSION CONTROL</p>
+    <h1>스타일을 입히고 변경을 기록하기</h1>
+    <p class="introduction">CSS로 웹페이지의 표현을 분리하고, Git으로 변경을 선택·기록한 뒤 GitHub 저장소에 반영하는 흐름을 이해한다.</p>
+    <nav class="lesson-nav" aria-label="5주차 학습 목차"><a href="#css-basics">CSS 기초</a><a href="#css-selectors">선택자</a><a href="#git-concepts">Git 흐름</a><a href="#git-setup">초기 설정</a><a href="#git-start">저장소 준비</a><a href="#git-stage">커밋</a><a href="#git-push">첫 업로드</a><a href="#git-daily">반복 작업</a><a href="#git-errors">오류 확인</a><a href="#review">복습</a></nav>
+  </header>
+<section class="wrap document-editor" aria-labelledby="document-editor-title" hidden>
+  <div class="editor-heading"><h2 id="document-editor-title">문서 편집</h2><p>‘문서 수정’을 누른 뒤 제목·본문·코드 예시를 클릭해 바꾸세요.</p></div>
+  <div class="editor-actions">
+    <button type="button" data-editor-action="edit">문서 수정</button>
+    <button type="button" data-editor-action="save" hidden>저장</button>
+    <button type="button" data-editor-action="cancel" class="secondary" hidden>취소</button>
+    <button type="button" data-editor-action="download" class="secondary">수정한 HTML 다운로드</button>
+  </div>
+  <p class="editor-help">저장은 이 브라우저에만 적용됩니다. 제출 파일에 반영하려면 HTML을 내려받아 practice 폴더의 같은 이름 파일을 교체하세요.</p>
+  <p class="editor-status" role="status" aria-live="polite"></p>
+</section>
+<main id="main" class="wrap practice-main lesson-main">
+  <section class="lesson-overview" aria-labelledby="overview-title">
+    <h2 id="overview-title" class="sr-only">5주차 학습 목표</h2>
+    <div class="lesson-cards">
+      <article class="demo-card"><h3>CSS로 표현 분리</h3><p>HTML의 구조를 유지하면서 선택자와 속성으로 색상·글꼴·간격·상태를 지정한다.</p></article>
+      <article class="demo-card"><h3>Git으로 변경 기록</h3><p>수정한 파일 중 저장할 변경을 골라 하나의 커밋으로 기록한다.</p></article>
+      <article class="demo-card"><h3>GitHub로 기록 공유</h3><p>원격 저장소를 연결하고 로컬 커밋을 push해 저장소에 반영한다.</p></article>
+    </div>
+  </section>
+
+  <section id="css-basics" class="lesson-section" aria-labelledby="css-basics-title">
+    <p class="eyebrow">CSS 01 / STRUCTURE &amp; STYLE</p>
+    <h2 id="css-basics-title">내용과 디자인을 분리하기</h2>
+    <p class="lesson-source">Lec04 강의자료 2~6쪽</p>
+    <p>HTML은 제목·문단·링크 같은 콘텐츠의 구조와 의미를 표현한다. CSS(Cascading Style Sheets)는 색상·글꼴·크기·간격·배치 같은 외형을 지정한다. 공통 규칙을 한곳에 모으면 여러 요소와 페이지의 디자인을 일관되게 바꿀 수 있다.</p>
+    <p>CSS1은 1996년, CSS2는 1998년에 등장했고 이후 CSS는 여러 모듈로 발전했다. ‘CSS3’라는 이름을 하나의 고정된 기능 묶음이나 모든 브라우저의 완전한 지원으로 이해하지 않고, 사용하는 기능과 환경을 함께 확인한다.</p>
+    <pre><code>선택자 {
+  속성: 값;
+  속성: 값;
+}
+
+h3 {
+  color: #346248;
+  font-style: italic;
+}</code></pre>
+    <ul class="lesson-list"><li>선택자는 스타일을 적용할 대상을 고른다.</li><li>선언은 속성 이름과 값을 콜론으로 연결하고 세미콜론으로 구분한다.</li><li>중괄호 안에 여러 선언을 작성하면 같은 요소에 여러 속성을 적용할 수 있다.</li><li>다른 속성의 선언이 모이는 것과 같은 속성의 충돌은 구분한다. 같은 속성이 충돌할 때는 단순히 무조건 마지막 줄이 이긴다고 판단하지 않는다.</li></ul>
+  </section>
+
+  <section id="css-files" class="lesson-section" aria-labelledby="css-files-title">
+    <p class="eyebrow">CSS 02 / CONNECTING STYLESHEETS</p>
+    <h2 id="css-files-title">세 가지 작성 위치와 외부 파일 연결</h2>
+    <p class="lesson-source">Lec04 강의자료 7~11쪽</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="CSS 작성 방법 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>같은 CSS를 어디에 작성하는가?</caption><thead><tr><th scope="col">방법</th><th scope="col">위치</th><th scope="col">특징</th></tr></thead><tbody><tr><th scope="row">내부 스타일시트</th><td>head 안의 style 요소</td><td>한 HTML 문서 안에서 스타일을 정의한다.</td></tr><tr><th scope="row">외부 스타일시트</th><td>별도 .css 파일을 link로 연결</td><td>여러 페이지가 같은 스타일을 재사용하기 좋다.</td></tr><tr><th scope="row">인라인 스타일</th><td>요소의 style 속성</td><td>해당 요소에 직접 선언하며 내용과 표현이 섞인다.</td></tr></tbody></table>
+    </div>
+    <p>이 이력서와 학습 페이지는 과제 기준에 맞춰 실제 표현을 외부 CSS에 작성한다. 내부·인라인 방식은 차이를 이해하는 학습 내용으로만 정리한다.</p>
+    <pre><code>&lt;!-- HTML의 head --&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+
+/* style.css */
+p {
+  font-size: 16px;
+  color: #52645d;
+}</code></pre>
+    <p>CSS의 주석은 /* 설명 */ 형태다. href는 HTML 문서를 기준으로 CSS 파일의 경로를 지정하므로 폴더 위치와 파일 이름이 맞는지 확인한다.</p>
+    <p>div는 기본적으로 블록 단위의 영역 묶음, span은 문장 안의 인라인 묶음으로 사용할 수 있다. 의미를 가진 요소가 적합한 경우에는 그 요소를 사용하고, 스타일 적용을 위해 필요한 묶음에 class나 id를 지정한다.</p>
+  </section>
+
+  <section id="css-selectors" class="lesson-section" aria-labelledby="css-selectors-title">
+    <p class="eyebrow">CSS 03 / SELECTORS &amp; STATES</p>
+    <h2 id="css-selectors-title">대상과 상태에 맞게 선택하기</h2>
+    <p class="lesson-source">Lec04 강의자료 8·12~16쪽</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="CSS 선택자 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>기본 선택자의 의미</caption><thead><tr><th scope="col">예</th><th scope="col">종류</th><th scope="col">선택 대상</th></tr></thead><tbody><tr><th scope="row">p</th><td>태그 선택자</td><td>p 요소</td></tr><tr><th scope="row">h3, strong</th><td>선택자 목록</td><td>h3와 strong 각각</td></tr><tr><th scope="row">p strong</th><td>후손 선택자</td><td>p 내부에 있는 strong</td></tr><tr><th scope="row">.term</th><td>클래스 선택자</td><td>class에 term이 있는 요소들</td></tr><tr><th scope="row">strong.term</th><td>태그와 클래스 조합</td><td>term 클래스를 가진 strong</td></tr><tr><th scope="row">#intro</th><td>ID 선택자</td><td>id="intro"인 요소 하나</td></tr><tr><th scope="row">a:hover / a:focus</th><td>가상클래스</td><td>포인터를 올리거나 초점을 받은 링크</td></tr><tr><th scope="row">a:active</th><td>가상클래스</td><td>링크를 누르는 등 활성화하는 동안의 상태</td></tr><tr><th scope="row">a:link / a:visited</th><td>가상클래스</td><td>방문 전·방문한 링크의 상태</td></tr><tr><th scope="row">h3::before / h3::after</th><td>가상요소</td><td>요소 앞·뒤에 생성하는 표현 영역</td></tr></tbody></table>
+    </div>
+    <p>class는 여러 요소에 재사용할 수 있고 하나의 요소에 여러 클래스를 지정할 수 있다. id는 같은 문서에서 고유하게 사용한다. CSS에서는 .클래스와 #아이디로 구분한다.</p>
+    <p>자료의 :before·:after는 가상클래스와 구분되는 가상요소다. 새 예제에서는 ::before·::after 표기를 사용한다. :focus는 마우스 전용 상태가 아니라 키보드 등으로 초점을 받은 상태도 표현한다.</p>
+    <p class="lesson-citation">분류 확인: <a href="https://www.w3.org/TR/selectors-4/">W3C Selectors</a></p>
+    <pre><code>/* 글꼴 목록은 font-family로 작성 */
+p {
+  font-family: Palatino, Garamond, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.css4-example .css4-term {
+  color: #995034;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.css4-example h3::before { content: "◆ "; }
+.css4-example a:hover { background: #e5eddd; }</code></pre>
+    <p>자료 12쪽의 글꼴 목록은 font 단축 속성을 그대로 복사하기보다 font-family로 정리했다. 아래 출력은 이 페이지의 외부 practice.css에 범위를 제한해 작성했다.</p>
+    <div class="demo-card css4-example" data-editor-readonly>
+      <div id="css4-intro"><h3>선택자로 적용한 스타일</h3><p>이 예제는 <strong class="css4-term">CSS</strong>를 강조하고, <span class="css4-term">클래스</span>를 여러 요소에 재사용한다.</p></div>
+      <p id="css4-next">ID로 선택한 문단은 가운데 정렬한다.</p>
+      <a href="#review">마우스를 올리거나 Tab으로 초점을 확인한 뒤 복습으로 이동</a>
+    </div>
+  </section>
+
+  <section id="git-concepts" class="lesson-section" aria-labelledby="git-concepts-title">
+    <p class="eyebrow">GIT 01 / THE BIG PICTURE</p>
+    <h2 id="git-concepts-title">Git과 GitHub, 네 단계의 흐름</h2>
+    <p>Git은 내 컴퓨터에서 코드의 변경 이력을 관리하는 도구다. GitHub는 원격 저장소를 호스팅하고 협업 기능을 제공하는 서비스다. 파일을 저장하는 것, 커밋하는 것, GitHub에 반영하는 것은 서로 다른 단계다.</p>
+    <ol class="git-flow" aria-label="파일 수정부터 GitHub 반영까지"><li><h3>1. 작업 폴더</h3><p>HTML·CSS 파일을 수정하고 저장</p></li><li><h3>2. 스테이징</h3><p>git add로 다음 기록에 넣을 변경 선택</p></li><li><h3>3. 로컬 커밋</h3><p>git commit으로 변경의 스냅샷 기록</p></li><li><h3>4. 원격 저장소</h3><p>git push로 커밋과 브랜치를 GitHub에 반영</p></li></ol>
+    <div class="lesson-callout"><h3>add·commit·push를 혼동하지 않기</h3><p>add만 하면 커밋이 만들어지지 않는다. commit만 하면 원격에 반영되지 않는다. push는 현재 폴더의 모든 미커밋 변경을 올리는 것이 아니라 기록된 커밋을 전송한다.</p></div>
+    <p>브랜치는 작업 이력의 흐름을 가리키는 이름이고, origin은 원격 저장소에 붙인 별칭이다. origin이 GitHub 계정 이름이거나 main이 모든 저장소의 필수 이름인 것은 아니다.</p>
+    <p class="lesson-citation">개념 확인: <a href="https://docs.github.com/en/get-started/using-git/about-git">GitHub Docs · About Git</a></p>
+  </section>
+
+  <section id="git-setup" class="lesson-section" aria-labelledby="git-setup-title">
+    <p class="eyebrow">GIT 02 / ONE-TIME SETUP</p>
+    <h2 id="git-setup-title">작업 전 초기 설정</h2>
+    <p>명령은 터미널에서 사용한다. 먼저 Git 설치 여부를 확인하고 커밋 작성자 정보를 설정한다. 아래 이름과 이메일 값은 자리표시자이며 실제 계정에 사용할 값으로 바꾼다.</p>
+    <pre><code>git --version
+
+git config --global user.name "PUBLIC_ACTIVITY_NAME"
+git config --global user.email "GITHUB_NOREPLY_EMAIL"
+
+git config --get user.name
+git config --get user.email</code></pre>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Git 설정 항목 설명 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>설정의 역할과 범위</caption><thead><tr><th scope="col">항목</th><th scope="col">의미</th></tr></thead><tbody><tr><th scope="row">user.name</th><td>커밋에 기록할 작성자 이름. GitHub 로그인용 ID 설정과는 다르다.</td></tr><tr><th scope="row">user.email</th><td>커밋 작성자 메타데이터. 계정의 이메일 설정에서 확인한 GitHub noreply 주소를 사용할 수 있다.</td></tr><tr><th scope="row">--global</th><td>이 컴퓨터의 사용자 계정에서 사용하는 저장소들에 적용하는 기본값.</td></tr><tr><th scope="row">--local</th><td>현재 Git 저장소에만 적용하며 global 설정보다 우선한다. 저장소 준비 후 사용할 수 있다.</td></tr></tbody></table>
+    </div>
+    <p>커밋 작성자 정보는 GitHub 인증 정보를 대신하지 않는다. 이름을 설정했다고 자동으로 로그인되는 것은 아니다. 개인정보 공개를 줄이려면 실명 대신 공개 활동명을 사용하고, noreply 값은 계정 설정의 실제 주소를 확인해 입력한다. 이 페이지에는 실제 이메일이나 인증 값을 기록하지 않는다.</p>
+    <p class="lesson-citation">설정 확인: <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">Git 초기 설정</a> · <a href="https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address">GitHub 커밋 이메일 설정</a> · <a href="https://git-scm.com/install/">Git 설치 안내</a></p>
+  </section>
+
+  <section id="git-start" class="lesson-section" aria-labelledby="git-start-title">
+    <p class="eyebrow">GIT 03 / INIT OR CLONE</p>
+    <h2 id="git-start-title">새 프로젝트와 기존 저장소를 구분하기</h2>
+    <div class="lesson-example-grid">
+      <article><h3>A. 내 폴더에서 새로 시작</h3><p>Git으로 관리하지 않던 프로젝트 폴더에 들어가 저장소를 만든다. -b main은 이 예제의 최초 브랜치 이름을 main으로 지정한다.</p><pre><code>cd "/path/to/project"
+git init -b main
+git status</code></pre></article>
+      <article><h3>B. GitHub에 기존 코드가 있음</h3><p>기존 원격의 파일과 이력을 clone으로 가져와 작업한다. GITHUB_ID와 REPOSITORY를 실제 저장소 값으로 바꾼다.</p><pre><code>git clone https://github.com/GITHUB_ID/REPOSITORY.git
+cd REPOSITORY
+git status
+git remote -v</code></pre></article>
+    </div>
+    <p>A와 B는 시작 상황에 따른 선택지다. 이미 clone한 폴더에 다시 새 저장소를 만드는 과정을 반복하지 않는다. .git 디렉터리는 Git의 관리 정보를 담으며, 페이지의 콘텐츠 폴더와 구분한다. init -b는 Git 2.28 이상을 기준으로 한다.</p>
+    <p>이미 GitHub에 README나 커밋이 있는 저장소라면 B가 자연스러운 시작이다. A에서 새 로컬 이력을 만들었다면 첫 push의 대상은 별도 초기 커밋이 없는 빈 원격 저장소로 준비한다.</p>
+    <p class="lesson-citation">시작 방법: <a href="https://git-scm.com/docs/git-init">git init</a> · <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github">GitHub에 로컬 코드 추가</a></p>
+  </section>
+
+  <section id="git-stage" class="lesson-section" aria-labelledby="git-stage-title">
+    <p class="eyebrow">GIT 04 / REVIEW, ADD &amp; COMMIT</p>
+    <h2 id="git-stage-title">변경을 확인하고 한 묶음으로 기록하기</h2>
+    <p>프로젝트 파일을 저장한 뒤 먼저 상태와 차이를 확인한다. 이번 커밋에 포함할 파일을 고르고, 스테이징된 내용도 다시 확인한 다음 커밋한다.</p>
+    <pre><code>git status
+
+git diff
+
+git add index.html style.css practice/week05.html practice/practice.css
+
+git diff --staged
+
+git commit -m "5주차 CSS와 Git 학습 기록 추가"
+
+git log --oneline -5
+git status</code></pre>
+    <p>명령의 파일 이름은 웹페이지 프로젝트의 예시다. 실제로 수정한 파일 이름을 사용하며, 새로 추가한 이미지·스크립트·문서가 있다면 함께 검토한다. git diff는 일반적으로 추적 중인 파일의 미스테이징 차이를 보여 주며 새 파일은 status와 파일 내용으로 확인한다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Git 변경 확인과 기록 명령어 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>각 명령에서 확인하는 범위</caption><thead><tr><th scope="col">명령</th><th scope="col">하는 일</th><th scope="col">확인할 점</th></tr></thead><tbody><tr><th scope="row">git status</th><td>현재 파일과 스테이징 상태 확인</td><td>누락된 새 파일과 의도하지 않은 변경을 찾는다.</td></tr><tr><th scope="row">git diff</th><td>작업 폴더와 스테이징 사이의 차이 확인</td><td>수정한 코드가 의도한 변경인지 읽는다.</td></tr><tr><th scope="row">git add FILE</th><td>그 시점의 파일 내용을 스테이징</td><td>커밋에 넣을 변경을 선택한다.</td></tr><tr><th scope="row">git diff --staged</th><td>다음 커밋에 들어갈 변경 확인</td><td>저장하려는 내용이 실제로 준비됐는지 읽는다.</td></tr><tr><th scope="row">git commit -m</th><td>스테이징을 로컬 이력으로 기록</td><td>무엇을 바꿨는지 알 수 있는 메시지를 남긴다.</td></tr><tr><th scope="row">git log --oneline</th><td>최근 커밋의 요약 확인</td><td>새 기록이 생성됐는지 확인한다.</td></tr></tbody></table>
+    </div>
+    <div class="lesson-callout"><h3>add 뒤에 또 수정했다면 다시 확인</h3><p>스테이징은 자동으로 최신 파일 내용에 맞춰 바뀌지 않는다. add 후 파일을 더 수정했다면 git diff와 git diff --staged를 비교하고 필요한 내용을 다시 add한다. 커밋에는 작업 폴더의 모든 변경이 아니라 준비된 내용이 들어간다.</p></div>
+    <p>커밋은 한 가지 목적을 설명할 수 있는 단위로 묶는다. 예를 들어 ‘CSS 선택자 예제 추가’, ‘잘못된 내부 링크 수정’처럼 바뀐 행동이나 내용을 메시지로 표현한다.</p>
+    <p class="lesson-citation">변경 기록 확인: <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Git · Recording Changes</a></p>
+  </section>
+
+  <section id="git-ignore" class="lesson-section" aria-labelledby="git-ignore-title">
+    <p class="eyebrow">GIT 05 / CHOOSING FILES</p>
+    <h2 id="git-ignore-title">올릴 파일과 제외할 파일 구분</h2>
+    <p>.gitignore에는 추적하지 않을 파일 패턴을 작성한다. 웹페이지에 필요한 HTML·CSS·이미지·스크립트와 관계없는 임시 파일을 구분해 커밋에 포함한다.</p>
+    <pre><code># .gitignore 예시
+.DS_Store
+.env
+node_modules/</code></pre>
+    <p>이미 추적 중인 파일은 .gitignore에 이름을 추가하는 것만으로 이력에서 없어지지 않는다. 인증 토큰이나 비밀 값을 소스·스크린샷·커밋 메시지에 기록하지 않는다. .gitignore도 프로젝트의 규칙이므로 필요하면 함께 커밋한다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Git 짧은 상태 출력의 의미 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>git status --short를 읽는 예</caption><thead><tr><th scope="col">표시</th><th scope="col">의미</th></tr></thead><tbody><tr><th scope="row">??</th><td>Git이 아직 추적하지 않는 새 파일</td></tr><tr><th scope="row">첫 칸 공백, 둘째 칸 M</th><td>파일을 수정했지만 그 변경은 아직 스테이징하지 않음</td></tr><tr><th scope="row">첫 칸 M, 둘째 칸 공백</th><td>추적 중인 파일의 변경을 스테이징함</td></tr><tr><th scope="row">MM</th><td>스테이징한 내용과 그 뒤 작업 폴더에서 더 수정한 내용이 함께 존재</td></tr></tbody></table>
+    </div>
+    <p>이미 커밋이 있는 저장소에서 스테이징 선택만 취소하려면 다음 명령을 사용할 수 있다. 파일의 현재 수정 내용을 되돌리는 명령과 구분한다.</p>
+    <pre><code>git restore --staged style.css
+git status</code></pre>
+    <p class="lesson-citation">파일 선택: <a href="https://git-scm.com/docs/gitignore">gitignore</a> · <a href="https://git-scm.com/docs/git-restore">git restore --staged</a></p>
+  </section>
+
+  <section id="git-push" class="lesson-section" aria-labelledby="git-push-title">
+    <p class="eyebrow">GIT 06 / FIRST PUSH TO GITHUB</p>
+    <h2 id="git-push-title">원격 연결과 첫 업로드</h2>
+    <p>새 로컬 저장소의 첫 커밋을 만들었다면 GitHub에 업로드할 원격 저장소를 준비한다. 다음은 A 방식으로 시작한 프로젝트와 빈 원격 저장소를 연결하는 예시다.</p>
+    <ol class="lesson-steps"><li>GitHub에서 새 Repository를 만들고 공개·비공개 범위를 선택한다.</li><li>새 로컬 이력을 올릴 빈 저장소라면 GitHub 쪽 README·라이선스·gitignore 초기 생성은 생략한다.</li><li>저장소 화면의 원격 URL을 복사한다.</li><li>로컬 프로젝트에서 origin을 연결하고 주소를 확인한다.</li><li>올바른 계정과 권한으로 인증한 뒤 첫 push를 한다.</li></ol>
+    <pre><code>git remote add origin https://github.com/GITHUB_ID/REPOSITORY.git
+git remote -v
+
+git branch --show-current
+
+git push -u origin main</code></pre>
+    <p>위 명령은 이 예제의 브랜치가 main일 때 사용한다. 실제 브랜치 이름은 확인한 값에 맞춘다. -u는 로컬 브랜치가 추적할 원격 브랜치를 설정하므로 이후 같은 브랜치에서는 git push나 git pull을 더 간단히 사용할 수 있다.</p>
+    <h3>작성자 설정과 인증은 별도</h3>
+    <p>HTTPS 방식에서는 GitHub CLI나 Git Credential Manager 등의 로그인 흐름, 또는 토큰 기반 인증을 사용할 수 있다. SSH 방식은 GitHub에 등록한 SSH 키로 인증한다. HTTPS Git 작업에 GitHub 계정의 일반 비밀번호를 사용하는 방식과 구분한다.</p>
+    <p>clone한 저장소는 origin이 이미 연결되어 있을 수 있다. 같은 별칭을 다시 추가하기 전에 git remote -v를 읽고 대상이 맞는지 확인한다. 토큰·개인 키를 URL이나 소스에 넣지 않는다.</p>
+    <p class="lesson-citation">첫 업로드: <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github">GitHub 로컬 코드 추가</a> · <a href="https://git-scm.com/docs/git-push">git push</a> · <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github">GitHub 인증</a></p>
+  </section>
+
+  <section id="git-daily" class="lesson-section" aria-labelledby="git-daily-title">
+    <p class="eyebrow">GIT 07 / EVERYDAY WORKFLOW</p>
+    <h2 id="git-daily-title">다음 수정부터 반복하는 순서</h2>
+    <p>원격과 추적 브랜치가 설정된 뒤에는 init이나 remote add를 매번 반복하지 않는다. 작업 전 상태와 원격 변경을 확인하고, 수정·기록·전송의 순서를 반복한다.</p>
+    <pre><code># 1. 작업 전: 커밋하지 않은 변경이 없는지 확인
+git status
+
+# 2. 다른 컴퓨터·GitHub에서 바뀐 내용이 있다면 가져오기
+git pull --ff-only
+
+# 3. HTML/CSS를 수정하고 브라우저에서 확인한 뒤
+git diff
+git add index.html style.css practice/week05.html practice/practice.css
+git diff --staged
+git commit -m "CSS 선택자 설명과 출력 예제 보완"
+
+# 4. 원격으로 전송
+git push
+
+# 5. 상태와 기록 확인
+git status
+git log --oneline -5</code></pre>
+    <p>pull은 원격 변경을 가져와 현재 브랜치에 반영하는 과정이다. --ff-only는 이력을 단순히 앞으로 이동할 수 있는 경우만 허용한다. 로컬과 원격이 각각 다른 커밋으로 갈라지면 중단하므로 이 옵션이 모든 충돌을 자동 해결하는 것은 아니다.</p>
+    <p>작업 폴더에 수정이 남아 있다면 먼저 어떻게 보관할지 결정한다. 원격 변경과 같은 부분을 동시에 수정했다면 두 변경을 읽고 병합·재배치 등으로 정리해야 한다. 오류를 없애기 위해 원격 이력을 강제로 덮어쓰는 방식으로 처리하지 않는다.</p>
+    <h3>GitHub 화면에서 마지막 확인</h3>
+    <ul class="lesson-list"><li>대상 Repository와 브랜치가 올바른지 확인한다.</li><li>방금 만든 커밋 메시지와 수정 파일이 보이는지 확인한다.</li><li>GitHub 파일 내용에 수정한 HTML·CSS가 반영됐는지 읽는다.</li><li>push와 웹사이트 배포를 구분한다. 코드를 올렸다고 자동으로 공개 웹페이지가 생기는 것은 아니다.</li></ul>
+    <p class="lesson-citation">동기화 기준: <a href="https://git-scm.com/docs/git-pull">git pull</a></p>
+  </section>
+
+  <section id="git-errors" class="lesson-section" aria-labelledby="git-errors-title">
+    <p class="eyebrow">GIT 08 / TROUBLESHOOTING</p>
+    <h2 id="git-errors-title">메시지를 읽고 원인부터 확인하기</h2>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="자주 만나는 Git 오류와 확인 방법 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>대표적인 상태·오류와 다음 확인</caption><thead><tr><th scope="col">메시지 또는 상황</th><th scope="col">가능한 원인</th><th scope="col">먼저 확인할 것</th></tr></thead><tbody><tr><th scope="row">not a git repository</th><td>프로젝트의 Git 저장소 밖에서 명령을 실행함</td><td>현재 폴더와 .git 위치 확인. 기존 저장소라면 init을 반복하기보다 올바른 폴더로 이동.</td></tr><tr><th scope="row">Author identity unknown</th><td>커밋 작성자 정보가 설정되지 않음</td><td>user.name·user.email의 global 또는 local 값 확인.</td></tr><tr><th scope="row">nothing to commit</th><td>새 변경이 없거나 커밋할 내용이 준비되지 않음</td><td>파일 저장 여부와 git status를 읽고 실제 상태 확인.</td></tr><tr><th scope="row">remote origin already exists</th><td>origin이 이미 등록되어 있음</td><td>git remote -v로 대상 확인. URL 변경이 필요할 때만 set-url 사용.</td></tr><tr><th scope="row">src refspec main does not match any</th><td>main 브랜치가 없거나 아직 첫 커밋이 없음</td><td>실제 브랜치 이름과 첫 커밋 유무 확인.</td></tr><tr><th scope="row">non-fast-forward / ff-only 중단</th><td>원격에 로컬에 없는 커밋이 있거나 이력이 갈라짐</td><td>fetch 후 로컬·원격 기록을 비교하고 통합 방법 결정.</td></tr><tr><th scope="row">Authentication failed / 권한 거절</th><td>인증 방식·계정·저장소 권한이 맞지 않음</td><td>원격 URL, 로그인 계정과 쓰기 권한 확인. 작성자 설정만으로 해결되지 않음.</td></tr></tbody></table>
+    </div>
+    <pre><code># 원격 주소를 읽고 필요할 때만 수정
+git remote -v
+git remote set-url origin https://github.com/GITHUB_ID/REPOSITORY.git
+
+# 원격 기록을 가져와 비교: 작업 파일을 바로 합치지 않음
+git fetch origin
+git log --oneline --graph --decorate --all</code></pre>
+    <p>에러 표는 가능한 원인을 정리한 복습 자료다. 메시지 하나만 보고 파일을 삭제하거나 이력을 되돌리지 않고, 현재 저장소·브랜치·파일 상태를 먼저 읽는다. 충돌이 생기면 겹친 부분을 확인해 원하는 내용으로 정리한 뒤 필요한 변경을 다시 기록한다.</p>
+  </section>
+
+  <section id="review" class="lesson-section" aria-labelledby="review-title">
+    <p class="eyebrow">REVIEW / CSS &amp; GIT</p>
+    <h2 id="review-title">복습 질문</h2>
+    <details><summary>.term과 #intro는 무엇이 다른가?</summary><p>여러 요소에 재사용할 수 있는 class와 한 문서에서 고유한 id를 선택한다.</p></details>
+    <details><summary>:hover와 ::before는 같은 종류인가?</summary><p>:hover는 요소의 상태를 고르는 가상클래스, ::before는 생성되는 표현 영역인 가상요소다.</p></details>
+    <details><summary>git add 뒤 파일을 다시 수정하면 커밋에도 바로 포함되는가?</summary><p>자동 포함되지 않는다. add한 시점의 내용과 추가 수정이 달라지므로 diff와 staged diff를 확인하고 필요한 내용을 다시 add한다.</p></details>
+    <details><summary>git commit만 하면 GitHub에 파일이 올라가는가?</summary><p>로컬 저장소에 기록된다. 원격 반영에는 별도의 push와 올바른 인증·권한이 필요하다.</p></details>
+    <details><summary>기존 저장소를 clone한 뒤 remote add를 매번 하는가?</summary><p>clone 과정에서 원격이 설정되어 있을 수 있다. remote -v로 확인하며 초기화를 매 작업마다 반복하지 않는다.</p></details>
+    <details><summary>user.name 설정은 GitHub 로그인인가?</summary><p>커밋 작성자 메타데이터다. GitHub 인증과는 별도다.</p></details>
+    <details><summary>git pull --ff-only가 거절되면 모든 파일이 사라지는가?</summary><p>이력을 단순하게 이동할 수 없으면 작업을 중단한다. 상태와 이력을 읽고 원격·로컬 변경을 통합할 방법을 결정한다.</p></details>
+    <details><summary>push를 하면 웹사이트도 자동 배포되는가?</summary><p>원격 저장소의 커밋이 갱신되는 것이다. 실제 사이트 배포는 사용하는 호스팅의 별도 절차를 따른다.</p></details>
+  </section>
+
+  <section id="sources" class="lesson-section lesson-references" aria-labelledby="sources-title">
+    <h2 id="sources-title">학습 범위와 참고 자료</h2>
+    <p>CSS는 「[웹프로그래밍] Lec04. CSS 스타일 시트 기초 및 활용」 PDF 2~16쪽을 정리했다. 17쪽 이후는 이번 범위에 포함하지 않았다. Git은 작업 전 초기 설정과 커밋·GitHub Repository 업로드 과정을 배웠다는 기록을 바탕으로 공식 문서의 명령 예시와 설명을 추가했다.</p>
+    <p>자료 12쪽의 글꼴 목록 문법과 15~16쪽의 가상클래스·가상요소 구분을 보완했다. 코드의 경로·작성자 값·저장소 이름은 복습용 예시 또는 자리표시자이며, 이 학습 페이지를 작성하면서 실제 Git 설정·커밋·push를 수행한 기록은 아니다.</p>
+    <p class="lesson-citation">핵심 참고: <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">Git 초기 설정</a> · <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Git 변경 기록</a> · <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github">GitHub 첫 업로드</a></p>
+  </section>
+</main>
+<footer class="wrap site-footer"><p>Lec04 2~16쪽 · Git·GitHub 작업 과정 · 5주차</p><a class="back-top" href="../index.html#weekly">학습 기록으로 ↗</a></footer>
+</body>
+</html>

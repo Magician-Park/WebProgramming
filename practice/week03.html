@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lec03 2~19쪽의 링크·이미지 개념과 네이버 뉴스·웹툰의 문서 내 위치 이동 실습을 함께 정리한 기록입니다.">
+  <title>3주차 | 링크·이미지와 TOP 버튼</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="practice.css">
+  <script src="editor.js" defer></script>
+  <script src="../page-loader.js" defer></script>
+</head>
+<body id="top">
+  <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+  </div>
+
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div class="draft-note"><span class="draft-mark">3주차 실습 기록</span> Lec03 2~19쪽의 강의 정리와 뉴스·웹툰 저장 페이지의 실습 기록입니다.</div>
+  <header class="wrap practice-header lesson-header">
+    <a class="return-link" href="../index.html#weekly">← 이력서 학습 기록</a>
+    <p class="eyebrow">WEEK 03 / ANCHOR LINKS</p>
+    <h1>링크와 이미지로 연결하기</h1>
+    <p class="introduction">링크 주소와 이미지의 표현을 이해하고, 뉴스·웹툰 실습에서 id와 href로 문서 안의 원하는 위치를 연결한다.</p>
+    <nav class="lesson-nav" aria-label="3주차 학습 목차"><a href="#lecture-links">링크 개념</a><a href="#lecture-images">이미지와 설명</a><a href="#practice-log">실습 기록</a><a href="#anchor-rule">이동 원리</a><a href="#news-case">뉴스 예제</a><a href="#webtoon-case">이미지 예제</a><a href="#native-top">TOP 버튼 비교</a><a href="#review">복습</a></nav>
+  </header>
+<section class="wrap document-editor" aria-labelledby="document-editor-title" hidden>
+  <div class="editor-heading"><h2 id="document-editor-title">문서 편집</h2><p>‘문서 수정’을 누른 뒤 제목·본문·코드 예시를 클릭해 바꾸세요.</p></div>
+  <div class="editor-actions">
+    <button type="button" data-editor-action="edit">문서 수정</button>
+    <button type="button" data-editor-action="save" hidden>저장</button>
+    <button type="button" data-editor-action="cancel" class="secondary" hidden>취소</button>
+    <button type="button" data-editor-action="download" class="secondary">수정한 HTML 다운로드</button>
+  </div>
+  <p class="editor-help">저장은 이 브라우저에만 적용됩니다. 제출 파일에 반영하려면 HTML을 내려받아 practice 폴더의 같은 이름 파일을 교체하세요.</p>
+  <p class="editor-status" role="status" aria-live="polite"></p>
+</section>
+<main id="main" class="wrap practice-main lesson-main">
+  <section class="lesson-overview" aria-labelledby="overview-title">
+    <h2 id="overview-title" class="sr-only">3주차 실습 핵심</h2>
+    <div class="lesson-cards">
+      <article class="demo-card"><h3>a · 링크 만들기</h3><p>클릭할 글자나 이미지를 a 요소로 감싸고 href에 이동할 위치를 지정한다.</p></article>
+      <article class="demo-card"><h3>id · 도착점 표시</h3><p>같은 문서 안에서 이동할 요소에 고유한 id를 붙인다.</p></article>
+      <article class="demo-card"><h3># · 문서 안의 위치</h3><p>href="#up"은 현재 문서에서 id="up"인 요소를 찾아 이동한다.</p></article>
+    </div>
+  </section>
+
+  <section id="lecture-links" class="lesson-section" aria-labelledby="lecture-links-title">
+    <p class="eyebrow">LECTURE / HYPERTEXT &amp; LINKS</p>
+    <h2 id="lecture-links-title">정보를 연결하는 노드·링크·앵커</h2>
+    <p class="lesson-source">Lec03 강의자료 2~4쪽</p>
+    <p>하이퍼텍스트는 관련 문서나 텍스트 조각을 링크로 연결한다. 하이퍼미디어는 텍스트뿐 아니라 이미지·그래픽·오디오·비디오 같은 정보까지 연결하는 개념이다. 링크를 선택해 정보 사이를 탐색하는 과정을 내비게이션이라고 한다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="노드, 링크, 앵커의 개념 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>연결 구조를 설명하는 세 가지 개념</caption>
+        <thead><tr><th scope="col">개념</th><th scope="col">의미</th><th scope="col">실습에 적용하면</th></tr></thead>
+        <tbody><tr><th scope="row">노드</th><td>문서나 멀티미디어 정보의 기본 단위</td><td>뉴스 문서, 웹툰 문서와 그 안의 정보</td></tr><tr><th scope="row">링크</th><td>노드를 연결해 탐색할 수 있게 하는 연결</td><td>본문 문구나 이미지를 눌러 이동하는 연결</td></tr><tr><th scope="row">앵커</th><td>링크의 출발점 또는 도착점</td><td>클릭할 a 요소와 id로 지정한 제목·이미지</td></tr></tbody>
+      </table>
+    </div>
+    <pre><code>&lt;a href="week01.html" title="1주차 학습 정리"&gt;
+  1주차 페이지 읽기
+&lt;/a&gt;</code></pre>
+    <p>a 요소의 href는 이동할 위치를, 링크 안의 텍스트나 이미지는 클릭할 영역을 지정한다. title은 링크의 보조 설명으로 마우스를 올릴 때 표시될 수 있지만, 읽기 쉬운 링크 텍스트를 대신하지는 않는다.</p>
+    <div class="demo-actions" data-editor-readonly><a class="demo-button" href="week01.html" title="웹의 역사와 인터넷 주소를 정리한 1주차">1주차 페이지로 이동</a><a class="demo-button secondary" href="#news-case">이 문서의 뉴스 실습으로 이동</a></div>
+  </section>
+
+  <section id="lecture-addresses" class="lesson-section" aria-labelledby="lecture-addresses-title">
+    <p class="eyebrow">LECTURE / URLS &amp; BOOKMARKS</p>
+    <h2 id="lecture-addresses-title">다른 문서와 문서 안의 위치로 이동하기</h2>
+    <p class="lesson-source">Lec03 강의자료 5~12쪽</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="링크 주소의 종류와 경로 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>현재 practice/week03.html을 기준으로 읽는 주소</caption>
+        <thead><tr><th scope="col">방식</th><th scope="col">href의 예</th><th scope="col">이동 위치</th></tr></thead>
+        <tbody><tr><th scope="row">절대 주소</th><td>https://www.w3.org/</td><td>전체 웹 주소로 지정한 외부 사이트</td></tr><tr><th scope="row">같은 폴더의 상대 주소</th><td>week01.html</td><td>현재 문서와 같은 practice 폴더의 1주차 문서</td></tr><tr><th scope="row">상위 폴더의 상대 주소</th><td>../index.html</td><td>상위 폴더의 이력서 문서</td></tr><tr><th scope="row">현재 문서의 위치</th><td>#news-case</td><td>현재 문서에서 id="news-case"인 영역</td></tr><tr><th scope="row">다른 문서의 특정 위치</th><td>week01.html#html-history</td><td>1주차 문서에서 id="html-history"인 영역</td></tr></tbody>
+      </table>
+    </div>
+    <p>상대 주소는 현재 문서의 위치를 기준으로 해석한다. 문서를 다른 폴더로 옮기면 같은 상대 주소가 다른 파일을 가리킬 수 있다. 단순히 href를 빈 값으로 두는 대신 목적지 경로를 분명히 작성한다.</p>
+    <pre><code>&lt;!-- 링크의 시작점 --&gt;
+&lt;a href="#book001"&gt;첫 번째 참고도서 소개&lt;/a&gt;
+
+&lt;!-- 도착점: id에는 #을 붙이지 않는다 --&gt;
+&lt;section id="book001"&gt;
+  &lt;h3&gt;첫 번째 참고도서&lt;/h3&gt;
+  &lt;p&gt;도서의 설명을 작성합니다.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+    <p>자료에서는 a id="book001" 같은 빈 앵커로 도착점을 지정한다. 목적지를 a에만 설정할 필요는 없으며 section·제목·span·img 같은 요소에 고유한 id를 지정할 수도 있다. 이것이 뉴스의 span id="up"과 웹툰의 img id="up"으로 이어진다.</p>
+    <div class="lesson-callout"><h3>예제 코드는 유효한 구조로 쓰기</h3><p>자료의 스마트 따옴표는 코드용 따옴표로 바꾸고, br은 종료 태그 없이 쓴다. ol 안의 항목은 li로 감싸며, 표의 테두리와 위치 같은 표현은 외부 CSS로 분리한다.</p></div>
+  </section>
+
+  <section id="lecture-images" class="lesson-section" aria-labelledby="lecture-images-title">
+    <p class="eyebrow">LECTURE / IMAGES &amp; CAPTIONS</p>
+    <h2 id="lecture-images-title">이미지를 넣고 링크와 설명으로 묶기</h2>
+    <p class="lesson-source">Lec03 강의자료 13~19쪽</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="GIF, JPEG, PNG의 특징 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>이미지 형식의 특징과 압축 비교를 읽는 기준</caption>
+        <thead><tr><th scope="col">형식</th><th scope="col">특징</th><th scope="col">자료에서 이해할 점</th></tr></thead>
+        <tbody><tr><th scope="row">GIF</th><td>팔레트 기반으로 제한된 색상을 표현</td><td>일반적으로 최대 256색 팔레트를 사용하며 단순한 그림과 색이 적은 이미지에 활용된다.</td></tr><tr><th scope="row">JPEG</th><td>사진처럼 색상 변화가 많은 이미지에 활용</td><td>보통 손실 압축을 사용하며 품질 설정과 파일 크기를 함께 살펴본다.</td></tr><tr><th scope="row">PNG</th><td>무손실 압축과 투명도 지원</td><td>도형·문자·투명 배경 이미지에 활용된다. 비압축 형식이라고 이해하지 않는다.</td></tr></tbody>
+      </table>
+    </div>
+    <p>자료 14쪽의 압축률은 두 예제 이미지의 비교 결과다. GIF가 언제나 가장 작거나 PNG가 항상 더 크다고 일반화하지 않는다. 실제 크기는 이미지의 내용·해상도·색상·압축 설정에 따라 달라진다.</p>
+    <p class="lesson-citation">PNG의 무손실 압축과 알파 채널 확인: <a href="https://www.w3.org/TR/png-3/">W3C PNG 규격</a></p>
+    <h3>img의 경로·크기·대체 텍스트</h3>
+    <pre><code>&lt;img src="anchor-panel.svg"
+     width="320" height="160"
+     alt="문서 내 이동 실습을 설명하는 그림"&gt;</code></pre>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="이미지 속성의 역할 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>이미지를 표시할 때 확인할 속성</caption>
+        <thead><tr><th scope="col">속성</th><th scope="col">역할</th></tr></thead>
+        <tbody><tr><th scope="row">src</th><td>이미지의 파일 이름 또는 경로를 지정한다. 상대 경로라면 현재 문서를 기준으로 찾는다.</td></tr><tr><th scope="row">width / height</th><td>이미지의 표시 크기와 비율을 지정한다. 반응형 화면에서는 CSS와 함께 조정한다.</td></tr><tr><th scope="row">alt</th><td>이미지 대신 전달할 내용을 설명한다. 로드 실패와 비시각적 이용을 함께 고려한다.</td></tr></tbody>
+      </table>
+    </div>
+    <p>클릭하는 이미지의 alt는 이동 기능이나 목적지를 이해할 수 있게 작성한다. 이미지의 정렬은 오래된 align 속성보다 CSS로 표현하며, 너비와 높이를 임의로 바꿔 비율이 찌그러지지 않게 한다.</p>
+    <h3>figure와 figcaption, 이미지 링크</h3>
+    <p>figure는 그림·사진·다이어그램 등 독립적으로 설명할 콘텐츠를 묶고, figcaption은 그 콘텐츠의 설명을 같은 figure 안에 작성한다. 이미지를 a로 감싸면 그림 전체가 링크의 클릭 영역이 된다.</p>
+    <pre><code>&lt;figure&gt;
+  &lt;a href="#webtoon-case"&gt;
+    &lt;img src="anchor-panel.svg" width="320" height="160"
+         alt="웹툰 이미지 링크 실습으로 이동"&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt;이미지를 누르면 웹툰 실습으로 이동합니다.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+    <div class="demo-card" data-editor-readonly>
+      <figure class="lesson-figure"><a class="anchor-image-link" href="#webtoon-case"><img class="anchor-demo-image" src="anchor-panel.svg" width="320" height="160" alt="웹툰 이미지 링크 실습으로 이동"></a><figcaption>이미지를 누르면 아래의 웹툰 실습 영역으로 이동합니다.</figcaption></figure>
+    </div>
+    <p>자료 19쪽의 figcation은 figcaption으로 고쳐 작성한다. 이 예제에서는 설명을 a 밖의 figure 자식으로 두어 그림·링크·설명의 구조를 분명히 했다. 실제 책 표지나 웹툰 장면을 복제하지 않고 기존 학습용 그림을 사용했다.</p>
+    <p class="lesson-citation">구조와 대체 텍스트 확인: <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element">WHATWG figure</a> · <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element">WHATWG img</a></p>
+  </section>
+
+  <section id="practice-log" class="lesson-section" aria-labelledby="practice-log-title">
+    <p class="eyebrow">01 / PRACTICE LOG</p>
+    <h2 id="practice-log-title">뉴스와 웹툰의 긴 페이지에서 위로 이동하기</h2>
+    <p>3주차에는 저장한 네이버 뉴스 기사와 웹툰 페이지의 HTML을 열어 문서 내 위치 이동을 실습했다. 본문이나 아래쪽 이미지를 클릭하면 상단에 지정한 위치로 올라가도록 링크와 도착점을 연결했다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="제공한 웹페이지의 수정 내용 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>첨부 ZIP의 실제 저장 HTML에서 확인한 내용</caption>
+        <thead><tr><th scope="col">대상</th><th scope="col">도착점</th><th scope="col">클릭할 링크</th><th scope="col">소스 확인</th></tr></thead>
+        <tbody><tr><th scope="row">뉴스 기사</th><td>기사 제목 안의 span에 id="up"</td><td>기사 본문의 특정 문구를 a href="#up"으로 감쌈</td><td>제목 979행, 본문 1134행</td></tr><tr><th scope="row">웹툰 1화</th><td>본문 상단의 연령 안내 이미지에 id="up"</td><td>아래쪽 마지막 이미지를 a href="#up"으로 감쌈</td><td>상단 559행, 아래쪽 724행</td></tr></tbody>
+      </table>
+    </div>
+    <p>각 저장 문서에는 id="up"인 요소와 href="#up"인 링크가 각각 하나씩 있었다. 기사와 웹툰은 서로 다른 문서이므로 같은 id 이름을 사용할 수 있다. 한 문서 안에서는 id를 중복해서 쓰지 않는다.</p>
+    <p class="lesson-citation">자료: 제공한 뉴스·웹툰 ZIP 및 세 장의 코드 캡처. 행 번호는 첨부 ZIP 안의 최상위 HTML 기준이며 파일을 수정하면 달라질 수 있다.</p>
+  </section>
+
+  <section id="anchor-rule" class="lesson-section" aria-labelledby="anchor-rule-title">
+    <p class="eyebrow">02 / FRAGMENT LINKS</p>
+    <h2 id="anchor-rule-title">링크와 도착점의 이름을 맞추기</h2>
+    <div class="lesson-example-grid">
+      <article><h3>도착점</h3><pre><code>&lt;span id="up"&gt;기사 제목&lt;/span&gt;</code></pre><p>id는 이동할 요소의 식별자다. id 값에는 #을 붙이지 않는다.</p></article>
+      <article><h3>이동할 링크</h3><pre><code>&lt;a href="#up"&gt;위로 이동&lt;/a&gt;</code></pre><p>href의 # 뒤에 도착점의 id를 적는다. up이라는 이름이 서로 같아야 한다.</p></article>
+    </div>
+    <ol class="lesson-steps"><li>사용자가 링크를 클릭한다.</li><li>브라우저가 href의 #up을 문서 내 위치를 가리키는 프래그먼트로 읽는다.</li><li>현재 문서에서 id="up"인 요소를 찾는다.</li><li>해당 요소가 보이도록 문서의 위치를 이동한다.</li></ol>
+    <div class="lesson-callout"><h3>이름이 up이라서 올라가는 것은 아니다</h3><p>up은 개발자가 정한 이름이다. 요소가 위쪽에 있으면 위로 이동하고, 아래쪽에 있으면 아래로 이동한다. up 대신 summary나 chapter-1을 써도 링크와 id가 일치하면 같은 원리로 동작한다.</p></div>
+    <p>id="up"은 반드시 페이지의 스크롤 위치 0을 뜻하지 않는다. 뉴스 실습에서는 기사 제목, 웹툰 실습에서는 상단 안내 이미지가 도착점이다. 이름이 없는 링크나 도착점이 없는 링크는 의도한 위치로 이동할 수 없다.</p>
+  </section>
+
+  <section id="news-case" class="lesson-section" aria-labelledby="news-case-title">
+    <p class="eyebrow">03 / NEWS PAGE</p>
+    <h2 id="news-case-title">기사 본문을 클릭하면 제목으로</h2>
+    <p>첨부 사진은 본문의 문구를 a로 감싼 단계, href="#up"을 추가한 단계, 제목에 span id="up"을 둔 단계를 보여 준다. ZIP의 저장 HTML에서도 이 연결이 확인된다.</p>
+    <div class="lesson-example-grid">
+      <article><h3>제목에 도착점 추가</h3><pre><code>&lt;h2 id="title_area"&gt;
+  &lt;span id="up" class="up_class"&gt;기사 제목&lt;/span&gt;
+&lt;/h2&gt;</code></pre></article>
+      <article><h3>본문 문구에 링크 추가</h3><pre><code>&lt;a&gt;기사 본문의 특정 문구&lt;/a&gt;
+
+&lt;!-- 이동할 위치를 지정한 실습 코드 --&gt;
+&lt;a href="#up"&gt;기사 본문의 특정 문구&lt;/a&gt;</code></pre></article>
+    </div>
+    <p>href가 없는 a 요소에는 이동할 위치가 없다. class="up_class"는 스타일 등에 사용할 수 있는 클래스 이름이고, 문서 내 이동의 도착점은 id="up"이 결정한다. 위 코드는 긴 기사 제목과 본문을 설명용 문구로 줄였으며 링크와 id 구조는 제공 자료와 같다.</p>
+    <article class="demo-card anchor-demo" data-editor-readonly aria-labelledby="news-demo-title">
+      <h3 id="news-demo-title"><span id="up">뉴스 실습 예제의 제목</span></h3>
+      <p>이곳이 id="up"인 도착점이다. 아래의 본문 링크를 누르면 이 제목으로 이동한다.</p>
+      <div class="anchor-demo-copy"><p>긴 기사를 읽다가 앞의 제목을 다시 확인하고 싶은 상황을 생각해 볼 수 있다.</p><p>실습에서는 이동 기능을 만들 문구를 a 요소로 감싸고 href에 #up을 지정했다.</p><p>아래 버튼은 같은 원리를 확인하기 위한 재구성 예제다. 원본 기사 본문을 복사한 것은 아니다.</p></div>
+      <a class="demo-button" href="#up">기사 제목으로 이동 ↑</a>
+    </article>
+  </section>
+
+  <section id="webtoon-case" class="lesson-section" aria-labelledby="webtoon-case-title">
+    <p class="eyebrow">04 / WEBTOON PAGE</p>
+    <h2 id="webtoon-case-title">이미지도 링크의 클릭 영역이 된다</h2>
+    <p>웹툰 저장 HTML은 상단의 연령 안내 이미지에 id="up"을 추가하고, 아래쪽 마지막 콘텐츠 이미지를 a href="#up"으로 감싼 형태다. 글자뿐 아니라 이미지 전체도 링크의 클릭 영역이 될 수 있다.</p>
+    <pre><code>&lt;!-- 상단의 도착점 이미지: 실제 자료는 연령 안내 이미지 --&gt;
+&lt;img src="상단안내이미지.jpg" alt="연령 안내" id="up"&gt;
+
+&lt;!-- 아래쪽 이미지 클릭 → 상단 이미지로 이동 --&gt;
+&lt;a href="#up"&gt;
+  &lt;img src="마지막이미지.jpg" alt="위로 이동할 웹툰 이미지"&gt;
+&lt;/a&gt;</code></pre>
+    <p>이미지 경로와 alt 문구는 설명하기 쉽게 바꿨다. 저장본에서는 마지막 이미지의 id가 content_image_80이었다. 실제 실습의 이동 목표는 상단의 id="up"인 이미지다.</p>
+    <article class="demo-card anchor-demo" data-editor-readonly aria-labelledby="webtoon-demo-title">
+      <h3 id="webtoon-demo-title">이미지 링크 실습 예제</h3>
+      <p>이 페이지 안에서는 뉴스 예제의 up과 겹치지 않도록 이미지의 id를 toon-up으로 구분했다.</p>
+      <img class="anchor-demo-image" src="anchor-panel.svg" alt="웹툰 예제의 상단 도착점 이미지" id="toon-up" width="320" height="160">
+      <div class="anchor-demo-copy"><p>상단 이미지가 도착점이다.</p><p>중간 장면을 지나 아래쪽으로 읽어 내려오는 상황을 재구성했다.</p><p>아래 이미지는 실제 웹툰 장면이 아니라 링크 원리를 설명하는 학습용 그림이다.</p></div>
+      <p>아래 이미지를 누르면 위의 이미지로 이동한다.</p>
+      <a class="anchor-image-link" href="#toon-up"><img class="anchor-demo-image" src="anchor-panel.svg" alt="눌러서 웹툰 예제 상단 이미지로 이동" width="320" height="160"></a>
+    </article>
+  </section>
+
+  <section id="native-top" class="lesson-section" aria-labelledby="native-top-title">
+    <p class="eyebrow">05 / TOP BUTTON IMPLEMENTATIONS</p>
+    <h2 id="native-top-title">직접 만든 앵커와 원래 TOP 버튼 비교</h2>
+    <p>저장한 페이지에는 직접 추가한 #up 링크와 별도로 원래의 ‘맨위로’ 컨트롤도 남아 있다. 두 종류의 코드를 구분해 확인했다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="원래 TOP 버튼과 앵커 링크 비교 표, 좌우로 스크롤 가능">
+      <table class="lesson-table"><caption>제공한 파일에서 확인한 이동 방식</caption>
+        <thead><tr><th scope="col">구분</th><th scope="col">확인한 코드</th><th scope="col">이동 기준</th></tr></thead>
+        <tbody><tr><th scope="row">실습에서 추가한 링크</th><td>a href="#up"과 id="up"</td><td>이름으로 지정한 요소의 위치</td></tr><tr><th scope="row">뉴스의 원래 맨위로</th><td>goTop / _MOVE_TOP 클릭 → moveTop() → window.scrollTo(0, 0)</td><td>페이지 좌표의 맨 위</td></tr><tr><th scope="row">웹툰의 원래 맨위로</th><td>.up_down_area .link_top 클릭 → window.scrollTo(0, 0)</td><td>페이지 좌표의 맨 위</td></tr></tbody>
+      </table>
+    </div>
+    <pre><code>// 저장된 뉴스·웹툰 스크립트에서 확인한 핵심 동작
+window.scrollTo(0, 0);
+
+// 직접 추가한 HTML 앵커 링크는 id가 있는 요소로 이동
+// &lt;a href="#up"&gt;위로 이동&lt;/a&gt;</code></pre>
+    <p>뉴스의 read.min.js는 _MOVE_TOP 클릭에서 기본 링크 동작을 막고 moveTop()을 호출한다. 그 함수 안에서 window.scrollTo(0, 0)이 실행된다. 웹툰의 detail-scrolltoon 스크립트도 맨위로 버튼의 클릭 이벤트에서 같은 좌표 이동을 호출한다. HTML의 버튼 모양이나 onclick의 문자열만 보고 동작 전체를 판단하지 않고 연결된 스크립트까지 확인했다.</p>
+    <div class="lesson-callout"><h3>부드러운 이동은 별도 설정</h3><p>이 학습 페이지에는 외부 CSS의 scroll-behavior: smooth가 적용되어 앵커 이동이 부드럽게 보인다. 이는 #up의 의미 자체와는 별개다. 동작 줄이기를 요청한 환경에서는 기존 설정대로 즉시 이동한다.</p></div>
+    <pre><code>html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}</code></pre>
+    <p class="lesson-citation">이력서의 <a href="../index.html#top">맨 위 영역</a>과 <a href="../index.html#weekly">주차별 기록</a>으로 이동하는 링크도 프래그먼트 주소를 사용한다.</p>
+  </section>
+
+  <section id="workflow" class="lesson-section" aria-labelledby="workflow-title">
+    <p class="eyebrow">06 / WHAT I PRACTISED</p>
+    <h2 id="workflow-title">실습 순서와 확인할 점</h2>
+    <ol class="lesson-steps"><li>저장한 HTML에서 위로 이동할 목표 요소를 찾는다.</li><li>목표 요소에 id="up"을 지정한다.</li><li>클릭할 글자나 이미지를 a 요소로 감싼다.</li><li>href="#up"을 지정하고 저장한다.</li><li>브라우저에서 수정된 페이지를 다시 열거나 새로고침한다.</li><li>링크를 눌러 지정한 제목·이미지로 이동하는지 확인한다.</li></ol>
+    <ul class="lesson-list"><li>id 값과 href의 # 뒤 이름이 정확히 같은지 확인한다.</li><li>하나의 문서에 같은 id를 두 번 사용하지 않는다.</li><li>이미지 링크는 a의 시작·종료 태그가 img를 제대로 감싸는지 확인한다.</li><li>도착점이 페이지 맨 위인지, 본문 중간인지 구분한다.</li><li>저장된 큰 웹페이지는 HTML·CSS·JavaScript의 역할을 나누어 살펴본다.</li></ul>
+  </section>
+
+  <section id="review" class="lesson-section" aria-labelledby="review-title">
+    <p class="eyebrow">07 / QUICK REVIEW</p>
+    <h2 id="review-title">원리를 다시 확인하기</h2>
+    <details><summary>절대 주소와 상대 주소는 어떤 기준으로 구분하는가?</summary><p>절대 주소는 전체 주소를 지정한다. 상대 주소는 현재 문서의 위치를 기준으로 파일이나 경로를 찾는다.</p></details>
+    <details><summary>alt와 title은 같은 역할인가?</summary><p>alt는 이미지 대신 전달할 내용을 나타낸다. title은 보조 설명이며 읽기 쉬운 링크 텍스트나 이미지의 대체 텍스트를 대신하지 않는다.</p></details>
+    <details><summary>figcaption은 어디에 작성하는가?</summary><p>figure 안에서 콘텐츠의 설명으로 작성한다. 이미지 링크는 a가 img를 감싸도록 하고 설명은 같은 figure 안에 배치한다.</p></details>
+    <details><summary>id에는 #up을 쓰는가, up을 쓰는가?</summary><p>id="up"으로 쓰고, 이동할 링크에서 href="#up"으로 쓴다.</p></details>
+    <details><summary>&lt;a&gt;만 감싸면 이동 기능이 생기는가?</summary><p>href로 이동할 대상을 지정해야 한다. href 없는 a에는 이 실습의 이동 주소가 없다.</p></details>
+    <details><summary>up이라는 이름은 페이지의 맨 위를 뜻하는가?</summary><p>개발자가 정한 id 이름이다. id="up"인 요소가 실제로 놓인 위치로 이동한다.</p></details>
+    <details><summary>이미지를 눌러도 이동할 수 있는가?</summary><p>a href="#up" 안에 img를 넣으면 이미지가 링크의 클릭 영역이 된다.</p></details>
+    <details><summary>href="#up"과 window.scrollTo(0, 0)은 같은가?</summary><p>전자는 이름으로 지정한 요소를 찾고, 후자는 페이지의 좌표로 이동한다. 목표 요소가 중간에 있으면 도착 위치가 다를 수 있다.</p></details>
+  </section>
+
+  <section id="sources" class="lesson-section lesson-references" aria-labelledby="sources-title">
+    <h2 id="sources-title">확인한 자료</h2>
+    <p>추가 강의자료: 「[웹프로그래밍] Lec03. 링크와 멀티미디어」 PDF 2~19쪽. 20쪽 이후의 오디오·비디오 내용은 이번 추가 범위에 포함하지 않았다.</p>
+    <p>제공한 뉴스 기사 ZIP과 「헤어지기 싫어! - 1화 | 네이버 웹툰」 ZIP의 최상위 HTML, 관련 로컬 JavaScript, a 요소·href="#up"·span id="up"의 코드 캡처 3장을 확인했다.</p>
+    <p>저장본은 수정한 실습 파일을 분석한 결과이며, 현재 네이버 서비스 전체의 구현을 일반화한 설명은 아니다. 원본 기사·웹툰 전체, 웹툰 장면 이미지와 광고·추적 스크립트는 이 학습 페이지나 제출 ZIP에 복제하지 않았다. 예제는 같은 이동 원리를 독립된 HTML로 재구성했다.</p>
+  </section>
+</main>
+<footer class="wrap site-footer"><p>Lec03 2~19쪽 · 뉴스·웹툰 실습 기록</p><a class="back-top" href="../index.html#weekly">학습 기록으로 ↗</a></footer>
+</body>
+</html>

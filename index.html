@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=./farm-cargo-mockups.html">
-    <title>농업 화물 배차 앱 - 화면 목업</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Magician-Park의 수상 실적, 수강 과목과 웹프로그래밍 학습 정리·예시를 담은 개인 이력서입니다.">
+  <title>Magician-Park | 개인 이력서</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="page-loader.js" defer></script>
 </head>
-<body>
-    <p>목업 페이지로 이동 중… 자동으로 이동하지 않으면 <a href="./farm-cargo-mockups.html">여기</a>를 눌러주세요.</p>
+<body id="top">
+  <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+  </div>
+
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div class="draft-note"><span class="draft-mark">실습 예시 포함</span> 1~2주차는 강의자료 정리, 3·5~6주차는 강의·실습 기록, 4주차는 추석연휴, 7주차는 실습 예시입니다. 수상 실적과 수강 목록은 제공된 사실을 반영했습니다.</div>
+  <header class="hero wrap">
+    <div class="hero-top">
+      <span class="eyebrow">PERSONAL RESUME / 2026</span>
+      <nav class="section-nav" aria-label="이력서 영역"><a href="#achievements">01 / EXPERIENCE</a><a href="#courses">02 / LEARNING</a><a href="#weekly">03 / WEB PROGRAMMING</a></nav>
+    </div>
+    <div class="hero-body">
+      <div class="hero-copy">
+        <p class="kicker">배우고, 만들고, 기록합니다.</p>
+        <h1>Magician-Park<span class="accent">.</span></h1>
+        <p class="affiliation">상명대학교 소프트웨어학과 3학년</p>
+        <p class="introduction">웹과 AI 기술을 활용해 더 편리한 세상을 만드는 방법을 배우고 있습니다.</p>
+        <p class="interest-tags">학습 관심 <span>AI</span><span>Data Science</span><span>App development</span></p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="art-symbol">&lt;/&gt;</span><span class="art-caption">LEARN. BUILD. REPEAT.</span></div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section id="achievements" class="resume-section" aria-labelledby="achievements-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / EXPERIENCE</p><h2 id="achievements-title">쌓아온 경험</h2></div><p class="section-description">작은 시도부터, 하나씩.</p></div>
+      <p class="pending-note">수상 이력 6건 · 고등학교 활동 5건 포함</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="실적 표, 작은 화면에서 좌우로 스크롤 가능">
+        <table>
+          <caption class="sr-only">최신순으로 정렬한 수상 실적 6건의 시기, 수상 등급, 내용, 본인 역할.</caption>
+          <thead><tr><th scope="col">시기</th><th scope="col">수상</th><th scope="col">내용</th><th scope="col">본인 역할</th></tr></thead>
+          <tbody>
+            <tr><td><time datetime="2022-09">2022.09</time></td><td><span class="category">장려상</span></td><td><strong>교내 로봇경진대회</strong><span class="row-note">대학교 2학년 · 2022.09.22</span></td><td>ROS 1 (<strong>rospy</strong>) Coding</td></tr>
+            <tr><td><time datetime="2020-08">2020.08</time></td><td><span class="category">금상</span></td><td><strong>통계 활용 발표회</strong><span class="row-note">고등학교 3학년 · 2020.08.31</span></td><td>Data preprocessing &amp; visualization</td></tr>
+            <tr><td><time datetime="2019-11">2019.11</time></td><td><span class="category">은상</span></td><td><strong>UCC 공모전</strong><span class="row-note">고등학교 2학년 · 2019.11.26</span></td><td>Video Production and Editing</td></tr>
+            <tr><td><time datetime="2019-11">2019.11</time></td><td><span class="category">대상</span></td><td><strong>창의적체험활동 동아리 발표회</strong><span class="row-note">고등학교 2학년 · 2019.11.07</span></td><td>Arduino programming in C++</td></tr>
+            <tr><td><time datetime="2019-06">2019.06</time></td><td><span class="category">장려상</span></td><td><strong>소논문대회(자연과학기타분야)</strong><span class="row-note">고등학교 2학년 · 2019.06.24</span></td><td>Hypothesis testing</td></tr>
+            <tr><td><time datetime="2018-12">2018.12</time></td><td><span class="category">동상</span></td><td><strong>UCC 공모전</strong><span class="row-note">고등학교 1학년 · 2018.12.03</span></td><td>Video Production and Editing</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="courses" class="resume-section" aria-labelledby="courses-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / LEARNING</p><h2 id="courses-title">이번 학기의 배움</h2></div><p class="semester">2026 — 2학기</p></div>
+      <p class="pending-note">이번 학기 수강 과목 6개 · 전공 과목의 세부 이수 구분을 함께 표시합니다.</p>
+      <ul class="course-list">
+        <li><a href="#weekly"><span class="course-code">01</span><span class="course-name">웹프로그래밍 및 AI에이전트 활용<span class="course-detail">주차별 실습 기록 보기</span></span><span class="course-type">전공 · 전공선택</span><span class="link-arrow" aria-hidden="true">↗</span></a></li>
+        <li><div class="course-entry"><span class="course-code">02</span><span class="course-name">알고리즘</span><span class="course-type">전공 · 전공선택</span></div></li>
+        <li><div class="course-entry"><span class="course-code">03</span><span class="course-name">심층학습</span><span class="course-type">전공 · 전공심화</span></div></li>
+        <li><div class="course-entry"><span class="course-code">04</span><span class="course-name">지능형소프트웨어</span><span class="course-type">전공 · 전공선택</span></div></li>
+        <li><div class="course-entry"><span class="course-code">05</span><span class="course-name">데이터베이스</span><span class="course-type">전공 · 전공선택</span></div></li>
+        <li><div class="course-entry"><span class="course-code">06</span><span class="course-name">취업과 창업(공과대학)</span><span class="course-type">전공 · 전공선택</span></div></li>
+      </ul>
+    </section>
+    <section id="weekly" class="resume-section" aria-labelledby="weekly-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / WEB PROGRAMMING</p><h2 id="weekly-title">매주 만드는 기록</h2></div></div>
+      <p class="pending-note">1~2주차는 강의자료 정리, 3주차는 Lec03 2~19쪽과 뉴스·웹툰의 문서 내 이동 실습 기록이며, 4주차는 추석연휴, 5주차는 CSS 기초와 Git·GitHub 작업 과정이며, 6주차는 HTML 목록·표·문서 구조와 CSS 박스 모델·레이아웃·360도 회전 학습 기록이며, 7주차는 동작 확인용 예시입니다. 주차를 열고 ‘문서 수정’으로 내용을 편집할 수 있습니다. 제출 전 본인의 완료 주차와 실습 URL로 교체하세요.</p>
+      <div class="week-legend"><span><i class="legend-dot completed-dot" aria-hidden="true"></i>학습 정리·실습·예시</span><span><i class="legend-dot planned-dot" aria-hidden="true"></i>예정</span></div>
+      <ol class="week-grid" aria-label="1주차부터 15주차까지 실습 기록">
+        <li><a class="week completed" href="practice/week01.html"><span class="week-number">01</span><span class="week-label">1주차</span><span class="week-status">학습 정리 보기 ↗</span></a></li>
+        <li><a class="week completed" href="practice/week02.html"><span class="week-number">02</span><span class="week-label">2주차</span><span class="week-status">학습 정리 보기 ↗</span></a></li>
+        <li><a class="week completed" href="practice/week03.html"><span class="week-number">03</span><span class="week-label">3주차</span><span class="week-status">학습·실습 기록 보기 ↗</span></a></li>
+        <li><span class="week planned"><span class="week-number">04</span><span class="week-label">4주차</span><span class="week-status">추석연휴</span></span></li>
+        <li><a class="week completed" href="practice/week05.html"><span class="week-number">05</span><span class="week-label">5주차</span><span class="week-status">학습 기록 보기 ↗</span></a></li>
+        <li><a class="week completed" href="practice/week06.html"><span class="week-number">06</span><span class="week-label">6주차</span><span class="week-status">학습 기록 보기 ↗</span></a></li>
+        <li><a class="week completed" href="practice/week07.html"><span class="week-number">07</span><span class="week-label">7주차</span><span class="week-status">예시 실습 보기 ↗</span></a></li>
+        <li><span class="week planned"><span class="week-number">08</span><span class="week-label">8주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">09</span><span class="week-label">9주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">10</span><span class="week-label">10주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">11</span><span class="week-label">11주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">12</span><span class="week-label">12주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">13</span><span class="week-label">13주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">14</span><span class="week-label">14주차</span><span class="week-status">예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">15</span><span class="week-label">15주차</span><span class="week-status">예정</span></span></li>
+      </ol>
+    </section>
+  </main>
+  <footer class="wrap site-footer">
+    <div><span class="footer-title">계속 배우는 중.</span><p>최종 수정일: <time datetime="2026-10-15">2026-10-15</time></p></div>
+    <div class="footer-actions">
+      <a class="github-link" href="https://github.com/Magician-Park"><svg class="github-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a>
+      <a class="back-top" href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
 </body>
 </html>

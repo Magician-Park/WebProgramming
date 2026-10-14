@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-15",
+  "checks": [
+    {
+      "file": "index.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_html_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "4e68c4cad9b62b45b228aefd84f5457611eced407910b0e0dbce6aa27962417b"
+    },
+    {
+      "file": "practice/week01.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week01_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "0495b82dffb2a4edc92b30be69e95871895bffc5ddcbce2e51888a227f786fd4"
+    },
+    {
+      "file": "practice/week02.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week02_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "d57936b240574226d0769e5228ebc6bd385881d9cda22161f295c7a785f4b4de"
+    },
+    {
+      "file": "practice/week03.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week03_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "3a80eaaa6b87bf032623e6e7a6f6d0e64ad192b33d387a11020e56ae0cd784d4"
+    },
+    {
+      "file": "practice/week04.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week04_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "0164eaab994edd42db3f9580e23c8919a68034fbaf47d8d4ff94c11dd89978e6"
+    },
+    {
+      "file": "practice/week05.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week05_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "9a5b64a33cfce6a01bf4d3237bab0c1744f3898decef2914fc9a04c033faa9b7"
+    },
+    {
+      "file": "practice/week06.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week06_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "4f68935242b8b4b8cc4fbfc0a97f1fc832a3d89281b7df43de90743d44851dd7"
+    },
+    {
+      "file": "practice/week07.html",
+      "errors": 0,
+      "warnings": 0,
+      "original_response": "w3c_week07_response.json",
+      "checker_version": "26.10.12",
+      "latest_source_validated": true,
+      "source_sha256": "57bc5fac2e845ed4cb350eb26f2ef530fea09d11f51efdc0052f8bde4d9a6eb2"
+    }
+  ]
+}
