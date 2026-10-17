@@ -1,0 +1,714 @@
+{
+  "checked_on": "2026-10-18",
+  "method": "Chrome headless; navigate to actual deployed source page and activate each unique external anchor with its original href; confirm HTTPS destination document title and readyState",
+  "cases": [
+    {
+      "page": "https://magician-park.smu.ai.kr/",
+      "href": "https://github.com/Magician-Park",
+      "target": "https://github.com/Magician-Park",
+      "final": {
+        "url": "https://github.com/Magician-Park",
+        "title": "Magician-Park (Magician-Park) · GitHub",
+        "ready": "interactive",
+        "text": "Skip to content\nNavigation Menu\nSign in\nMagician-Park\nMagician-Park\nFollow\nLet's stick to our duties.\nBlock or report user\nOverview\nRepositories\n8\nProjects\nPackages\nStars\n3\nPopular repositories\nLoading\nSW_Convergence-Web\nPublic\n\n HTML\n\nC_la"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/",
+      "href": "https://github.com/Magician-Park/Claude_AI_APP",
+      "target": "https://github.com/Magician-Park/Claude_AI_APP",
+      "final": {
+        "url": "https://github.com/Magician-Park/Claude_AI_APP",
+        "title": "GitHub - Magician-Park/Claude_AI_APP: Create a trucking app using Claude AI · GitHub",
+        "ready": "interactive",
+        "text": "Skip to content\nNavigation Menu\nSign in\nMagician-Park\nClaude_AI_APP\nRepository navigation\nCode\nIssues\nPull requests\nActions\nProjects\nSecurity and quality\nInsights\nClaude_AI_APP\nPublic\nNotifications\nFork0\n (0)\nStar0\n (0)\nAbout\n\nCreate a truc"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://www.w3.org/History.html",
+      "target": "https://www.w3.org/History.html",
+      "final": {
+        "url": "https://www.w3.org/History.html",
+        "title": "A Little History of the World Wide Web",
+        "ready": "interactive",
+        "text": "A Little History of the World Wide Web\n\nSee also How It All Started presentation materials from the W3C 10th Anniversary Celebration and other references.\n\nfrom 1945 to 1995\n\n1945\n\nVannevar Bush writes an article in Atlantic Monthly about a"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/",
+      "href": "https://github.com/Magician-Park/OSS_teamK-T",
+      "target": "https://github.com/Magician-Park/OSS_teamK-T",
+      "final": {
+        "url": "https://github.com/Magician-Park/OSS_teamK-T",
+        "title": "GitHub - Magician-Park/OSS_teamK-T · GitHub",
+        "ready": "interactive",
+        "text": "Skip to content\nNavigation Menu\nSign in\nMagician-Park\nOSS_teamK-T\nRepository navigation\nCode\nIssues\n1\n (1)\nPull requests\nActions\nProjects\nSecurity and quality\nInsights\nOSS_teamK-T\nPublic\nNotifications\nFork0\n (0)\nStar0\n (0)\nAbout\nNo descript"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://www.rfc-editor.org/info/rfc1866/",
+      "target": "https://www.rfc-editor.org/info/rfc1866/",
+      "final": {
+        "url": "https://www.rfc-editor.org/info/rfc1866/",
+        "title": "RFC 1866: Hypertext Markup Language - 2.0 | RFC Editor",
+        "ready": "interactive",
+        "text": "Skip to content\nPrimary navigation\nHomeRFC 1866\nInfo\nRFC 1866: Hypertext Markup Language - 2.0\nSGML\nHTML\nT. Berners-Lee,  D. Connolly\nHISTORIC\nRate this RFC\nSubscribe\nAdd to Set\nThis RFC is now obsolete, see RFC 2854.\nNetwork Working Group "
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://www.w3.org/press-releases/2014/html5-rec/",
+      "target": "https://www.w3.org/press-releases/2014/html5-rec/",
+      "final": {
+        "url": "https://www.w3.org/press-releases/2014/html5-rec/",
+        "title": "Open Web Platform Milestone Achieved with HTML5 Recommendation | 2014 | Press releases | W3C",
+        "ready": "interactive",
+        "text": "Skip to content\n日本語ホームページ\nJapanese website\n简体中文首页\nChinese website\nVisit the W3C homepage\nStandards & groups\nGet involved\nResources\nNews & events\nSupport us\nAbout\nSearch\nMy account\nHome\nPress releases\n2014\nOpen Web Platform Milestone Achieve"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://www.rfc-editor.org/info/rfc791/",
+      "target": "https://www.rfc-editor.org/info/rfc791/",
+      "final": {
+        "url": "https://www.rfc-editor.org/info/rfc791/",
+        "title": "RFC 791: Internet Protocol | RFC Editor",
+        "ready": "interactive",
+        "text": "Skip to content\nPrimary navigation\nHomeRFC 791\nInfo\nRFC 791: STD 5: Internet Protocol\nIPv4\nJ. Postel\nINTERNET STANDARD\nRate this RFC\nSubscribe\nAdd to Set\nThis RFC was updated, see RFC 1349, RFC 2474, RFC 6864.\nRFC:  791\n\n\n\n\n\n\n\n             "
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://whatwg.org/faq",
+      "target": "https://whatwg.org/faq",
+      "final": {
+        "url": "https://whatwg.org/faq",
+        "title": "FAQ — WHATWG",
+        "ready": "interactive",
+        "text": "WHATWG\n\nFAQ\n\nStandards\nFAQ\nPolicies\nParticipate\n\nSee also the HTML Standard FAQ.\n\nThe WHATWG\nWhat is the WHATWG?\n\nThe Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web throug"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://www.rfc-editor.org/info/rfc8200/",
+      "target": "https://www.rfc-editor.org/info/rfc8200/",
+      "final": {
+        "url": "https://www.rfc-editor.org/info/rfc8200/",
+        "title": "RFC 8200: Internet Protocol, Version 6 (IPv6) Specification | RFC Editor",
+        "ready": "interactive",
+        "text": "Skip to content\nPrimary navigation\nHomeRFC 8200\nInfo\nRFC 8200: STD 86: Internet Protocol, Version 6 (IPv6) Specification\nIPv6\nS. Deering,  R. Hinden\nINTERNET STANDARD\nRate this RFC\nSubscribe\nAdd to Set\nThis RFC was updated, see RFC 9673.\nIn"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week02.html",
+      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features",
+      "target": "https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 15 Rendering — Table of Contents — 17 IANA considerations →\n16 Obsolete features\n16.1 Obsolete but conforming features\n16.1.1 Warnings for obsolete but conforming features\n16.2 Non-con"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week02.html",
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+      "target": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+        "title": "HTML Standard",
+        "ready": "interactive",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 3 Semantics, structure, and APIs of HTML documents — Table of Contents — 4.3 Sections →\n4 The elements of HTML\n4.1 The document element\n4.1.1 The html element\n4.2 Document metadata\n4.2"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week02.html",
+      "href": "https://html.spec.whatwg.org/multipage/syntax.html#elements-2",
+      "target": "https://html.spec.whatwg.org/multipage/syntax.html#elements-2",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/syntax.html#elements-2",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 12 Web storage — Table of Contents — 13.2 Parsing HTML documents →\n13 The HTML syntax\n13.1 Writing HTML documents\n13.1.1 The DOCTYPE\n13.1.2 Elements\n13.1.2.1 Start tags\n13.1.2.2 End ta"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week02.html",
+      "href": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+      "target": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 4.4 Grouping content — Table of Contents — 4.6 Links →\n4.5 Text-level semantics\n4.5.1 The a element\n4.5.2 The em element\n4.5.3 The strong element\n4.5.4 The small element\n4.5.5 The s el"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week02.html",
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html",
+      "target": "https://html.spec.whatwg.org/multipage/semantics.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/semantics.html",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 3 Semantics, structure, and APIs of HTML documents — Table of Contents — 4.3 Sections →\n4 The elements of HTML\n4.1 The document element\n4.1.1 The html element\n4.2 Document metadata\n4.2"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week02.html",
+      "href": "https://html.spec.whatwg.org/multipage/syntax.html",
+      "target": "https://html.spec.whatwg.org/multipage/syntax.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+        "title": "HTML Standard",
+        "ready": "interactive",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 12 Web storage — Table of Contents — 13.2 Parsing HTML documents →\n13 The HTML syntax\n13.1 Writing HTML documents\n13.1.1 The DOCTYPE\n13.1.2 Elements\n13.1.2.1 Start tags\n13.1.2.2 End ta"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://html.spec.whatwg.org/multipage/obsolete.html",
+      "target": "https://html.spec.whatwg.org/multipage/obsolete.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 15 Rendering — Table of Contents — 17 IANA considerations →\n16 Obsolete features\n16.1 Obsolete but conforming features\n16.1.1 Warnings for obsolete but conforming features\n16.2 Non-con"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://www.internetsociety.org/blog/2016/09/final-report-on-tcpip-migration-in-1983/",
+      "target": "https://www.internetsociety.org/blog/2016/09/final-report-on-tcpip-migration-in-1983/",
+      "final": {
+        "url": "https://www.internetsociety.org/blog/2016/09/final-report-on-tcpip-migration-in-1983/",
+        "title": "Final report on TCP/IP migration in 1983 - Internet Society",
+        "ready": "interactive",
+        "text": "Skip to content\nAbout Us\nOur Work\nNews and Insights\nGet Involved\nMember login\nEN\nFR\nES\nSearch\n \n♥ Donate\nInternet Technologies 15 September 2016\nFinal report on TCP/IP migration in 1983\nBy Kevin Meynell\n\nSometimes you need to go back to the"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week03.html",
+      "href": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element",
+      "target": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 4.3 Sections — Table of Contents — 4.5 Text-level semantics →\n4.4 Grouping content\n4.4.1 The p element\n4.4.2 The hr element\n4.4.3 The pre element\n4.4.4 The blockquote element\n4.4.5 The"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week03.html",
+      "href": "https://www.w3.org/TR/png-3/",
+      "target": "https://www.w3.org/TR/png-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/png-3/",
+        "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+        "ready": "complete",
+        "text": "↑\n→\n\nPortable Network Graphics (PNG) Specification (Third Edition)\n\nW3C Recommendation 24 June 2025\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2025/REC-png-3-20250624/\nLatest published version:\nhttps://www.w3.org/"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week03.html",
+      "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+      "target": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 4.7 Edits — Table of Contents — 4.8.4 Images →\n4.8 Embedded content\n4.8.1 The picture element\n4.8.2 The source element\n4.8.3 The img element\n4.8 Embedded content\n4.8.1 The picture elem"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week01.html",
+      "href": "https://home.cern/science/computing/the-birth-of-the-web/",
+      "target": "https://home.cern/science/computing/the-birth-of-the-web/",
+      "final": {
+        "url": "https://home.cern/science/computing/the-birth-of-the-web/",
+        "title": "The birth of the Web – Home | CERN",
+        "ready": "interactive",
+        "text": "Skip to content\nCERN | Accelerating science\nSign In\nDirectory\nAbout CERN →\nWho we are\nOur Mission\nOur Governance\nOur Member States\nOur History\nOur People\nWhat we do\nFundamental research\nContribute to society\nEnvironmentally responsible rese"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address",
+      "target": "https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address",
+      "final": {
+        "url": "https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address",
+        "title": "Setting your commit email address - GitHub Docs",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to content\nGitHub Docs\nSearch or ask Copilot/\nMenu\nCollapse sidebar\nExpand sidebar\nHome\nAccount and profile\nHow-tos\nEmail preferences\nSet commit email address\nAccount and profile\nGet started\nAccount\nProfile\nPersona"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup",
+      "target": "https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup",
+      "final": {
+        "url": "https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup",
+        "title": "Git - First-Time Git Setup",
+        "ready": "interactive",
+        "text": "--distributed-even-if-your-workflow-isnt\nAbout\nLearn\nBook\nCheat Sheet\nVideos\nExternal Links\nTools\nReference\nInstall\nCommunity\n\nThis book is available in English.\n\nFull translation available in\n\nazərbaycan dili,\nбългарски език,\nDeutsch,\nEspa"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://www.w3.org/TR/selectors-4/",
+      "target": "https://www.w3.org/TR/selectors-4/",
+      "final": {
+        "url": "https://www.w3.org/TR/selectors-4/",
+        "title": "Selectors Level 4",
+        "ready": "complete",
+        "text": "↑\n→\n\nSelectors Level 4\n\nW3C Working Draft, 22 January 2026\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2026/WD-selectors-4-20260122/\nLatest published version:\nhttps://www.w3.org/TR/selectors-4/\nEditor's Draft:\nhttp"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://docs.github.com/en/get-started/using-git/about-git",
+      "target": "https://docs.github.com/en/get-started/using-git/about-git",
+      "final": {
+        "url": "https://docs.github.com/en/get-started/using-git/about-git",
+        "title": "About Git - GitHub Docs",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to content\nGitHub Docs\nHome\nGet started\nUsing Git\nAbout Git\nIn this article\nAbout Git\n\nLearn about the version control system, Git, and how it works with GitHub.\n\nCopy markdown\nAbout version control and Git\n\nA vers"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/install/",
+      "target": "https://git-scm.com/install/",
+      "final": {
+        "url": "https://git-scm.com/install/",
+        "title": "Git - Install",
+        "ready": "complete",
+        "text": "--distributed-even-if-your-workflow-isnt\nAbout\nLearn\nTools\nReference\nInstall\nCommunity\n\nThe entire Pro Git book written by Scott Chacon and Ben Straub is available to read online for free. Dead tree versions are available on Amazon.com.\n\nIn"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github",
+      "target": "https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github",
+      "final": {
+        "url": "https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github",
+        "title": "Adding locally hosted code to GitHub - GitHub Docs",
+        "ready": "interactive",
+        "text": "Skip to main content\n\nThis article is also available in Korean.\n\nSkip to content\nGitHub Docs\nHome\nMigrations\nImport source code\nCommand line\nLocal code\nIn this article\nAdding locally hosted code to GitHub\n\nIf your code is stored locally on "
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/docs/git-init",
+      "target": "https://git-scm.com/docs/git-init",
+      "final": {
+        "url": "https://git-scm.com/docs/git-init",
+        "title": "Git - git-init Documentation",
+        "ready": "interactive",
+        "text": "--distributed-is-the-new-centralized\nAbout\nLearn\nTools\nReference\nInstall\nCommunity\nTable of Contents\nNAME\nSYNOPSIS\nDESCRIPTION\nOPTIONS\nTEMPLATE DIRECTORY\nEXAMPLES\nCONFIGURATION\nGIT\nEnglish ▾\nTopics ▾\nLatest version ▾\ngit-init last updated i"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository",
+      "target": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository",
+      "final": {
+        "url": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository",
+        "title": "Git - Recording Changes to the Repository",
+        "ready": "complete",
+        "text": "--fast-version-control\nAbout\nLearn\nBook\nCheat Sheet\nVideos\nExternal Links\nTools\nReference\nInstall\nCommunity\n\nThis book is available in English.\n\nFull translation available in\n\nazərbaycan dili,\nбългарски език,\nDeutsch,\nEspañol,\nفارسی,\nFrança"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/docs/gitignore",
+      "target": "https://git-scm.com/docs/gitignore",
+      "final": {
+        "url": "https://git-scm.com/docs/gitignore",
+        "title": "Git - gitignore Documentation",
+        "ready": "complete",
+        "text": "--distributed-is-the-new-centralized\nAbout\nLearn\nTools\nReference\nInstall\nCommunity\nTable of Contents\nNAME\nSYNOPSIS\nDESCRIPTION\nPATTERN FORMAT\nCONFIGURATION\nNOTES\nEXAMPLES\nSEE ALSO\nGIT\nEnglish ▾\nTopics ▾\nLatest version ▾\ngitignore last updat"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/docs/git-restore",
+      "target": "https://git-scm.com/docs/git-restore",
+      "final": {
+        "url": "https://git-scm.com/docs/git-restore",
+        "title": "Git - git-restore Documentation",
+        "ready": "interactive",
+        "text": "--fast-version-control\nAbout\nLearn\nTools\nReference\nInstall\nCommunity\nTable of Contents\nNAME\nSYNOPSIS\nDESCRIPTION\nOPTIONS\nEXAMPLES\nSEE ALSO\nGIT\nEnglish ▾\nTopics ▾\nLatest version ▾\ngit-restore last updated in 2.55.0\nNAME\n\ngit-restore - Restor"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/docs/git-push",
+      "target": "https://git-scm.com/docs/git-push",
+      "final": {
+        "url": "https://git-scm.com/docs/git-push",
+        "title": "Git - git-push Documentation",
+        "ready": "interactive",
+        "text": "--local-branching-on-the-cheap\nAbout\nLearn\nTools\nReference\nInstall\nCommunity\nTable of Contents\nNAME\nSYNOPSIS\nDESCRIPTION\nOPTIONS\nGIT URLS\nREMOTES\nUPSTREAM BRANCHES\nREMOTE GROUPS\nOUTPUT\nPUSH RULES\nNOTE ABOUT FAST-FORWARDS\nEXAMPLES\nSECURITY\nC"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+      "target": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+      "final": {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+        "title": "About authentication to GitHub - GitHub Docs",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to content\nGitHub Docs\nHome\nAuthentication\nAccount security\nAuthentication to GitHub\nIn this article\nAbout authentication to GitHub\n\nYou can securely access your account's resources by authenticating to GitHub, usi"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week05.html",
+      "href": "https://git-scm.com/docs/git-pull",
+      "target": "https://git-scm.com/docs/git-pull",
+      "final": {
+        "url": "https://git-scm.com/docs/git-pull",
+        "title": "Git - git-pull Documentation",
+        "ready": "complete",
+        "text": "--local-branching-on-the-cheap\nAbout\nLearn\nTools\nReference\nInstall\nCommunity\nTable of Contents\nNAME\nSYNOPSIS\nDESCRIPTION\nOPTIONS\nGIT URLS\nREMOTES\nUPSTREAM BRANCHES\nMERGE STRATEGIES\nDEFAULT BEHAVIOUR\nEXAMPLES\nSECURITY\nBUGS\nSEE ALSO\nGIT\nEngli"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-box-3/",
+      "target": "https://www.w3.org/TR/css-box-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-box-3/",
+        "title": "CSS Box Model Module Level 3",
+        "ready": "complete",
+        "text": "↑\n→\n\nCSS Box Model Module Level 3\n\nW3C Recommendation, 11 April 2024\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2024/REC-css-box-3-20240411/\nLatest published version:\nhttps://www.w3.org/TR/css-box-3/\nEditor's Draf"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+      "target": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 4.3 Sections — Table of Contents — 4.5 Text-level semantics →\n4.4 Grouping content\n4.4.1 The p element\n4.4.2 The hr element\n4.4.3 The pre element\n4.4.4 The blockquote element\n4.4.5 The"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-sizing-3/",
+      "target": "https://www.w3.org/TR/css-sizing-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-sizing-3/",
+        "title": "CSS Box Sizing Module Level 3",
+        "ready": "complete",
+        "text": "↑\n→\n\nCSS Box Sizing Module Level 3\n\nW3C Working Draft, 4 September 2026\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2026/WD-css-sizing-3-20260904/\nLatest published version:\nhttps://www.w3.org/TR/css-sizing-3/\nEdito"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://html.spec.whatwg.org/multipage/tables.html",
+      "target": "https://html.spec.whatwg.org/multipage/tables.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/tables.html",
+        "title": "HTML Standard",
+        "ready": "interactive",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 4.8.15 MathML — Table of Contents — 4.10 Forms →\n4.9 Tabular data\n4.9.1 The table element\n4.9.1.1 Techniques for describing tables\n4.9.1.2 Techniques for table design\n4.9.2 The caption"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-display-3/",
+      "target": "https://www.w3.org/TR/css-display-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-display-3/",
+        "title": "CSS Display Module Level 3",
+        "ready": "interactive",
+        "text": "↑\n→\n\nCSS Display Module Level 3\n\nW3C Candidate Recommendation Draft, 5 June 2026\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2026/CRD-css-display-3-20260605/\nLatest published version:\nhttps://www.w3.org/TR/css-disp"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-position-3/",
+      "target": "https://www.w3.org/TR/css-position-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-position-3/",
+        "title": "CSS Positioned Layout Module Level 3",
+        "ready": "complete",
+        "text": "↑\n→\n\nCSS Positioned Layout Module Level 3\n\nW3C Working Draft, 7 October 2025\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2025/WD-css-position-3-20251007/\nLatest published version:\nhttps://www.w3.org/TR/css-position"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-overflow-3/",
+      "target": "https://www.w3.org/TR/css-overflow-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-overflow-3/",
+        "title": "CSS Overflow Module Level 3",
+        "ready": "complete",
+        "text": "↑\n→\n\nCSS Overflow Module Level 3\n\nW3C Working Draft, 7 October 2025\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2025/WD-css-overflow-3-20251007/\nLatest published version:\nhttps://www.w3.org/TR/css-overflow-3/\nEdito"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/",
+      "target": "https://www.w3.org/TR/css-backgrounds-3/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-backgrounds-3/",
+        "title": "CSS Backgrounds and Borders Module Level 3",
+        "ready": "interactive",
+        "text": "↑\n→\n\nCSS Backgrounds and Borders Module Level 3\n\nW3C Candidate Recommendation Draft, 11 March 2024\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2024/CRD-css-backgrounds-3-20240311/\nLatest published version:\nhttps://"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-color-4/",
+      "target": "https://www.w3.org/TR/css-color-4/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-color-4/",
+        "title": "CSS Color Module Level 4",
+        "ready": "interactive",
+        "text": "↑\n→\n\nCSS Color Module Level 4\n\nW3C Candidate Recommendation Draft, 9 October 2026\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2026/CRD-css-color-4-20261009/\nLatest published version:\nhttps://www.w3.org/TR/css-color"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-transitions-1/",
+      "target": "https://www.w3.org/TR/css-transitions-1/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-transitions-1/",
+        "title": "CSS Transitions Module Level 1",
+        "ready": "complete",
+        "text": "↑\n→\n\nCSS Transitions Module Level 1\n\nW3C Working Draft, 8 January 2026\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2026/WD-css-transitions-1-20260108/\nLatest published version:\nhttps://www.w3.org/TR/css-transitions"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-animations-1/",
+      "target": "https://www.w3.org/TR/css-animations-1/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-animations-1/",
+        "title": "CSS Animations Level 1",
+        "ready": "complete",
+        "text": "↑\n→\n\nCSS Animations Level 1\n\nW3C Working Draft, 2 March 2023\n\nMore details about this document\nThis version:\nhttps://www.w3.org/TR/2023/WD-css-animations-1-20230302/\nLatest published version:\nhttps://www.w3.org/TR/css-animations-1/\nEditor's"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week06.html",
+      "href": "https://www.w3.org/TR/css-transforms-1/",
+      "target": "https://www.w3.org/TR/css-transforms-1/",
+      "final": {
+        "url": "https://www.w3.org/TR/css-transforms-1/",
+        "title": "CSS Transforms Module Level 1",
+        "ready": "interactive",
+        "text": "↑\n→\n\nCSS Transforms Module Level 1\nW3C Candidate Recommendation, 14 February 2019\nThis version:\nhttps://www.w3.org/TR/2019/CR-css-transforms-1-20190214/\nLatest published version:\nhttps://www.w3.org/TR/css-transforms-1/\nEditor's Draft:\nhttps"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET",
+        "title": "GET request method - HTTP | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\nRequest methods\nGET\nGET request method\nBaseline\nWIDELY AVAILABLE\n\nThe GET HTTP method requests a representation of the specified resource. Requests using GET should only be used to request data and should"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST",
+        "title": "POST request method - HTTP | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\nRequest methods\nPOST\nPOST request method\nBaseline\nWIDELY AVAILABLE\n\nThe POST HTTP method sends data to the server. The type of the body of the request is indicated by the Content-Type header.\n\nThe differe"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://html.spec.whatwg.org/multipage/forms.html",
+      "target": "https://html.spec.whatwg.org/multipage/forms.html",
+      "final": {
+        "url": "https://html.spec.whatwg.org/multipage/forms.html",
+        "title": "HTML Standard",
+        "ready": "complete",
+        "text": "HTML\n\nLiving Standard — Last Updated 16 October 2026\n\n← 4.9 Tabular data — Table of Contents — 4.10.5 The input element →\n4.10 Forms\n4.10.1 Introduction\n4.10.1.1 Writing a form's user interface\n4.10.1.2 Implementing the server-side processi"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled",
+        "title": "disabled HTML attribute - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\nAttributes\ndisabled\ndisabled HTML attribute\n\nThe Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+        "title": "Using HTML form validation and the Constraint Validation API - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\nGuides\nConstraint validation\nUsing HTML form validation and the Constraint Validation API\n\nThe creation of web forms has always been a complex task. While marking up the form itself is easy, checking whet"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset",
+        "title": "HTMLFormElement: reset() method - Web APIs | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\nHTMLFormElement\nreset()\nHTMLFormElement: reset() method\nBaseline\nWIDELY AVAILABLE\n\nThe HTMLFormElement.reset() method restores a form element's default values. This method does the same thing as clicking "
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/email",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/email",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/email",
+        "title": "<input type=\"email\"> HTML attribute value - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\n<input>\n<input type=\"email\">\n<input type=\"email\"> HTML attribute value\nBaseline\nWIDELY AVAILABLE\n\n<input> elements of type email are used to let the user enter and edit an email address, or, if the multip"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist",
+        "title": "<datalist> HTML data list element - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\nElements\n<datalist>\n<datalist> HTML data list element\nLimited availability\n\nThis feature is not Baseline because it does not work in some of the most widely-used browsers.\n\nWant more browser support for t"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password",
+        "title": "<input type=\"password\"> HTML attribute value - HTML | MDN",
+        "ready": "complete",
+        "text": "Skip to main content\nSkip to search\n<input>\n<input type=\"password\">\n<input type=\"password\"> HTML attribute value\nBaseline\nWIDELY AVAILABLE\n*\n\n<input> elements of type password provide a way for the user to securely enter a password.\n\nThe el"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file",
+        "title": "<input type=\"file\"> HTML attribute value - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\n<input>\n<input type=\"file\">\n<input type=\"file\"> HTML attribute value\nBaseline\nWIDELY AVAILABLE\n\n<input> elements with type=\"file\" let the user choose one or more files from their device storage. Once chos"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/datetime-local",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/datetime-local",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/datetime-local",
+        "title": "<input type=\"datetime-local\"> HTML attribute value - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\n<input>\n<input type=\"datetime-local\">\n<input type=\"datetime-local\"> HTML attribute value\nBaseline\nWIDELY AVAILABLE\n\n<input> elements of type datetime-local create input controls that let the user easily e"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/week",
+      "target": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/week",
+      "final": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/week",
+        "title": "<input type=\"week\"> HTML attribute value - HTML | MDN",
+        "ready": "interactive",
+        "text": "Skip to main content\nSkip to search\n<input>\n<input type=\"week\">\n<input type=\"week\"> HTML attribute value\nLimited availability\n\nThis feature is not Baseline because it does not work in some of the most widely-used browsers.\n\nWant more browse"
+      },
+      "result": "pass"
+    },
+    {
+      "page": "https://magician-park.smu.ai.kr/practice/week07.html",
+      "href": "https://jo4008.smu.ai.kr/doc07.html",
+      "target": "https://jo4008.smu.ai.kr/doc07.html",
+      "final": {
+        "url": "https://jo4008.smu.ai.kr/doc07.html",
+        "title": "",
+        "ready": "complete",
+        "text": "다양한 입력 폼\n성명: \n이메일: \n캠퍼스: 서울 천안\n직업: \n학생\n회사원\n공무원\n기타\n\n구입희망분야(복수선택 가능)\n- 분야: 컴퓨터 경제 상식\n비고:\n\n\n  "
+      },
+      "result": "pass"
+    }
+  ]
+}
