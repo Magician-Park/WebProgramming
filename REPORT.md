@@ -10,6 +10,12 @@
 
 ---
 
+### GitHub 그림 링크 변경 (2026-10-18)
+
+메인 상단의 별도 GitHub 버튼과 일러스트를 하나의 프로필 링크로 통합했다. 노트북 덮개 위치에 CSS로 GitHub 스티커를 표시하고 마우스·키보드 초점에서 강조한다. 이미지 원본은 수정하지 않았다. 모바일에서는 그림을 숨기고 같은 링크를 GitHub 버튼으로 표시한다. 프로필 링크 1개·접근성 이름·키보드 초점·모바일 높이 47.6px·페이지 폭 넘침 없음을 로컬 Chrome에서 확인했다. [데스크톱](images/hero_github_desktop.png) · [모바일](images/hero_github_mobile.png)
+
+아래의 배포·W3C 결과는 이 디자인 변경 전 검수 이력이다. 이번 수정본은 커밋·푸시·배포·외부 재검사를 수행하지 않았으며 현재 소스 해시와 검사본 해시는 별도로 보관한다.
+
 ## 1. 인수 검수표
 
 검수일: 2026-10-18. 화면 검수 환경: Codex 인앱 브라우저, 실제 배포 사이트, CSS viewport **1280×800px / 390×844px**. Chrome은 도구에 연결되지 않아 사용하지 않았다. 이전 `file://` 접근 제한을 우회하지 않고 정상 접근 가능한 HTTPS 사이트에서 확인했다. 캡처와 치수 기록은 [최종 브라우저 검수 기록](images/browser_audit_20261018.md)에 모았다.
@@ -22,7 +28,7 @@
 | F-04 | ① 제공된 이번 학기 6개 과목과 학수번호가 ul 목록의 카드에 표시되는지 대조했다. ② 전공선택 5과목·전공심화 1과목의 구분과 학기 요약이 일치한다. ③ 웹프로그래밍 및 AI에이전트 활용(PBL)의 학습 기록 보기 ↓ 링크가 #weekly로 연결되는지 확인했다. 넓은/좁은 화면에서 카드의 줄바꿈과 버튼 배치를 확인했다. | Pass | [최신 메인 전체](images/check_20261018_desktop_full.jpg), [최신 모바일 전체](images/check_20261018_mobile_full.jpg), [과목 소스 검사](images/courses_check.txt) |
 | F-05 | ① 1~15주차가 각각 한 번씩 표시된다. ② 수업을 진행한 1·2·3·5·6·7주차는 본인의 배포 학습 기록으로 연결된다. 작성자의 직접 검수에 더해 이번에도 여섯 링크를 열고 기록·편집 기능을 확인했다. 7주차의 서울·천안 선택 내용도 배포 화면에 있다. ③ 4주차는 추석연휴, 8주차는 중간고사로 수업이 없으므로 링크 없는 일정으로 표시했다. 9~15주차는 기입 예정이며 링크가 없다. 공지의 미진행 주차 문구 예정과 표기가 달라 예외 인정 여부가 남아 있다. ④ 진행 주차의 초록색과 휴강·시험·기입 예정의 회색 구분을 확인했다. | Fail (③ 미진행 주차 표기 차이) | [최신 주차 지도](images/check_20261018_desktop_full.jpg), [주차별 전체 캡처 목록](images/browser_audit_20261018.md), [주차 소스 검사](images/weekly_check.txt) |
 | F-06 | ① 실제 배포 footer와 소스의 time 값이 2026-10-18인지 확인했다. ② 작성자가 Footer 날짜와 최종 커밋 날짜 검수 완료를 확인했다. 저장소 커밋 날짜의 확인 주체는 작성자다. | Pass (작성자 직접 검수 포함) | [최신 메인 전체](images/check_20261018_desktop_full.jpg), [Footer 검수 기록](images/footer_check.txt) |
-| Q-HTML | 최신 index.html 및 practice/week01.html~week07.html 총 8개 전체를 사용자 요청에 따라 W3C Nu 검사기에 전송했다. 전부 오류 0개·경고 0개다. 각 현재 파일과 검사 대상 SHA-256이 일치한다. 사진 파일은 전송하지 않았다. 소스 업로드 검사이며 공식 검사기 화면을 캡처한 것으로 표현하지 않았다. | Pass | [8개 원본 응답·검사 해시](images/w3c_html_summary.json), [응답 열람 페이지](images/validation.html) |
+| Q-HTML | 최신 index.html 및 practice/week01.html~week07.html 총 8개 전체를 사용자 요청에 따라 W3C Nu 검사기에 전송했다. 전부 오류 0개·경고 0개다. 검사 당시 파일과 검사 대상 SHA-256이 일치한다. 이후 메인 그림 링크 변경본은 로컬 화면 검수이며 외부 재검사하지 않았다. 사진 파일은 전송하지 않았다. 소스 업로드 검사이며 공식 검사기 화면을 캡처한 것으로 표현하지 않았다. | Pass | [8개 원본 응답·검사 해시](images/w3c_html_summary.json), [응답 열람 페이지](images/validation.html) |
 | Q-CSS | ① 공통 CSS의 숨김 텍스트를 clip에서 clip-path: inset(50%)로 교체하고 로컬 Chrome에서 대상 6개의 숨김 유지·계산된 스타일을 확인했다. 사용자 승인 후 전체 공통 CSS를 W3C CSS3+SVG(profile=css3svg)로 재검사해 오류 0개·validity=true를 확인했다. 전체 경고는 235개이며 clip 폐기 경고는 사라졌다. 기본 CSS3 프로필은 clip-path 미인식 오류 1개를 반환해 두 결과를 구분했다. 주차 CSS는 기존 검사본과 동일하며 오류 0개·전체 경고 153개다. ② HTML 8개에 style 요소·인라인 style 속성이 없고 외부 CSS를 연결한다. ③ 실제 배포 메인·1~7주차 전체를 1280×800px 및 390×844px로 바꿔 캡처하고 확인했다. 주요 카드·폼·실행 예제·편집 버튼·사진 팝업에 겹침이나 화면 밖 잘림이 없었다. 각 문서 전체 폭은 viewport와 같았다. 모바일 실적 표는 354px 영역 안의 840px 표이며 실제 ArrowRight 입력으로 scrollLeft 411.5px까지 이동했다. 코드·학습 표의 내부 스크롤과 팝업의 크기 제한도 확인했다. | Pass | [화면 비교](images/check_20261018_responsive.jpg), [표 오른쪽 열](images/check_20261018_mobile_table_right.jpg), [모바일 사진 팝업](images/check_20261018_mobile_photo.jpg), [화면 치수·전체 캡처](images/browser_audit_20261018.md), [CSS 오류·경고·해시](images/css_check_summary.json), [검수 기록](images/css_check.txt) |
 | Q-DEPLOY | 기존 실제 배포 검수에서 내부 이동·1~7주차·사진 10개 팝업·이미지 로드·문서 편집과 다운로드를 확인했다. 추가로 배포 HTML 8개의 href/src 260건을 추출해 중복 제외 URL 83개 모두 GET HTTP 200과 정상 응답 형식을 확인했다. fragment 참조 107건의 대상이 모두 존재한다. 외부 링크 72건의 고유 목적지 59개를 실제 배포 원본 페이지에서 Chrome headless로 활성화해 최종 HTTPS 문서 로드를 확인했다. GitHub 프로필·저장소도 정상 접속했다. 반복 링크는 동일 목적지와 fragment를 대조했다. | Pass | [배포 최종 검수](images/deploy_audit_20261018.md), [HTTP·앵커 원본](images/deploy_link_audit_20261018.json), [브라우저 외부 링크 원본](images/deploy_browser_links_20261018.json), [기존 화면 검수](images/browser_audit_20261018.md), [사진 표시](images/photo_actual_20261018.json) |
 

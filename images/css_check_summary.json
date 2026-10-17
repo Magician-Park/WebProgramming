@@ -4,9 +4,9 @@
   "checks": [
     {
       "file": "style.css",
-      "source_sha256": "faaad7a1cdb1221e615cd7eeafdbb2ac4df85d35dfc6a64483adebcee21cef70",
+      "source_sha256": "5ee9f3259084515b8380b0c095aa08aee4aaf2463fa9c87600dc304b226d789b",
       "validated_source_sha256": "faaad7a1cdb1221e615cd7eeafdbb2ac4df85d35dfc6a64483adebcee21cef70",
-      "latest_source_validated": true,
+      "latest_source_validated": false,
       "errors": 0,
       "warnings": 235,
       "warning_level": 2,
@@ -20,7 +20,7 @@
       "profile": "css3svg",
       "checked_at_utc": "2026-10-17T16:39:18.017762+00:00",
       "original_response": "w3c_css_response.xml",
-      "note": "2026-10-18 사용자 승인으로 clip-path 교체 후 style.css 전체 재검사. CSS3+SVG(profile=css3svg) 오류 0·validity=true, warning=2 전체 235개. clip deprecated 경고 제거. 기본 CSS3(profile=css3)는 clip-path 미인식 오류 1개를 반환해 별도 원본 보관. 로컬 Chrome의 clip-path·대상 6개 숨김 유지 확인. CSS3+SVG 응답 csslevel은 css3로 표시됨.",
+      "note": "2026-10-18 사용자 승인으로 clip-path 교체 후 style.css 전체 재검사. CSS3+SVG(profile=css3svg) 오류 0·validity=true, warning=2 전체 235개. clip deprecated 경고 제거. 기본 CSS3(profile=css3)는 clip-path 미인식 오류 1개를 반환해 별도 원본 보관. 로컬 Chrome의 clip-path·대상 6개 숨김 유지 확인. CSS3+SVG 응답 csslevel은 css3로 표시됨. 2026-10-18 메인 그림 전체를 기존 GitHub 프로필 링크 하나로 연결하고 CSS로 노트북 스티커를 표시. 모바일 버튼과 접근성 이름 유지. 최신 변경은 로컬 화면 검사이며 기존 W3C 응답은 이번 디자인 변경 전 기준.",
       "response_csslevel": "css3",
       "warning_levels": {
         "2": 233,
