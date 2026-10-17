@@ -8,9 +8,9 @@
       "original_response": "w3c_html_response.json",
       "checker_version": "26.10.12",
       "latest_source_validated": false,
-      "source_sha256": "24467d63131e8488f3e9175bc99104d11df365542cd5016408218715ca863c8f",
+      "source_sha256": "c1fde26fc306abc7fff5db70ef77258fa0d52fc900fbd412fa4d4452de87cc50",
       "validated_source_sha256": "006c5fa800579deb48f39186bbf47384199211606f4d9f076cf5ff42b754edba",
-      "note": "2026-10-18 사용자 요청으로 최신 HTML 전체를 W3C Nu에 전송하여 검사. 사진 파일은 전송하지 않음. 2026-10-18 메인 그림 전체를 기존 GitHub 프로필 링크 하나로 연결하고 CSS로 노트북 스티커를 표시. 모바일 버튼과 접근성 이름 유지. 최신 변경은 로컬 화면 검사이며 기존 W3C 응답은 이번 디자인 변경 전 기준."
+      "note": "2026-10-18 사용자 요청으로 최신 HTML 전체를 W3C Nu에 전송하여 검사. 사진 파일은 전송하지 않음. 2026-10-18 메인 그림 전체를 기존 GitHub 프로필 링크 하나로 연결하고 CSS로 노트북 스티커를 표시. 모바일 버튼과 접근성 이름 유지. 최신 변경은 로컬 화면 검사이며 기존 W3C 응답은 이번 디자인 변경 전 기준. 그림 GitHub 링크 변경 후 배포 CSS 캐시 불일치를 확인해 style.css 주소에 내용 해시 버전 쿼리를 추가. 버전 주소는 최신 CSS를 반환함을 확인. 이번 href 변경은 외부 HTML 재검사 전."
     },
     {
       "file": "practice/week01.html",
