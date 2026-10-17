@@ -1,0 +1,126 @@
+{
+  "initialChecks": [
+    {
+      "label": "중소벤처기업진흥공단 AX 교육 프로그램 사진 보기",
+      "caption": "AX 교육 맞춤연수 현장 사진 · 이수 기간: 2026.07.14 ~ 2026.07.16",
+      "loaded": false,
+      "title": "중소벤처기업진흥공단 AX 교육 프로그램",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "버스운전자격증 취득 사진 보기",
+      "caption": "버스운전자격증 취득일 · 2026.04.07",
+      "loaded": false,
+      "title": "버스운전자격증 취득",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "1종 대형면허 갱신 사진 보기",
+      "caption": "1종 대형 면허 최초 취득일 · 2026.02.11",
+      "loaded": false,
+      "title": "1종 대형면허 갱신",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "오픈소스 소프트웨어(OSS) 활용 해커톤 사진 보기",
+      "caption": "장려상 · 2022.09.22 · 대학교 2학년",
+      "loaded": false,
+      "title": "오픈소스 소프트웨어(OSS) 활용 해커톤",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "1종 보통면허 취득 사진 보기",
+      "caption": "1종 보통 면허 최초 취득일 · 2021.07.30",
+      "loaded": true,
+      "title": "1종 보통면허 취득",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "통계 활용 발표회 사진 보기",
+      "caption": "금상 · 2020.08.31 · 고등학교 3학년",
+      "loaded": false,
+      "title": "통계 활용 발표회",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "2학년 UCC 공모전 사진 보기",
+      "caption": "은상 · 2019.11.26 · 고등학교 2학년",
+      "loaded": true,
+      "title": "2학년 UCC 공모전",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "창의적체험활동 동아리 발표회 사진 보기",
+      "caption": "대상 · 2019.11.07 · 고등학교 2학년",
+      "loaded": true,
+      "title": "창의적체험활동 동아리 발표회",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "소논문대회(자연과학기타분야) 사진 보기",
+      "caption": "장려상 · 2019.06.24 · 고등학교 2학년",
+      "loaded": true,
+      "title": "소논문대회(자연과학기타분야)",
+      "viewport": 390,
+      "width": 352
+    },
+    {
+      "label": "1학년 UCC 공모전 사진 보기",
+      "caption": "동상 · 2018.12.03 · 고등학교 1학년",
+      "loaded": true,
+      "title": "1학년 UCC 공모전",
+      "viewport": 390,
+      "width": 352
+    }
+  ],
+  "afterLoading": [
+    {
+      "loaded": true,
+      "title": "버스운전자격증 취득"
+    },
+    {
+      "loaded": true,
+      "title": "1종 대형면허 갱신"
+    },
+    {
+      "loaded": true,
+      "title": "1종 보통면허 취득"
+    },
+    {
+      "loaded": true,
+      "title": "1학년 UCC 공모전"
+    },
+    {
+      "loaded": true,
+      "title": "소논문대회(자연과학기타분야)"
+    },
+    {
+      "loaded": true,
+      "title": "창의적체험활동 동아리 발표회"
+    },
+    {
+      "loaded": true,
+      "title": "2학년 UCC 공모전"
+    },
+    {
+      "loaded": true,
+      "title": "통계 활용 발표회"
+    },
+    {
+      "loaded": true,
+      "title": "오픈소스 소프트웨어(OSS) 활용 해커톤"
+    },
+    {
+      "loaded": true,
+      "title": "중소벤처기업진흥공단 AX 교육 프로그램"
+    }
+  ]
+}

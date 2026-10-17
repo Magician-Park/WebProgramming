@@ -21,7 +21,7 @@
       "profile": "css3",
       "checked_at_utc": "2026-10-17T14:20:45Z",
       "original_response": "w3c_css_response.xml",
-      "note": "실적 분류의 이동 밑줄·숫자 배지·작은 화면 간격·동작 줄이기 스타일 포함 전체 style.css W3C CSS3 오류 0개. warning=2 전체 경고. 실제 화면 검수는 대기."
+      "note": "실적 분류의 이동 밑줄·숫자 배지·작은 화면 간격·동작 줄이기 스타일 포함 전체 style.css W3C CSS3 오류 0개. warning=2 전체 경고. 2026-10-18 배포 HTTPS 사이트 1280px·390px 실제 화면 검수 완료."
     },
     {
       "file": "practice/practice.css",
@@ -40,7 +40,7 @@
       "profile": "css3",
       "checked_at_utc": "2026-10-17T14:10:27Z",
       "original_response": "w3c_practice_css_response.xml",
-      "note": "1~7주차 상단 돌아가기 링크의 네모 버튼·hover·키보드 초점 스타일 수정 후 전체 practice.css W3C CSS3 오류 0개. warning=2 전체 경고. 실제 화면 검수 대기."
+      "note": "1~7주차 상단 돌아가기 링크의 네모 버튼·hover·키보드 초점 스타일 수정 후 전체 practice.css W3C CSS3 오류 0개. warning=2 전체 경고. 2026-10-18 배포 HTTPS 사이트 1280px·390px 실제 화면 검수 완료."
     }
   ],
   "inline_and_internal_styles": {
@@ -49,9 +49,35 @@
   },
   "responsive_verification": {
     "source_review": true,
-    "actual_browser": false,
+    "actual_browser": true,
     "user_response": "아직 확인하지 않았습니다",
-    "status": "pending"
+    "status": "Pass",
+    "ai_attempt_blocked": true,
+    "user_recording_review": {
+      "date": "2026-10-18",
+      "reviewed": true,
+      "scope": "모바일 Safari 가로 화면 녹화",
+      "exact_1280_viewport_confirmed": false,
+      "narrow_portrait_confirmed": false,
+      "table_horizontal_scroll_confirmed": false,
+      "evidence": "video_review_20261018.txt"
+    },
+    "date": "2026-10-18",
+    "url": "https://magician-park.smu.ai.kr/",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "scope": "메인 및 1~7주차 전체 화면·카드·버튼·실행 예제·사진 dialog, 표 키보드 가로 스크롤",
+    "evidence": "responsive_actual_20261018.json",
+    "current_blocked": false,
+    "prior_local_file_restriction": "이전 file:// 검수는 보안 정책으로 중단했다. 이번 검수는 정상 접근 가능한 실제 배포 HTTPS 사이트에서 수행했으며 로컬 파일 제한을 우회하지 않았다."
   },
   "category_filter_visual_verification": {
     "date": "2026-10-17",

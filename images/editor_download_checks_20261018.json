@@ -1,0 +1,72 @@
+[
+  {
+    "week": 1,
+    "download_name": "week01.html",
+    "bytes": 28674,
+    "sha256": "8bb90b8b67f53cc226a27397e9d61df6182921c1c91ff5221fd181a012eee0c2",
+    "edited_title": "웹의 시작과 인터넷의 주소 · 저장 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  },
+  {
+    "week": 2,
+    "download_name": "week02.html",
+    "bytes": 35617,
+    "sha256": "02769dbd9452e741d65c01155b2caa3ebf543a9ea958b1042dc764ad68eda6af",
+    "edited_title": "HTML5 문서의 구조와 의미 · A-02 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  },
+  {
+    "week": 3,
+    "download_name": "week03.html",
+    "bytes": 37289,
+    "sha256": "fd7f7ff97bb9eecf9b705b11468efd5c711bdd83606dfbab1c3d8cb5765bb499",
+    "edited_title": "링크와 이미지로 연결하기 · A-02 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  },
+  {
+    "week": 4,
+    "download_name": "week04.html",
+    "bytes": 3336,
+    "sha256": "e1954ad0df61a01ea4b5542ae80c244276c39c8c1e10b03ece4b17046eb12c65",
+    "edited_title": "추석연휴 · A-02 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  },
+  {
+    "week": 5,
+    "download_name": "week05.html",
+    "bytes": 43238,
+    "sha256": "ee59c52629128a679cf0c4fc8fcd3097ab0fbdbc8134a8448c4a56857931c802",
+    "edited_title": "스타일을 입히고 변경을 기록하기 · A-02 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  },
+  {
+    "week": 6,
+    "download_name": "week06.html",
+    "bytes": 56914,
+    "sha256": "8625bfb1bc931f1995d3580260200ca98a17e67c5d2732335f5cfc3ed363cfc7",
+    "edited_title": "구조를 만들고, 공간과 움직임을 설계하기 · A-02 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  },
+  {
+    "week": 7,
+    "download_name": "week07.html",
+    "bytes": 54077,
+    "sha256": "d5754b64e24f96d66cbab34bcc16989be1698b5d6c6dd724b654aa190759fba4",
+    "edited_title": "입력하고, 선택하고, 결과를 확인하기 · A-02 검수",
+    "edit_included": true,
+    "active_edit_attributes_removed": true,
+    "opened_as_local_browser_page": false
+  }
+]

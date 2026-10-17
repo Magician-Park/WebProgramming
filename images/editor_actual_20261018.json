@@ -1,0 +1,87 @@
+[
+  {
+    "week": "01",
+    "cancelRestored": true,
+    "titleBodyCodeSaveReload": true,
+    "crossWeekIsolation": true,
+    "downloadPath": "/Users/magician-park/Downloads/week01.html",
+    "restored": true
+  },
+  {
+    "week": "02",
+    "original": {
+      "body": "DOCTYPE, html, head, body의 역할을 구분하고 기본 HTML 문서를 작성한다.",
+      "code": "https://example.com/learn/week02.html\nhttps          사용할 방식(스킴)\nexample.com    도메인 이름\n/learn/week02.html    자원의 경로",
+      "docWidth": 390,
+      "title": "HTML5 문서의 구조와 의미",
+      "width": 390
+    },
+    "cancelRestored": true,
+    "saveReload": true,
+    "downloadPath": "/Users/magician-park/Downloads/week02.html",
+    "restored": true
+  },
+  {
+    "week": "03",
+    "original": {
+      "body": "클릭할 글자나 이미지를 a 요소로 감싸고 href에 이동할 위치를 지정한다.",
+      "code": "<a href=\"week01.html\" title=\"1주차 학습 정리\">\n  1주차 페이지 읽기\n</a>",
+      "docWidth": 390,
+      "title": "링크와 이미지로 연결하기",
+      "width": 390
+    },
+    "cancelRestored": true,
+    "saveReload": true,
+    "downloadPath": "/Users/magician-park/Downloads/week03.html",
+    "restored": true
+  },
+  {
+    "week": "04",
+    "original": {
+      "body": "추석연휴",
+      "code": null,
+      "docWidth": 390,
+      "title": "추석연휴",
+      "width": 390
+    },
+    "cancelRestored": true,
+    "saveReload": true,
+    "downloadPath": "/Users/magician-park/Downloads/week04.html",
+    "restored": true
+  },
+  {
+    "week": "05",
+    "original": {
+      "body": "HTML의 구조를 유지하면서 선택자와 속성으로 색상·글꼴·간격·상태를 지정한다.",
+      "code": "선택자 {\n  속성: 값;\n  속성: 값;\n}\n\nh3 {\n  color: #346248;\n  font-style: italic;\n}",
+      "docWidth": 390,
+      "title": "스타일을 입히고 변경을 기록하기",
+      "width": 390
+    },
+    "cancelRestored": true,
+    "saveReload": true,
+    "downloadPath": "/Users/magician-park/Downloads/week05.html",
+    "restored": true
+  },
+  {
+    "week": "06",
+    "original": {
+      "body": "목록·표·문서 구조화 요소로 내용의 관계를 표현한다.",
+      "code": "<ul>\n  <li>HTML\n    <ol>\n      <li>목록 구조 익히기</li>\n      <li>표 작성하기</li>\n    </ol>\n  </li>\n  <li>CSS</li>\n</ul>\n<dl>\n  <dt>padding</dt>\n  <dd>내용과 테두리 사이의 내부 여백</dd>\n</dl>",
+      "docWidth": 390,
+      "title": "구조를 만들고, 공간과 움직임을 설계하기",
+      "width": 390
+    },
+    "cancelRestored": true,
+    "saveReload": true,
+    "downloadPath": "/Users/magician-park/Downloads/week06.html",
+    "restored": true
+  },
+  {
+    "week": "07",
+    "cancelRestored": true,
+    "saveReload": true,
+    "downloadPath": "/Users/magician-park/Downloads/week07.html",
+    "restored": true
+  }
+]

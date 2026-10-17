@@ -1,0 +1,386 @@
+[
+  {
+    "page": "practice/week07.html",
+    "width": 390,
+    "documentWidth": 390,
+    "height": 21934
+  },
+  {
+    "page": "practice/week07.html",
+    "width": 1280,
+    "documentWidth": 1280,
+    "height": 17400
+  },
+  {
+    "page": "practice/week01.html",
+    "brokenImages": [],
+    "documentWidth": 1280,
+    "height": 8129,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 1280
+  },
+  {
+    "page": "practice/week01.html",
+    "brokenImages": [],
+    "documentWidth": 390,
+    "height": 10200,
+    "outerOverflow": [],
+    "scrollAreas": [
+      {
+        "client": 354,
+        "label": "HTML 발전 과정 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "통신 규칙의 역할 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "IPv4와 IPv6 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "practice/week02.html",
+    "brokenImages": [],
+    "documentWidth": 1280,
+    "height": 11298,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 1280
+  },
+  {
+    "page": "practice/week02.html",
+    "brokenImages": [],
+    "documentWidth": 390,
+    "height": 13827,
+    "outerOverflow": [],
+    "scrollAreas": [
+      {
+        "client": 354,
+        "label": "HTML5의 특징 정리 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "인터넷 기본 개념 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "HTML 기본 구조와 메타데이터 역할 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "문자 참조 예시 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "제목, 문단, 텍스트 요소의 의미 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "practice/week03.html",
+    "brokenImages": [],
+    "documentWidth": 1280,
+    "height": 12523,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 1280
+  },
+  {
+    "page": "practice/week03.html",
+    "brokenImages": [],
+    "documentWidth": 390,
+    "height": 14975,
+    "outerOverflow": [],
+    "scrollAreas": [
+      {
+        "client": 354,
+        "label": "노드, 링크, 앵커의 개념 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "링크 주소의 종류와 경로 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "GIF, JPEG, PNG의 특징 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "이미지 속성의 역할 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "제공한 웹페이지의 수정 내용 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "원래 TOP 버튼과 앵커 링크 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "practice/week04.html",
+    "brokenImages": [],
+    "documentWidth": 1280,
+    "height": 911,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 1280
+  },
+  {
+    "page": "practice/week04.html",
+    "brokenImages": [],
+    "documentWidth": 390,
+    "height": 896,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 390
+  },
+  {
+    "page": "practice/week05.html",
+    "brokenImages": [],
+    "documentWidth": 1280,
+    "height": 14352,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 1280
+  },
+  {
+    "page": "practice/week05.html",
+    "brokenImages": [],
+    "documentWidth": 390,
+    "height": 17903,
+    "outerOverflow": [],
+    "scrollAreas": [
+      {
+        "client": 354,
+        "label": "CSS 작성 방법 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "CSS 선택자 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "Git 설정 항목 설명 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "Git 변경 확인과 기록 명령어 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "Git 짧은 상태 출력의 의미 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "자주 만나는 Git 오류와 확인 방법 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "practice/week06.html",
+    "brokenImages": [],
+    "documentWidth": 1280,
+    "height": 20854,
+    "outerOverflow": [],
+    "scrollAreas": [],
+    "width": 1280
+  },
+  {
+    "page": "practice/week06.html",
+    "brokenImages": [],
+    "documentWidth": 390,
+    "height": 25166,
+    "outerOverflow": [],
+    "scrollAreas": [
+      {
+        "client": 354,
+        "label": "목록 요소 선택 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "표 구조와 병합 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 312,
+        "label": "추천도서 출력 예제 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "구조화 요소의 역할 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "각 영역의 역할 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "padding·margin의 값 순서 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "display 값 비교 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "position 네 가지 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "overflow 값 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "보이지 않게 만드는 세 방법 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "transition 줄여쓰기 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      },
+      {
+        "client": 354,
+        "label": "좌표변환 함수 표, 좌우로 스크롤 가능",
+        "overflow": "auto",
+        "scroll": 610,
+        "tag": "DIV"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "documentWidth": 1280,
+    "firstScreen": [
+      {
+        "bottom": 302.8203125,
+        "text": "Magician-Park.",
+        "top": 233.2265625
+      },
+      {
+        "bottom": 345.8671875,
+        "text": "상명대학교 소프트웨어학과 3학년",
+        "top": 317.8203125
+      },
+      {
+        "bottom": 396.265625,
+        "text": "웹과 AI 기술을 활용해 더 편리한 세상을 만드는 방법을 배우고 있습니다.",
+        "top": 363.8671875
+      }
+    ],
+    "height": 800,
+    "imagesLoaded": true,
+    "page": "index.html",
+    "scrollY": 0,
+    "width": 1280
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "height": 844,
+    "documentWidth": 390,
+    "tableClientWidth": 354,
+    "tableScrollWidth": 840,
+    "verifiedScrollLeft": 411.5,
+    "photoDialogWidth": 352
+  }
+]
