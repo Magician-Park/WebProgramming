@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h3>다양한 입력 폼</h3>
+        <form method="get" action="form_app.js">
+            성명: <input type="text" name="person"/> <br>
+            이메일: <input type="email" name="email" placeholder="id@gmail.com"/>
+            <!-- 이메일 타입 추가 방법 --> 
+            캠퍼스: <input type="radio" name="campuscode" value="00" checked 천안/>
+            캠퍼스: <input type="radio" name="campuscode" value="01" 서울/>
+            <!-- checked는 미리 체크 표시-->
+                <input type="radio" name="sex" value="female"/>여성<br>
+            직업: <select name="job"  size="2">
+                    <option>학생</option> <option>회사원</option>
+                    <option>공무원</option> <option>기타</option>
+            비밀번호: <input type="password" name="person"/>
+            <!-- password는 *표시로 -->
+                </select>
+        <p> 구입희망분야(복수선택 가능)<br>
+        - 분야: <input type="checkbox" name="books" value="computer"/>컴퓨터
+                <input type="checkbox" name="books" value="economy"/>경제
+                <input type="checkbox" name="books" value="common"/>상식<br>
+        비고: <br>
+                <textarea name="comments" rows="4" cols="40"></textarea>
+        </p> <hr>
+            <input type="submit" value="신청"/>
+            <input type="reset" value="취소"/>
+            <input type="button" value="버튼" onclick="alert('버튼 클릭')">
+            <!-- 버튼 추가: onclick은 큰 따옴표로, 문자열은 작은 따옴표로 -->
+    </form>
+</body>

@@ -7,7 +7,7 @@
             <m:uri>practice.css</m:uri>
             <m:checkedby>http://jigsaw.w3.org/css-validator/</m:checkedby>
             <m:csslevel>css3</m:csslevel>
-            <m:date>2026-10-14T03:27:12Z</m:date>
+            <m:date>2026-10-17T02:10:02Z</m:date>
             <m:validity>true</m:validity>
             <m:result>
                 <m:errors xml:lang="en">
@@ -15,7 +15,7 @@
     
                 </m:errors>
                 <m:warnings xml:lang="en">
-                    <m:warningcount>27</m:warningcount>
+                    <m:warningcount>153</m:warningcount>
             
                     <m:warninglist>
                         <m:uri>file://localhost/practice.css</m:uri>
@@ -98,6 +98,146 @@
                         </m:warning>
         
                         <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>0</m:level>
+                            <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
+                            <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>0</m:level>
+                            <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
+                            <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>0</m:level>
+                            <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
+                            <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>0</m:level>
+                            <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
+                            <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>1</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
                             <m:line>3</m:line>
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
@@ -109,6 +249,20 @@
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
                             <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>6</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>6</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
                         </m:warning>
         
                         <m:warning>
@@ -123,6 +277,13 @@
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
                             <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>8</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
                         </m:warning>
         
                         <m:warning>
@@ -133,10 +294,24 @@
                         </m:warning>
         
                         <m:warning>
+                            <m:line>9</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
                             <m:line>10</m:line>
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
                             <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>10</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
                         </m:warning>
         
                         <m:warning>
@@ -154,6 +329,55 @@
                         </m:warning>
         
                         <m:warning>
+                            <m:line>15</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “color”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>15</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>16</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>16</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>16</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>16</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>19</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
                             <m:line>25</m:line>
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
@@ -161,6 +385,27 @@
                         </m:warning>
         
                         <m:warning>
+                            <m:line>29</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>32</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>34</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
                             <m:line>35</m:line>
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
@@ -172,6 +417,139 @@
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
                             <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>38</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>39</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>42</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>49</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>52</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>53</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>55</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>56</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>57</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>57</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>58</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>59</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>59</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>60</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>60</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>60</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>60</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>61</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>61</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
                         </m:warning>
         
                         <m:warning>
@@ -182,10 +560,24 @@
                         </m:warning>
         
                         <m:warning>
+                            <m:line>70</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
                             <m:line>71</m:line>
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
                             <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>72</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
                         </m:warning>
         
                         <m:warning>
@@ -196,6 +588,48 @@
                         </m:warning>
         
                         <m:warning>
+                            <m:line>82</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>85</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>87</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>89</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>91</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>92</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
                             <m:line>96</m:line>
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
@@ -207,6 +641,459 @@
                             <m:level>0</m:level>
                             <m:message>Due to their dynamic nature, CSS variables are currently not statically checked</m:message>
                             <m:type>css-variable</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>98</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>99</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>100</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>103</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>105</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>107</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>111</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>112</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>113</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>116</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>119</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>126</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>126</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>131</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>141</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>144</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>145</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>146</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>146</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>155</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>155</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>155</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>155</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “min-height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>163</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>165</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “min-height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>167</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>167</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>173</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>176</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>185</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>186</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>190</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+                    
+                    </m:warninglist>
+            
+                    <m:warninglist>
+                        <m:uri>$sfe</m:uri>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition-property”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-left-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-right-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-bottom-left-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-bottom-right-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
                         </m:warning>
     
                     </m:warninglist>

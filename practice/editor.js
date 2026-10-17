@@ -10,6 +10,7 @@
   const fields = candidates.filter(field => !fixedExamples.some(example => example.contains(field)) && !(field.getAttribute('class') || '').split(/\s+/).includes('sr-only') && !candidates.some(other => other !== field && field.contains(other)));
   const filename = location.pathname.split('/').pop() || 'practice.html';
   const storageKey = 'magician-park:practice:' + filename + ':v1';
+  const labSnapshots = Array.from(document.querySelectorAll('[data-lab-root]'), lab => lab.cloneNode(true));
   const originalAttributes = new Map();
   const editingAttributes = ['contenteditable', 'tabindex', 'role', 'aria-label', 'aria-multiline'];
   let editing = false;
@@ -124,6 +125,9 @@
     }
     const copyMain = copy.querySelector('main');
     if (copyMain) copyMain.removeAttribute('aria-busy');
+    Array.from(copy.querySelectorAll('[data-lab-root]')).forEach((lab, index) => {
+      if (labSnapshots[index]) lab.replaceWith(labSnapshots[index].cloneNode(true));
+    });
     const copyPanel = copy.querySelector('.document-editor');
     copyPanel.hidden = true;
     copyPanel.querySelector('.editor-status').textContent = '';

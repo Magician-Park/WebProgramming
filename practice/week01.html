@@ -7,12 +7,12 @@
   <title>1주차 | 웹의 역사와 인터넷 주소</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="practice.css">
-  <script src="editor.js" defer></script>
+  <script src="editor.js" defer></script><script src="review-quiz.js" defer></script>
   <script src="../page-loader.js" defer></script>
 </head>
 <body id="top">
   <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
-    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">Loading...</p></div>
   </div>
 
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -22,7 +22,7 @@
     <p class="eyebrow">WEEK 01 / WEB FOUNDATIONS</p>
     <h1>웹의 시작과 인터넷의 주소</h1>
     <p class="introduction">인터넷의 연결 위에서 웹과 HTML이 탄생한 흐름을 이해하고, IP·DNS·URL의 역할을 구분한다.</p>
-    <nav class="lesson-nav" aria-label="1주차 학습 목차"><a href="#web-history">웹의 역사</a><a href="#html-history">HTML의 탄생</a><a href="#communication">통신의 기본</a><a href="#ip-address">IP와 주소</a><a href="#review">복습</a></nav>
+    <nav class="lesson-nav" aria-label="1주차 학습 목차"><a href="#web-history">웹의 역사</a><a href="#html-history">HTML의 탄생</a><a href="#communication">통신의 기본</a><a href="#ip-address">IP와 주소</a><a href="#quiz">복습퀴즈</a><a href="#review">복습</a></nav>
   </header>
 <section class="wrap document-editor" aria-labelledby="document-editor-title" hidden>
   <div class="editor-heading"><h2 id="document-editor-title">문서 편집</h2><p>‘문서 수정’을 누른 뒤 제목·본문·코드 예시를 클릭해 바꾸세요.</p></div>
@@ -154,6 +154,17 @@
     <ol class="lesson-steps"><li>사용자가 URL을 입력한다.</li><li>필요한 경우 DNS로 도메인에 대응하는 IP 주소를 찾는다.</li><li>브라우저가 해당 서버에 자원을 요청한다.</li><li>서버의 응답을 받아 브라우저가 문서를 표시한다.</li></ol>
   </section>
 
+  <section id="quiz" class="lesson-section" aria-labelledby="quiz-title" data-editor-readonly data-lab-root>
+    <p class="eyebrow">WEEK 01 / QUIZ</p><h2 id="quiz-title">직접 풀고 확인하는 복습퀴즈</h2>
+    <p class="lesson-source">5문항 · 한 문제에 하나씩 선택한 뒤 채점하면 정답과 해설을 확인할 수 있습니다.</p>
+    <div class="lab7 demo-card"><h3>1주차 핵심 내용 확인</h3><form data-review-quiz method="get">
+    <fieldset data-answer="0" data-explanation="인터넷은 네트워크를 연결하는 기반이고 웹은 그 위에서 문서와 자원을 탐색하는 서비스다."><legend>1. 인터넷과 웹의 관계로 알맞은 것은?</legend><label class="lab7-choice"><input type="radio" name="q1" value="0" required>웹은 인터넷 위에서 제공되는 서비스다</label><label class="lab7-choice"><input type="radio" name="q1" value="1" required>인터넷과 웹은 항상 같은 뜻이다</label><label class="lab7-choice"><input type="radio" name="q1" value="2" required>인터넷은 웹 문서만 연결한다</label></fieldset><fieldset data-answer="1" data-explanation="HTML은 문서 구조, HTTP는 요청·응답 규칙, IP는 네트워크 주소와 패킷 전달에 관련된다."><legend>2. 웹 문서의 구조를 나타내는 언어는?</legend><label class="lab7-choice"><input type="radio" name="q2" value="0" required>HTTP</label><label class="lab7-choice"><input type="radio" name="q2" value="1" required>HTML</label><label class="lab7-choice"><input type="radio" name="q2" value="2" required>IP</label></fieldset><fieldset data-answer="2" data-explanation="DNS는 도메인 이름에 대응하는 IP 주소 등의 정보를 찾는 시스템이다."><legend>3. 도메인 이름으로 IP 주소를 찾을 때 사용하는 시스템은?</legend><label class="lab7-choice"><input type="radio" name="q3" value="0" required>CSS</label><label class="lab7-choice"><input type="radio" name="q3" value="1" required>HTML</label><label class="lab7-choice"><input type="radio" name="q3" value="2" required>DNS</label></fieldset><fieldset data-answer="0" data-explanation="IPv4는 32비트, IPv6는 128비트다. 비트 길이는 4배지만 가능한 주소 개수가 4배인 것은 아니다."><legend>4. IPv4와 IPv6의 주소 길이를 올바르게 짝지은 것은?</legend><label class="lab7-choice"><input type="radio" name="q4" value="0" required>32비트 / 128비트</label><label class="lab7-choice"><input type="radio" name="q4" value="1" required>32비트 / 64비트</label><label class="lab7-choice"><input type="radio" name="q4" value="2" required>64비트 / 128비트</label></fieldset><fieldset data-answer="1" data-explanation="TCP/IP의 기본 설명에서 순서 관리와 재전송은 TCP가 담당하며 IP만으로 신뢰성 있는 전달이 보장되지 않는다."><legend>5. IP 자체의 역할에 대한 설명으로 알맞은 것은?</legend><label class="lab7-choice"><input type="radio" name="q5" value="0" required>모든 패킷의 도착 순서와 재전송을 보장한다</label><label class="lab7-choice"><input type="radio" name="q5" value="1" required>주소를 바탕으로 패킷을 전달하며 도착·순서 자체는 보장하지 않는다</label><label class="lab7-choice"><input type="radio" name="q5" value="2" required>HTML의 글자 크기를 결정한다</label></fieldset>
+    <div class="lab7-actions"><button type="button" data-quiz-grade disabled>채점하기</button><button type="reset" class="secondary">다시 풀기</button></div>
+    <p data-quiz-result data-lab-result role="status" aria-live="polite" aria-atomic="true">5문항에 답한 뒤 채점하세요.</p>
+    <label for="review-quiz-score">정답 수</label><progress id="review-quiz-score" value="0" max="5">0 / 5</progress><ul data-quiz-feedback></ul>
+    </form></div><p>선택과 필수 응답 확인은 HTML 입력 기능을 사용하며, 점수와 해설은 JavaScript로 표시합니다. 답과 채점 결과는 전송하거나 저장하지 않으며 HTML 다운로드에도 초기 상태로 포함됩니다.</p>
+    <noscript><p>채점하려면 JavaScript를 켜 주세요. 아래 복습 질문을 펼쳐 개념과 정답을 확인할 수 있습니다.</p></noscript>
+  </section>
   <section id="review" class="lesson-section" aria-labelledby="review-title">
     <p class="eyebrow">05 / QUICK REVIEW</p>
     <h2 id="review-title">개념을 내 말로 설명해 보기</h2>
@@ -180,5 +191,7 @@
   </section>
 </main>
 <footer class="wrap site-footer"><p>Lec01 4~21쪽 학습 정리 · 1주차</p><a class="back-top" href="../index.html#weekly">학습 기록으로 ↗</a></footer>
+
+<a class="floating-top" href="#top" aria-label="TOP: 페이지 맨 위로 이동"><span class="floating-top-arrow" aria-hidden="true">↑</span><span class="floating-top-label">TOP</span></a>
 </body>
 </html>

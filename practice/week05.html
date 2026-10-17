@@ -7,12 +7,12 @@
   <title>5주차 | CSS 기초와 Git·GitHub 작업 흐름</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="practice.css">
-  <script src="editor.js" defer></script>
+  <script src="editor.js" defer></script><script src="review-quiz.js" defer></script>
   <script src="../page-loader.js" defer></script>
 </head>
 <body id="top">
   <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
-    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">Loading...</p></div>
   </div>
 
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -22,7 +22,7 @@
     <p class="eyebrow">WEEK 05 / CSS &amp; VERSION CONTROL</p>
     <h1>스타일을 입히고 변경을 기록하기</h1>
     <p class="introduction">CSS로 웹페이지의 표현을 분리하고, Git으로 변경을 선택·기록한 뒤 GitHub 저장소에 반영하는 흐름을 이해한다.</p>
-    <nav class="lesson-nav" aria-label="5주차 학습 목차"><a href="#css-basics">CSS 기초</a><a href="#css-selectors">선택자</a><a href="#git-concepts">Git 흐름</a><a href="#git-setup">초기 설정</a><a href="#git-start">저장소 준비</a><a href="#git-stage">커밋</a><a href="#git-push">첫 업로드</a><a href="#git-daily">반복 작업</a><a href="#git-errors">오류 확인</a><a href="#review">복습</a></nav>
+    <nav class="lesson-nav" aria-label="5주차 학습 목차"><a href="#css-basics">CSS 기초</a><a href="#css-selectors">선택자</a><a href="#git-concepts">Git 흐름</a><a href="#git-setup">초기 설정</a><a href="#git-start">저장소 준비</a><a href="#git-stage">커밋</a><a href="#git-push">첫 업로드</a><a href="#git-daily">반복 작업</a><a href="#git-errors">오류 확인</a><a href="#quiz">복습퀴즈</a><a href="#review">복습</a></nav>
   </header>
 <section class="wrap document-editor" aria-labelledby="document-editor-title" hidden>
   <div class="editor-heading"><h2 id="document-editor-title">문서 편집</h2><p>‘문서 수정’을 누른 뒤 제목·본문·코드 예시를 클릭해 바꾸세요.</p></div>
@@ -266,6 +266,17 @@ git log --oneline --graph --decorate --all</code></pre>
     <p>에러 표는 가능한 원인을 정리한 복습 자료다. 메시지 하나만 보고 파일을 삭제하거나 이력을 되돌리지 않고, 현재 저장소·브랜치·파일 상태를 먼저 읽는다. 충돌이 생기면 겹친 부분을 확인해 원하는 내용으로 정리한 뒤 필요한 변경을 다시 기록한다.</p>
   </section>
 
+  <section id="quiz" class="lesson-section" aria-labelledby="quiz-title" data-editor-readonly data-lab-root>
+    <p class="eyebrow">WEEK 05 / QUIZ</p><h2 id="quiz-title">직접 풀고 확인하는 복습퀴즈</h2>
+    <p class="lesson-source">5문항 · 한 문제에 하나씩 선택한 뒤 채점하면 정답과 해설을 확인할 수 있습니다.</p>
+    <div class="lab7 demo-card"><h3>5주차 핵심 내용 확인</h3><form data-review-quiz method="get">
+    <fieldset data-answer="0" data-explanation="클래스는 점(.)으로, id는 #으로 선택한다. 같은 클래스는 여러 요소에서 재사용할 수 있다."><legend>1. class=&quot;term&quot;인 요소를 고르는 CSS 선택자는?</legend><label class="lab7-choice"><input type="radio" name="q1" value="0" required>.term</label><label class="lab7-choice"><input type="radio" name="q1" value="1" required>#term</label><label class="lab7-choice"><input type="radio" name="q1" value="2" required>term#</label></fieldset><fieldset data-answer="1" data-explanation=":hover는 요소의 상태를 고르는 가상클래스다. ::before는 가상요소다."><legend>2. 마우스를 올린 상태를 선택하는 것은?</legend><label class="lab7-choice"><input type="radio" name="q2" value="0" required>::before</label><label class="lab7-choice"><input type="radio" name="q2" value="1" required>:hover</label><label class="lab7-choice"><input type="radio" name="q2" value="2" required>@import</label></fieldset><fieldset data-answer="2" data-explanation="스테이징에는 add한 시점의 내용이 담긴다. 이후 수정은 자동 반영되지 않으므로 diff와 staged diff를 확인한다."><legend>3. git add를 한 뒤 파일을 다시 수정했다. 추가 수정까지 커밋하려면?</legend><label class="lab7-choice"><input type="radio" name="q3" value="0" required>이미 자동으로 모두 포함된다</label><label class="lab7-choice"><input type="radio" name="q3" value="1" required>무조건 저장소를 다시 만든다</label><label class="lab7-choice"><input type="radio" name="q3" value="2" required>변경 내용을 확인하고 해당 파일을 다시 git add한다</label></fieldset><fieldset data-answer="0" data-explanation="commit은 로컬 기록이다. 원격 저장소 반영은 push이며 사이트 배포는 호스팅 절차에 따른다."><legend>4. git commit의 역할은?</legend><label class="lab7-choice"><input type="radio" name="q4" value="0" required>로컬 저장소에 변경 이력을 기록한다</label><label class="lab7-choice"><input type="radio" name="q4" value="1" required>GitHub에 무조건 업로드한다</label><label class="lab7-choice"><input type="radio" name="q4" value="2" required>웹사이트를 자동 배포한다</label></fieldset><fieldset data-answer="1" data-explanation="push는 올바른 원격·브랜치 및 인증·권한을 갖춘 상태에서 로컬 커밋을 원격에 반영한다. 이 퀴즈는 명령을 실행하지 않는다."><legend>5. 로컬 커밋을 GitHub 원격 저장소로 보내는 명령은?</legend><label class="lab7-choice"><input type="radio" name="q5" value="0" required>git status</label><label class="lab7-choice"><input type="radio" name="q5" value="1" required>git push</label><label class="lab7-choice"><input type="radio" name="q5" value="2" required>git diff</label></fieldset>
+    <div class="lab7-actions"><button type="button" data-quiz-grade disabled>채점하기</button><button type="reset" class="secondary">다시 풀기</button></div>
+    <p data-quiz-result data-lab-result role="status" aria-live="polite" aria-atomic="true">5문항에 답한 뒤 채점하세요.</p>
+    <label for="review-quiz-score">정답 수</label><progress id="review-quiz-score" value="0" max="5">0 / 5</progress><ul data-quiz-feedback></ul>
+    </form></div><p>선택과 필수 응답 확인은 HTML 입력 기능을 사용하며, 점수와 해설은 JavaScript로 표시합니다. 답과 채점 결과는 전송하거나 저장하지 않으며 HTML 다운로드에도 초기 상태로 포함됩니다.</p>
+    <noscript><p>채점하려면 JavaScript를 켜 주세요. 아래 복습 질문을 펼쳐 개념과 정답을 확인할 수 있습니다.</p></noscript>
+  </section>
   <section id="review" class="lesson-section" aria-labelledby="review-title">
     <p class="eyebrow">REVIEW / CSS &amp; GIT</p>
     <h2 id="review-title">복습 질문</h2>
@@ -287,5 +298,7 @@ git log --oneline --graph --decorate --all</code></pre>
   </section>
 </main>
 <footer class="wrap site-footer"><p>Lec04 2~16쪽 · Git·GitHub 작업 과정 · 5주차</p><a class="back-top" href="../index.html#weekly">학습 기록으로 ↗</a></footer>
+
+<a class="floating-top" href="#top" aria-label="TOP: 페이지 맨 위로 이동"><span class="floating-top-arrow" aria-hidden="true">↑</span><span class="floating-top-label">TOP</span></a>
 </body>
 </html>

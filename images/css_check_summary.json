@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-17",
+  "checker": "https://jigsaw.w3.org/css-validator/validator",
+  "checks": [
+    {
+      "file": "style.css",
+      "source_sha256": "6291ddf63fad654b918328f3114a97d0a623fb275e0021e769102afe9c64defa",
+      "validated_source_sha256": "6291ddf63fad654b918328f3114a97d0a623fb275e0021e769102afe9c64defa",
+      "latest_source_validated": true,
+      "errors": 0,
+      "warnings": 236,
+      "warning_level": 2,
+      "warning_types": {
+        "no-background-color": 33,
+        "redefinition": 186,
+        "no-color": 14,
+        "deprecatedproperty": 1,
+        "same-colors": 1,
+        "noexistence-media": 1
+      },
+      "profile": "css3",
+      "checked_at_utc": "2026-10-17T14:20:45Z",
+      "original_response": "w3c_css_response.xml",
+      "note": "실적 분류의 이동 밑줄·숫자 배지·작은 화면 간격·동작 줄이기 스타일 포함 전체 style.css W3C CSS3 오류 0개. warning=2 전체 경고. 실제 화면 검수는 대기."
+    },
+    {
+      "file": "practice/practice.css",
+      "source_sha256": "99b041643350c02fb2fd5cc7f1e02d86283817e37bc377a932bca4813ed1089d",
+      "validated_source_sha256": "99b041643350c02fb2fd5cc7f1e02d86283817e37bc377a932bca4813ed1089d",
+      "latest_source_validated": true,
+      "errors": 0,
+      "warnings": 153,
+      "warning_level": 2,
+      "warning_types": {
+        "css-variable": 31,
+        "redefinition": 67,
+        "no-background-color": 36,
+        "no-color": 19
+      },
+      "profile": "css3",
+      "checked_at_utc": "2026-10-17T14:10:27Z",
+      "original_response": "w3c_practice_css_response.xml",
+      "note": "1~7주차 상단 돌아가기 링크의 네모 버튼·hover·키보드 초점 스타일 수정 후 전체 practice.css W3C CSS3 오류 0개. warning=2 전체 경고. 실제 화면 검수 대기."
+    }
+  ],
+  "inline_and_internal_styles": {
+    "html_files": 8,
+    "found": false
+  },
+  "responsive_verification": {
+    "source_review": true,
+    "actual_browser": false,
+    "user_response": "아직 확인하지 않았습니다",
+    "status": "pending"
+  },
+  "category_filter_visual_verification": {
+    "date": "2026-10-17",
+    "result": "Pass",
+    "verified_by": "user",
+    "scope": "쌓아온 경험 분류 탭 및 표 전환 효과의 실제 화면",
+    "user_response": "실제 화면 검수도 통과했어.",
+    "responsive_resize_confirmed": false
+  }
+}

@@ -1,0 +1,37 @@
+2026-10-17 — 버스운전자격 사진 개인정보 가림 및 팝업 검수
+작성자가 과제 개인정보 제외 기준에 맞춰 이름·생년월일 가림을 요청함. 이전 원본 사용 선택은 철회됨.
+처리 도구: 내장 image_gen 이미지 편집. 이름과 생년월일 값에 불투명 검정 막대를 적용한 결과를 시각 확인.
+배포·제출 이미지: images/bus-driver-certificate-redacted.png, RGB PNG 1840×854. 메타데이터 없음. 두 가림 막대 안쪽 영역이 어두운 불투명 픽셀임을 확인.
+자격종류·유효성 표시를 읽을 수 있음을 시각 확인. 사진은 편집 결과 사본이며 원본과 픽셀·해상도가 동일하다고 주장하지 않음.
+이름·생년월일 실제 값은 HTML alt·REPORT·검수 기록에 옮기지 않음.
+제출 폴더의 가리지 않은 bus-driver-certificate.png 삭제. 사용자 Downloads 원본은 수정하지 않음.
+팝업 img와 기본 사진 링크 모두 가림 사본으로 연결. 표시 크기·alt 갱신, 팝업 스크립트·닫기·키보드 처리 구조 유지.
+최신 메인 HTML W3C 오류·경고 0개. 사진 바이너리를 W3C에 전송하지 않음. 실제 브라우저 재검수는 미수행.
+ZIP을 재생성하여 가림 사본 포함·원본 이미지 항목 제외·원본과 같은 바이트의 파일 없음 확인.
+Git 커밋·push·배포 미수행.
+가림 사본 SHA-256: 44cae4ec9fb5290f98a8ef73ed180269e59a21e07bede9a1ad84f750fbdaf03f
+
+최종 편집 프롬프트 (내장 image_gen):
+Edit target: the attached Korean bus qualification verification screenshot. Privacy redaction only. Cover the personal NAME value in the first table row and the DATE OF BIRTH value in the second table row with two completely opaque solid black rectangular bars, generously covering every character with padding. Keep the left-side labels 이름 and 생년월일 visible. Do not blur or pixelate; the underlying personal values must be removed from the output pixels. Preserve the rest of the original screenshot exactly: same dimensions 2268×1054 and framing, white background, table lines, qualification type 버스자격, validity statement, red explanatory paragraph, headings, navigation, and orange bottom button. Do not recreate, rewrite, correct, summarize, or invent any remaining text or UI. Only the two personal-value regions should change. The edit is for privacy protection on a resume website, not to change qualification facts.
+
+2026-10-17 — 버스 역할 정정 및 1종 대형면허 갱신 추가
+전체 실적 9건: 교육 1·자격 2·수상 6, 고등학교 실적 5. 날짜 최신순 2026.07.15 → 2026.04.07 → 2026.02.11 → 기존 수상 6건.
+버스 자격증 본인 역할: 모든 버스 운전 가능.
+신규 이력: 2026.02.11 / 자격 / 1종 대형면허 갱신 / 군 운전면허증(대형) 및 군 운전경력 인정으로 인한 1종 대형 면허 갱신. 제공 정보를 그대로 반영했으며 사진만으로 군 경력이나 갱신일을 추가 추론하지 않음.
+사진: 사용자 첨부에서 주소지 관서·국적·주소 가림을 시각 확인. 표시 픽셀은 그대로 두고 zTXt의 부가 메타데이터만 제거. 배포 PNG의 RGB 픽셀 해시가 원본과 동일, 메타데이터 없음.
+자격 사진 2개는 각각 고유 dialog·aria-controls·제목·img·날짜로 연결. 공통 스크립트가 두 개의 열기/닫기/배경 클릭/초점 복원을 독립 처리.
+모의 DOM 검사 통과: 각각 다른 dialog 열림, 올바른 링크로 초점 복원, 배경/내부 클릭 구분, 스크롤 잠금 해제, 수정 키 클릭 유지, 미지원/오류 시 이미지 링크 대체, 중복 열기·다중 상태 정리. JS 문법 통과.
+소스: 9행·4열, 자격 2건, 고유 ID·내부 경로·사진 src/href 연결 정상. 기존 GitHub 및 TOP 유지.
+실제 브라우저의 새 사진 팝업·Esc·Tab·모바일 화면은 미검수. 사용자의 새 면허·군 운전경력 전송 승인 후 최신 메인 W3C 오류·경고 0개 확인. 사진 파일은 전송하지 않음.
+Git 커밋·push·배포 없음.
+
+2026-10-17 — 보통면허 최초 취득 추가 및 대형·보통 증빙 사진 교체
+전체 실적 10건: 교육 1·자격 3·수상 6. 고등학교 실적 5건 유지.
+추가: 2021.07.30 / 자격 / 1종 보통면허 취득 / 1종 보통면허 최초 취득. 2022.09 로봇경진대회와 2020.08 통계 발표회 사이 최신순.
+대형면허(2026.02.11) 및 보통면허(2021.07.30) 사진을 사용자 제공 운전경력증명서로 통일. 각각 다른 dialog 제목·캡션을 사용한다. 버스는 기존 가림 사진 유지.
+새 증명서의 발급번호·성명·주소·운전면허 번호 가림을 시각 확인. PNG 부가 zTXt 메타데이터만 제거했으며 표시 RGB 픽셀 해시는 원본과 동일.
+현재 이미지: images/driving-history-redacted.png, 1716×608 RGB, 메타데이터 없음. 교체된 large-driver-license-redacted.png는 제출 폴더에서 제거.
+실적 10행·4열, 날짜 최신순·자격 3건·사용자 제공 역할 확인. 고유 ID·내부 파일/해시·aria-controls·각 dialog 이미지 src/href 확인.
+공통 dialog 스크립트의 다중 처리 구조 유지. 세 제목이 각기 올바른 dialog에 연결됨을 소스에서 확인. 실제 브라우저 배치·Esc/Tab·클릭 검수는 미수행.
+사용자 추가 전송 승인 후 최신 메인 HTML W3C 오류·경고 0개. 증명서 사진 파일은 검사기에 전송하지 않음.
+Git 커밋·push·배포 없음.

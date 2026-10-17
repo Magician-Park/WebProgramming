@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Magician-Park의 수상 실적, 수강 과목과 웹프로그래밍 학습 정리·예시를 담은 개인 이력서입니다.">
+  <meta name="description" content="Magician-Park의 수상·교육·자격증 실적, 수강 과목과 웹프로그래밍 학습 정리·예시를 담은 개인 이력서입니다.">
   <title>Magician-Park | 개인 이력서</title>
   <link rel="stylesheet" href="style.css">
   <script src="page-loader.js" defer></script>
+  <script src="certificate-dialog.js" defer></script>
+  <script src="achievement-filter.js" defer></script>
 </head>
-<body id="top">
+<body id="top" class="resume-page">
   <div class="page-loader" data-page-loader role="status" aria-live="polite" aria-atomic="true" hidden>
-    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">페이지를 불러오는 중</p></div>
+    <div class="page-loader-content"><span class="page-loader-spinner" aria-hidden="true"></span><p class="page-loader-brand">PERSONAL RESUME / 2026</p><p class="page-loader-label">Loading...</p></div>
   </div>
 
   <a class="skip-link" href="#main">본문 바로가기</a>
-  <div class="draft-note"><span class="draft-mark">실습 예시 포함</span> 1~2주차는 강의자료 정리, 3·5~6주차는 강의·실습 기록, 4주차는 추석연휴, 7주차는 실습 예시입니다. 수상 실적과 수강 목록은 제공된 사실을 반영했습니다.</div>
+  <div class="draft-note"><span class="draft-mark">학습 기록</span> 1~3·5~7주차는 강의·실습 기록, 4주차는 추석연휴, 8주차는 중간고사입니다. 수상·교육·자격증 실적과 수강 목록은 제공된 사실을 반영했습니다.</div>
   <header class="hero wrap">
     <div class="hero-top">
       <span class="eyebrow">PERSONAL RESUME / 2026</span>
@@ -28,69 +30,125 @@
         <p class="introduction">웹과 AI 기술을 활용해 더 편리한 세상을 만드는 방법을 배우고 있습니다.</p>
         <p class="interest-tags">학습 관심 <span>AI</span><span>Data Science</span><span>App development</span></p>
       </div>
-      <div class="hero-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="art-symbol">&lt;/&gt;</span><span class="art-caption">LEARN. BUILD. REPEAT.</span></div>
+      <div class="hero-visual">
+        <a class="github-link" href="https://github.com/Magician-Park"><svg class="github-icon" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg><span>GitHub</span></a>
+        <img class="hero-illustration" src="images/developer-coding.png" alt="은색 노트북으로 코딩하는 개발자 일러스트" width="1254" height="1254" decoding="async">
+      </div>
     </div>
   </header>
   <main id="main" class="wrap">
     <section id="achievements" class="resume-section" aria-labelledby="achievements-title">
       <div class="section-heading"><div><p class="eyebrow">01 / EXPERIENCE</p><h2 id="achievements-title">쌓아온 경험</h2></div><p class="section-description">작은 시도부터, 하나씩.</p></div>
-      <p class="pending-note">수상 이력 6건 · 고등학교 활동 5건 포함</p>
-      <div class="table-scroll" tabindex="0" role="region" aria-label="실적 표, 작은 화면에서 좌우로 스크롤 가능">
-        <table>
-          <caption class="sr-only">최신순으로 정렬한 수상 실적 6건의 시기, 수상 등급, 내용, 본인 역할.</caption>
-          <thead><tr><th scope="col">시기</th><th scope="col">수상</th><th scope="col">내용</th><th scope="col">본인 역할</th></tr></thead>
+      <p class="pending-note">실적 10건 · 수상 6건 · 교육 1건 · 자격 3건 · 고등학교 활동 5건 포함</p>
+      <div class="achievement-filters" role="group" aria-label="실적 분류 필터" data-achievement-filters data-filter-index="0" hidden>
+        <button class="achievement-filter-button" type="button" data-achievement-filter="all" aria-pressed="true" aria-controls="achievements-table">전체 <span class="achievement-filter-count" data-filter-count>10</span><span class="sr-only">건</span></button>
+        <button class="achievement-filter-button" type="button" data-achievement-filter="교육" aria-pressed="false" aria-controls="achievements-table">교육 <span class="achievement-filter-count" data-filter-count>1</span><span class="sr-only">건</span></button>
+        <button class="achievement-filter-button" type="button" data-achievement-filter="자격" aria-pressed="false" aria-controls="achievements-table">자격 <span class="achievement-filter-count" data-filter-count>3</span><span class="sr-only">건</span></button>
+        <button class="achievement-filter-button" type="button" data-achievement-filter="수상" aria-pressed="false" aria-controls="achievements-table">수상 <span class="achievement-filter-count" data-filter-count>6</span><span class="sr-only">건</span></button>
+      </div>
+      <p class="achievement-filter-result" data-achievement-status role="status" aria-live="polite" aria-atomic="true">전체 10건 표시 중 · 최신순</p>
+      <div class="table-scroll achievement-table-scroll" tabindex="0" role="region" aria-label="실적 표, 작은 화면에서 좌우로 스크롤 가능">
+        <table id="achievements-table" data-achievements-table>
+          <caption class="sr-only">최신순으로 정렬한 실적 10건의 시기, 분류, 내용, 본인 역할. 사진 아이콘으로 관련 자료를 확인할 수 있음.</caption>
+          <thead><tr><th scope="col">시기</th><th scope="col">분류</th><th scope="col">내용</th><th scope="col">본인 역할</th></tr></thead>
           <tbody>
-            <tr><td><time datetime="2022-09">2022.09</time></td><td><span class="category">장려상</span></td><td><strong>교내 로봇경진대회</strong><span class="row-note">대학교 2학년 · 2022.09.22</span></td><td>ROS 1 (<strong>rospy</strong>) Coding</td></tr>
-            <tr><td><time datetime="2020-08">2020.08</time></td><td><span class="category">금상</span></td><td><strong>통계 활용 발표회</strong><span class="row-note">고등학교 3학년 · 2020.08.31</span></td><td>Data preprocessing &amp; visualization</td></tr>
-            <tr><td><time datetime="2019-11">2019.11</time></td><td><span class="category">은상</span></td><td><strong>UCC 공모전</strong><span class="row-note">고등학교 2학년 · 2019.11.26</span></td><td>Video Production and Editing</td></tr>
-            <tr><td><time datetime="2019-11">2019.11</time></td><td><span class="category">대상</span></td><td><strong>창의적체험활동 동아리 발표회</strong><span class="row-note">고등학교 2학년 · 2019.11.07</span></td><td>Arduino programming in C++</td></tr>
-            <tr><td><time datetime="2019-06">2019.06</time></td><td><span class="category">장려상</span></td><td><strong>소논문대회(자연과학기타분야)</strong><span class="row-note">고등학교 2학년 · 2019.06.24</span></td><td>Hypothesis testing</td></tr>
-            <tr><td><time datetime="2018-12">2018.12</time></td><td><span class="category">동상</span></td><td><strong>UCC 공모전</strong><span class="row-note">고등학교 1학년 · 2018.12.03</span></td><td>Video Production and Editing</td></tr>
+            <tr data-achievement-category="교육"><td><time class="category" datetime="2026-07">2026.07</time></td><td><span class="category">교육</span></td><td><span class="achievement-title"><strong><a href="https://github.com/Magician-Park/Claude_AI_APP">중소벤처기업진흥공단 AX 교육 프로그램</a></strong><a class="category photo-link certificate-trigger" href="images/ax-training.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="ax-training-dialog" aria-label="중소벤처기업진흥공단 AX 교육 프로그램 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a><a class="category repository-link" href="https://github.com/Magician-Park/Claude_AI_APP" aria-label="AX 교육 프로그램 GitHub 저장소 열기" title="GitHub 저장소"><svg class="github-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></span><span class="row-note">대학교 3학년 · 2026.07.15</span></td><td>AI-Assisted App Development</td></tr>
+            <tr data-achievement-category="자격"><td><time class="category" datetime="2026-04">2026.04</time></td><td><span class="category">자격</span></td><td><span class="achievement-title"><strong>버스운전자격증 취득</strong><a class="category photo-link certificate-trigger" href="images/bus-driver-certificate-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="bus-certificate-dialog" aria-label="버스운전자격증 취득 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">대학교 3학년 · 2026.04.07</span></td><td>모든 버스 운전 가능</td></tr>
+            <tr data-achievement-category="자격"><td><time class="category" datetime="2026-02">2026.02</time></td><td><span class="category">자격</span></td><td><span class="achievement-title"><strong>1종 대형면허 갱신</strong><a class="category photo-link certificate-trigger" href="images/driving-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="large-license-dialog" aria-label="1종 대형면허 갱신 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">대학교 3학년 · 2026.02.11</span></td><td>기존 군 운전면허증(대형)취득 및 군 운전경력 인정으로 인한 1종 대형면허 갱신</td></tr>
+            <tr data-achievement-category="수상"><td><time class="category" datetime="2022-09">2022.09</time></td><td><span class="category">수상</span></td><td><span class="achievement-title"><strong>오픈소스 소프트웨어(OSS) 활용 해커톤</strong><a class="category photo-link certificate-trigger" href="images/oss-training-camp.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="oss-award-dialog" aria-label="오픈소스 소프트웨어(OSS) 활용 해커톤 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a><a class="category repository-link" href="https://github.com/Magician-Park/OSS_teamK-T" aria-label="오픈소스 소프트웨어(OSS) 활용 해커톤 GitHub 저장소 열기" title="GitHub 저장소"><svg class="github-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></span><span class="row-note">대학교 2학년 · 2022.09.22</span></td><td>ROS 1 (<strong>rospy</strong>) Coding</td></tr>
+            <tr data-achievement-category="자격"><td><time class="category" datetime="2021-07">2021.07</time></td><td><span class="category">자격</span></td><td><span class="achievement-title"><strong>1종 보통면허 취득</strong><a class="category photo-link certificate-trigger" href="images/driving-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="standard-license-dialog" aria-label="1종 보통면허 취득 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">대학교 1학년 · 2021.07.30</span></td><td>1종 보통면허 최초 취득</td></tr>
+            <tr data-achievement-category="수상"><td><time class="category" datetime="2020-08">2020.08</time></td><td><span class="category">수상</span></td><td><span class="achievement-title"><strong>통계 활용 발표회</strong><a class="category photo-link certificate-trigger" href="images/awards-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="awards-history-dialog" aria-label="통계 활용 발표회 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">고등학교 3학년 · 2020.08.31</span></td><td>Data preprocessing &amp; visualization</td></tr>
+            <tr data-achievement-category="수상"><td><time class="category" datetime="2019-11">2019.11</time></td><td><span class="category">수상</span></td><td><span class="achievement-title"><strong>2학년 UCC 공모전</strong><a class="category photo-link certificate-trigger" href="images/awards-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="awards-history-dialog" aria-label="2학년 UCC 공모전 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">고등학교 2학년 · 2019.11.26</span></td><td>Video Production and Editing</td></tr>
+            <tr data-achievement-category="수상"><td><time class="category" datetime="2019-11">2019.11</time></td><td><span class="category">수상</span></td><td><span class="achievement-title"><strong>창의적체험활동 동아리 발표회</strong><a class="category photo-link certificate-trigger" href="images/awards-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="awards-history-dialog" aria-label="창의적체험활동 동아리 발표회 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">고등학교 2학년 · 2019.11.07</span></td><td>Arduino programming in C++</td></tr>
+            <tr data-achievement-category="수상"><td><time class="category" datetime="2019-06">2019.06</time></td><td><span class="category">수상</span></td><td><span class="achievement-title"><strong>소논문대회(자연과학기타분야)</strong><a class="category photo-link certificate-trigger" href="images/awards-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="awards-history-dialog" aria-label="소논문대회(자연과학기타분야) 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">고등학교 2학년 · 2019.06.24</span></td><td>Hypothesis testing</td></tr>
+            <tr data-achievement-category="수상"><td><time class="category" datetime="2018-12">2018.12</time></td><td><span class="category">수상</span></td><td><span class="achievement-title"><strong>1학년 UCC 공모전</strong><a class="category photo-link certificate-trigger" href="images/awards-history-redacted.png" data-certificate-trigger aria-haspopup="dialog" aria-controls="awards-history-dialog" aria-label="1학년 UCC 공모전 사진 보기" title="사진 보기"><svg class="photo-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="1.5" y="2" width="13" height="12" rx="1.5"/><circle cx="5" cy="6" r="1.25"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg></a></span><span class="row-note">고등학교 1학년 · 2018.12.03</span></td><td>Video Production and Editing</td></tr>
           </tbody>
         </table>
       </div>
     </section>
     <section id="courses" class="resume-section" aria-labelledby="courses-title">
-      <div class="section-heading"><div><p class="eyebrow">02 / LEARNING</p><h2 id="courses-title">이번 학기의 배움</h2></div><p class="semester">2026 — 2학기</p></div>
-      <p class="pending-note">이번 학기 수강 과목 6개 · 전공 과목의 세부 이수 구분을 함께 표시합니다.</p>
-      <ul class="course-list">
-        <li><a href="#weekly"><span class="course-code">01</span><span class="course-name">웹프로그래밍 및 AI에이전트 활용<span class="course-detail">주차별 실습 기록 보기</span></span><span class="course-type">전공 · 전공선택</span><span class="link-arrow" aria-hidden="true">↗</span></a></li>
-        <li><div class="course-entry"><span class="course-code">02</span><span class="course-name">알고리즘</span><span class="course-type">전공 · 전공선택</span></div></li>
-        <li><div class="course-entry"><span class="course-code">03</span><span class="course-name">심층학습</span><span class="course-type">전공 · 전공심화</span></div></li>
-        <li><div class="course-entry"><span class="course-code">04</span><span class="course-name">지능형소프트웨어</span><span class="course-type">전공 · 전공선택</span></div></li>
-        <li><div class="course-entry"><span class="course-code">05</span><span class="course-name">데이터베이스</span><span class="course-type">전공 · 전공선택</span></div></li>
-        <li><div class="course-entry"><span class="course-code">06</span><span class="course-name">취업과 창업(공과대학)</span><span class="course-type">전공 · 전공선택</span></div></li>
-      </ul>
+      <div class="section-heading"><div><p class="eyebrow">02 / LEARNING</p><h2 id="courses-title">이번 학기의 배움</h2></div></div>
+      <div class="learning-layout">
+        <aside class="semester-panel" aria-labelledby="semester-title">
+          <h3 id="semester-title" class="sr-only">이번 학기 수강 요약</h3>
+          <div><p class="semester-year">2026 ACADEMIC YEAR</p><p class="semester-term">2학기</p><p class="semester-summary">6개 과목을 배우고 있습니다.</p></div>
+          <dl class="semester-stats"><div><dt>전공선택</dt><dd>5<span>과목</span></dd></div><div><dt>전공심화</dt><dd>1<span>과목</span></dd></div></dl>
+        </aside>
+        <ul class="course-list" aria-label="이번 학기 수강 과목 6개">
+          <li><a class="course-card course-card-linked" href="#weekly"><div class="course-meta"><span class="course-code">01</span><span class="course-type">전공선택</span></div><h3 class="course-name">웹프로그래밍 및 AI에이전트 활용(PBL)</h3><span class="course-detail">HBJW0008<span class="course-action">학습 기록 보기 <span class="course-arrow" aria-hidden="true">↓</span></span></span></a></li>
+          <li><article class="course-card"><div class="course-meta"><span class="course-code">02</span><span class="course-type">전공선택</span></div><h3 class="course-name">알고리즘(PBL)</h3><span class="course-detail">HBJO2179</span></article></li>
+          <li><article class="course-card"><div class="course-meta"><span class="course-code">03</span><span class="course-type">전공심화</span></div><h3 class="course-name">심층학습(PBL)</h3><span class="course-detail">HBJO2235</span></article></li>
+          <li><article class="course-card"><div class="course-meta"><span class="course-code">04</span><span class="course-type">전공선택</span></div><h3 class="course-name">지능형소프트웨어(PBL)</h3><span class="course-detail">HBJO2207</span></article></li>
+          <li><article class="course-card"><div class="course-meta"><span class="course-code">05</span><span class="course-type">전공선택</span></div><h3 class="course-name">데이터베이스</h3><span class="course-detail">HBJO2184</span></article></li>
+          <li><article class="course-card"><div class="course-meta"><span class="course-code">06</span><span class="course-type">전공선택</span></div><h3 class="course-name">취업과창업(공과대학)</h3><span class="course-detail">HBCD0005</span></article></li>
+        </ul>
+      </div>
     </section>
     <section id="weekly" class="resume-section" aria-labelledby="weekly-title">
       <div class="section-heading"><div><p class="eyebrow">03 / WEB PROGRAMMING</p><h2 id="weekly-title">매주 만드는 기록</h2></div></div>
-      <p class="pending-note">1~2주차는 강의자료 정리, 3주차는 Lec03 2~19쪽과 뉴스·웹툰의 문서 내 이동 실습 기록이며, 4주차는 추석연휴, 5주차는 CSS 기초와 Git·GitHub 작업 과정이며, 6주차는 HTML 목록·표·문서 구조와 CSS 박스 모델·레이아웃·360도 회전 학습 기록이며, 7주차는 동작 확인용 예시입니다. 주차를 열고 ‘문서 수정’으로 내용을 편집할 수 있습니다. 제출 전 본인의 완료 주차와 실습 URL로 교체하세요.</p>
-      <div class="week-legend"><span><i class="legend-dot completed-dot" aria-hidden="true"></i>학습 정리·실습·예시</span><span><i class="legend-dot planned-dot" aria-hidden="true"></i>예정</span></div>
+      <p class="pending-note">1~2주차는 강의자료 정리, 3주차는 Lec03 2~19쪽과 뉴스·웹툰의 문서 내 이동 실습 기록이며, 4주차는 추석연휴, 5주차는 CSS 기초와 Git·GitHub 작업 과정이며, 6주차는 HTML 목록·표·문서 구조와 CSS 박스 모델·레이아웃·360도 회전 학습 기록이며, 7주차는 입력 폼 실험과 복습 기록, 8주차는 중간고사입니다. 주차를 열고 ‘문서 수정’으로 내용을 편집할 수 있습니다. 제출 전 본인의 완료 주차와 실습 URL로 교체하세요.</p>
+      <div class="week-legend"><span><i class="legend-dot completed-dot" aria-hidden="true"></i>학습 정리·실습·예시</span><span><i class="legend-dot planned-dot" aria-hidden="true"></i>기입 예정·휴강·시험</span></div>
+      <div class="weekly-mindmap">
+        <input class="week-motion-toggle" id="week-motion-pause" type="checkbox" aria-controls="week-mindmap-stage">
+        <label class="week-motion-label" for="week-motion-pause">움직임 멈추기</label>
+        <p class="week-map-help">떠다니는 배움의 조각을 골라 학습 기록을 열어 보세요. 마우스를 올리거나 키보드로 선택하면 움직임이 멈춥니다.</p>
+        <div class="week-map-stage" id="week-mindmap-stage">
+          <svg class="week-map-lines" fill="none" stroke="currentColor" stroke-width="1.4" pointer-events="none" viewBox="0 0 1000 880" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M500 440 Q408.8 192.9 120 96.8"/><path d="M500 440 Q464.0 180.2 350 79.2"/><path d="M500 440 Q536.0 180.2 650 79.2"/><path d="M500 440 Q591.2 199.2 880 105.6"/><path d="M500 440 Q404.0 332.3 100 290.4"/><path d="M500 440 Q459.2 319.6 330 272.8"/><path d="M500 440 Q540.8 319.6 670 272.8"/><path d="M500 440 Q596.0 338.6 900 299.2"/><path d="M500 440 Q404.0 490.7 100 510.4"/><path d="M500 440 Q452.0 535.0 300 572.0"/><path d="M500 440 Q552.8 449.5 720 453.2"/><path d="M500 440 Q596.0 560.4 900 607.2"/><path d="M500 440 Q418.4 668.1 160 756.8"/><path d="M500 440 Q497.6 674.4 490 765.6"/><path d="M500 440 Q581.6 674.4 840 765.6"/></svg>
+          <div class="week-map-hub" aria-hidden="true"><span>WEB PROGRAMMING</span><strong>배움의 지도</strong><span>하나씩 연결되는 기록</span></div>
       <ol class="week-grid" aria-label="1주차부터 15주차까지 실습 기록">
-        <li><a class="week completed" href="practice/week01.html"><span class="week-number">01</span><span class="week-label">1주차</span><span class="week-status">학습 정리 보기 ↗</span></a></li>
-        <li><a class="week completed" href="practice/week02.html"><span class="week-number">02</span><span class="week-label">2주차</span><span class="week-status">학습 정리 보기 ↗</span></a></li>
-        <li><a class="week completed" href="practice/week03.html"><span class="week-number">03</span><span class="week-label">3주차</span><span class="week-status">학습·실습 기록 보기 ↗</span></a></li>
-        <li><span class="week planned"><span class="week-number">04</span><span class="week-label">4주차</span><span class="week-status">추석연휴</span></span></li>
-        <li><a class="week completed" href="practice/week05.html"><span class="week-number">05</span><span class="week-label">5주차</span><span class="week-status">학습 기록 보기 ↗</span></a></li>
-        <li><a class="week completed" href="practice/week06.html"><span class="week-number">06</span><span class="week-label">6주차</span><span class="week-status">학습 기록 보기 ↗</span></a></li>
-        <li><a class="week completed" href="practice/week07.html"><span class="week-number">07</span><span class="week-label">7주차</span><span class="week-status">예시 실습 보기 ↗</span></a></li>
-        <li><span class="week planned"><span class="week-number">08</span><span class="week-label">8주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">09</span><span class="week-label">9주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">10</span><span class="week-label">10주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">11</span><span class="week-label">11주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">12</span><span class="week-label">12주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">13</span><span class="week-label">13주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">14</span><span class="week-label">14주차</span><span class="week-status">예정</span></span></li>
-        <li><span class="week planned"><span class="week-number">15</span><span class="week-label">15주차</span><span class="week-status">예정</span></span></li>
+        <li><a class="week completed" href="practice/week01.html"><span class="week-number">1주차</span><span class="week-label">웹의 역사와 인터넷</span><span class="week-status">학습 기록 보기</span></a></li>
+        <li><a class="week completed" href="practice/week02.html"><span class="week-number">2주차</span><span class="week-label">HTML 문서의 기본</span><span class="week-status">학습 기록 보기</span></a></li>
+        <li><a class="week completed" href="practice/week03.html"><span class="week-number">3주차</span><span class="week-label">링크·이미지와 TOP</span><span class="week-status">학습 기록 보기</span></a></li>
+        <li><span class="week planned"><span class="week-number">4주차</span><span class="week-label">추석연휴</span></span></li>
+        <li><a class="week completed" href="practice/week05.html"><span class="week-number">5주차</span><span class="week-label">CSS 기초와 Git</span><span class="week-status">학습 기록 보기</span></a></li>
+        <li><a class="week completed" href="practice/week06.html"><span class="week-number">6주차</span><span class="week-label">HTML 구조와 CSS 표현</span><span class="week-status">학습 기록 보기</span></a></li>
+        <li><a class="week completed" href="practice/week07.html"><span class="week-number">7주차</span><span class="week-label">입력 폼과 실험실</span><span class="week-status">학습 기록 보기</span></a></li>
+        <li><span class="week planned"><span class="week-number">8주차</span><span class="week-label">중간고사</span></span></li>
+        <li><span class="week planned"><span class="week-number">9주차</span><span class="week-label">기입 예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">10주차</span><span class="week-label">기입 예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">11주차</span><span class="week-label">기입 예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">12주차</span><span class="week-label">기입 예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">13주차</span><span class="week-label">기입 예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">14주차</span><span class="week-label">기입 예정</span></span></li>
+        <li><span class="week planned"><span class="week-number">15주차</span><span class="week-label">기입 예정</span></span></li>
       </ol>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="wrap site-footer">
-    <div><span class="footer-title">계속 배우는 중.</span><p>최종 수정일: <time datetime="2026-10-15">2026-10-15</time></p></div>
-    <div class="footer-actions">
-      <a class="github-link" href="https://github.com/Magician-Park"><svg class="github-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a>
-      <a class="back-top" href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
-    </div>
+    <div><span class="footer-title">계속 배우는 중.</span><p>최종 수정일: <time datetime="2026-10-17">2026-10-17</time></p></div>
   </footer>
+  <a class="floating-top" href="#top" aria-label="TOP: 페이지 맨 위로 이동"><span class="floating-top-arrow" aria-hidden="true">↑</span><span class="floating-top-label">TOP</span></a>
+  <dialog id="bus-certificate-dialog" class="certificate-dialog" aria-labelledby="bus-certificate-title">
+    <div class="certificate-dialog-header"><h2 id="bus-certificate-title">버스운전자격증 취득</h2><button class="certificate-close" type="button" data-certificate-close autofocus>닫기 <span aria-hidden="true">×</span></button></div>
+    <img class="certificate-image" src="images/bus-driver-certificate-redacted.png" alt="이름과 생년월일을 가린 버스운전자격 유효성 확인 결과" width="1840" height="854" loading="lazy" decoding="async">
+    <p class="certificate-caption">취득일 · <time datetime="2026-04-07">2026.04.07</time></p>
+  </dialog>
+  <dialog id="large-license-dialog" class="certificate-dialog" aria-labelledby="large-license-title">
+    <div class="certificate-dialog-header"><h2 id="large-license-title">1종 대형면허 갱신</h2><button class="certificate-close" type="button" data-certificate-close autofocus>닫기 <span aria-hidden="true">×</span></button></div>
+    <img class="certificate-image" src="images/driving-history-redacted.png" alt="개인정보가 가려진 운전경력증명서의 대형 및 보통 면허 발급 이력" width="1716" height="608" loading="lazy" decoding="async">
+    <p class="certificate-caption">갱신일 · <time datetime="2026-02-11">2026.02.11</time></p>
+  </dialog>
+  <dialog id="standard-license-dialog" class="certificate-dialog" aria-labelledby="standard-license-title">
+    <div class="certificate-dialog-header"><h2 id="standard-license-title">1종 보통면허 취득</h2><button class="certificate-close" type="button" data-certificate-close autofocus>닫기 <span aria-hidden="true">×</span></button></div>
+    <img class="certificate-image" src="images/driving-history-redacted.png" alt="개인정보가 가려진 운전경력증명서의 보통면허 발급 이력" width="1716" height="608" loading="lazy" decoding="async">
+    <p class="certificate-caption">최초 취득일 · <time datetime="2021-07-30">2021.07.30</time></p>
+  </dialog>
+  <dialog id="awards-history-dialog" class="certificate-dialog" aria-labelledby="awards-history-title">
+    <div class="certificate-dialog-header"><h2 id="awards-history-title">고등학교 수상 경력</h2><button class="certificate-close" type="button" data-certificate-close autofocus>닫기 <span aria-hidden="true">×</span></button></div>
+    <img class="certificate-image" src="images/awards-history-redacted.png" alt="수여기관명이 가려진 고등학교 수상 경력 표" width="1262" height="832" loading="lazy" decoding="async">
+    <p class="certificate-caption">통계 활용 발표회 · UCC 공모전 · 창의적체험활동 동아리 발표회 · 소논문대회 수상 경력</p>
+  </dialog>
+  <dialog id="oss-award-dialog" class="certificate-dialog" aria-labelledby="oss-award-title">
+    <div class="certificate-dialog-header"><h2 id="oss-award-title">오픈소스 소프트웨어(OSS) 활용 해커톤</h2><button class="certificate-close" type="button" data-certificate-close autofocus>닫기 <span aria-hidden="true">×</span></button></div>
+    <img class="certificate-image" src="images/oss-training-camp.png" alt="2022학년도 OSS아카데미 제2회 OSS TRAINING 캠프 장려상 사진, 하단 정보 가림" width="1195" height="896" loading="lazy" decoding="async">
+    <p class="certificate-caption">장려상 · <time datetime="2022-09-22">2022.09.22</time> · 대학교 2학년</p>
+  </dialog>
+  <dialog id="ax-training-dialog" class="certificate-dialog" aria-labelledby="ax-training-title">
+    <div class="certificate-dialog-header"><h2 id="ax-training-title">중소벤처기업진흥공단 AX 교육 프로그램</h2><button class="certificate-close" type="button" data-certificate-close autofocus>닫기 <span aria-hidden="true">×</span></button></div>
+    <img class="certificate-image" src="images/ax-training.png" alt="개인정보가 가려진 AX 교육 맞춤연수 명찰과 교육장 현장 사진" width="1024" height="1024" loading="lazy" decoding="async">
+    <p class="certificate-caption">AX 교육 맞춤연수 현장 사진</p>
+  </dialog>
 </body>
 </html>

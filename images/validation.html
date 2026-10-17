@@ -1,34 +1,1687 @@
-<!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"><title>W3C HTML/CSS 실제 검사 응답</title><link rel="stylesheet" href="validation.css"></head><body><h1>W3C HTML/CSS 실제 검사 응답</h1><p>2026-10-15 · 공통 페이지 로딩 화면 추가 후 HTML 8개·공통 CSS 검사 · 배포 URL 검수는 아직 진행하지 않았습니다.</p><p>이 화면은 원본 응답을 로컬에서 표시한 검수 자료이며 공식 검사기 웹 화면은 아닙니다.</p><section id="html"><h2>HTML 8개 파일 — 오류 0개 / 경고 0개</h2><p>W3C Nu HTML Checker에 각 최종 파일을 직접 전송한 결과입니다.</p><ul><li>index.html — 오류 0개 / 경고 0개</li><li>practice/week01.html — 오류 0개 / 경고 0개</li><li>practice/week02.html — 오류 0개 / 경고 0개</li><li>practice/week03.html — 오류 0개 / 경고 0개</li><li>practice/week04.html — 오류 0개 / 경고 0개</li><li>practice/week05.html — 오류 0개 / 경고 0개</li><li>practice/week06.html — 오류 0개 / 경고 0개</li><li>practice/week07.html — 오류 0개 / 경고 0개</li></ul><p>index.html 원본 JSON 응답:</p><pre>{
-  "version": "26.10.12",
-  "messages": []
-}</pre></section><section id="css0"><h2>style.css — 오류 0개 / 경고 1개</h2><p>W3C CSS3 검사기의 원본 SOAP 응답입니다.</p><p><a href="https://jigsaw.w3.org/css-validator/">공식 CSS 검사기</a></p><pre>&lt;?xml version='1.0' encoding="utf-8"?&gt;
-&lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>검사 원본 응답과 범위</title><link rel="stylesheet" href="validation.css"></head><body><h1>W3C 검사 응답과 현재 검사 범위</h1><p>2026-10-17 · 직전 보통면허 추가본 HTML 오류·경고 0개. 최신 면허·수상 및 OSS 해커톤 사진·과목명·학수번호 수정본은 로컬 검사 완료. CSS 오류 0개.</p><p>공식 검사기 화면 캡처가 아닌 원본 응답 열람용입니다.</p><section id="html"><h2>HTML 검사 범위</h2><ul><li>index.html — 직전 W3C 응답·최신 마인드맵/분류 필터 소스 로컬 검사</li><li>practice/week01.html — 직전 W3C 응답·최신 소스 로컬 검사</li><li>practice/week02.html — 직전 W3C 응답·퀴즈 추가본 로컬 검사</li><li>practice/week03.html — 직전 W3C 응답·퀴즈 추가본 로컬 검사</li><li>practice/week04.html — 직전 W3C 응답·로딩 문구 수정본 로컬 검사</li><li>practice/week05.html — 직전 W3C 응답·최신 소스 로컬 검사</li><li>practice/week06.html — 직전 W3C 응답·최신 소스 로컬 검사</li><li>practice/week07.html — 직전 W3C 응답·최신 소스 로컬 검사</li></ul><h3>직전 메인 HTML 응답</h3><pre>{
+  &quot;version&quot;: &quot;26.10.12&quot;,
+  &quot;messages&quot;: []
+}</pre></section><section id="css0"><h2>style.css — 오류 0개 / 경고 236개</h2><p>CSS3 · warning=2 · 분류 탭·전환 수정 후 전체 파일 검사</p><pre>&lt;?xml version=&#x27;1.0&#x27; encoding=&quot;utf-8&quot;?&gt;
+&lt;env:Envelope xmlns:env=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
     &lt;env:Body&gt;
         &lt;m:cssvalidationresponse
-            env:encodingStyle="http://www.w3.org/2003/05/soap-encoding"
-            xmlns:m="http://www.w3.org/2005/07/css-validator"&gt;
+            env:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;
+            xmlns:m=&quot;http://www.w3.org/2005/07/css-validator&quot;&gt;
             &lt;m:uri&gt;style.css&lt;/m:uri&gt;
             &lt;m:checkedby&gt;http://jigsaw.w3.org/css-validator/&lt;/m:checkedby&gt;
             &lt;m:csslevel&gt;css3&lt;/m:csslevel&gt;
-            &lt;m:date&gt;2026-10-14T03:36:01Z&lt;/m:date&gt;
+            &lt;m:date&gt;2026-10-17T02:20:13Z&lt;/m:date&gt;
             &lt;m:validity&gt;true&lt;/m:validity&gt;
             &lt;m:result&gt;
-                &lt;m:errors xml:lang="en"&gt;
+                &lt;m:errors xml:lang=&quot;en&quot;&gt;
                     &lt;m:errorcount&gt;0&lt;/m:errorcount&gt;
     
                 &lt;/m:errors&gt;
-                &lt;m:warnings xml:lang="en"&gt;
-                    &lt;m:warningcount&gt;1&lt;/m:warningcount&gt;
+                &lt;m:warnings xml:lang=&quot;en&quot;&gt;
+                    &lt;m:warningcount&gt;236&lt;/m:warningcount&gt;
             
                     &lt;m:warninglist&gt;
                         &lt;m:uri&gt;file://localhost/style.css&lt;/m:uri&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;13&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;23&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;23&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;25&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “display”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;27&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;31&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;33&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;35&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;36&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;37&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;40&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;41&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;42&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;46&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;47&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;55&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;56&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;57&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;66&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;66&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;71&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;73&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;75&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;80&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;82&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;83&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;85&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;88&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;89&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;90&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;93&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;94&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;97&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;99&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;102&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;103&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;The property “clip” is deprecated&lt;/m:message&gt;
                             &lt;m:type&gt;deprecatedproperty&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;105&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;107&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;108&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;109&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;113&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “text-align”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;115&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;116&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;117&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;117&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “letter-spacing”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;117&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;117&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “letter-spacing”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;118&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;119&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;119&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;119&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;119&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;119&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;120&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “display”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;121&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;121&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “letter-spacing”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;122&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;123&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;124&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;125&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;126&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “display”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;126&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;127&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;128&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;128&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “text-align”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;128&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “max-width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;128&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;129&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;132&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “scroll-behavior”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;140&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-color”&lt;/m:message&gt;
+                            &lt;m:context&gt;.page-loader-spinner&lt;/m:context&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;142&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;144&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;144&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “animation”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;147&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;147&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;148&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “flex-direction”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;148&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;149&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;150&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;151&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;152&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;152&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;152&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;152&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;152&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;152&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;155&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;156&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “min-height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;156&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;156&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;156&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;156&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “flex-direction”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “align-items”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;157&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;158&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;158&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;158&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;158&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;158&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;158&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;166&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;166&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;166&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;166&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “min-height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;170&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;171&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “max-height”&lt;/m:message&gt;
+                            &lt;m:context&gt;.certificate-dialog&lt;/m:context&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;172&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;177&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;179&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “max-height”&lt;/m:message&gt;
+                            &lt;m:context&gt;.certificate-image&lt;/m:context&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;180&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;182&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;182&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;182&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;182&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;182&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;182&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;187&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;189&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;191&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;194&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;199&lt;/m:line&gt;
+                            &lt;m:level&gt;1&lt;/m:level&gt;
+                            &lt;m:message&gt;Same color for “background-color” and “border-color”&lt;/m:message&gt;
+                            &lt;m:context&gt;.completed&lt;/m:context&gt;
+                            &lt;m:type&gt;same-colors&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;200&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;200&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;230&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;230&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “background-image”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;232&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “position”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;232&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;232&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;232&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transform”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;233&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “position”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;233&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;233&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;233&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;233&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;239&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “min-height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;242&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;243&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;244&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;244&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;245&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;246&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “min-height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;246&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;246&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;246&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;246&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;247&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;248&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;251&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “animation”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;254&lt;/m:line&gt;
+                            &lt;m:level&gt;0&lt;/m:level&gt;
+                            &lt;m:message&gt;Property “animation” doesn&amp;apos;t exist for media “print (braille, handheld, projection, screen, speech, tty, tv)”&lt;/m:message&gt;
+                            &lt;m:type&gt;noexistence-media&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;254&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “animation”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;254&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transform”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;254&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “box-shadow”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;255&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;255&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “background-image”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;256&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “display”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;256&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “display”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;257&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “position”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;257&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “display”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;257&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;257&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;258&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “position”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;258&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;258&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;258&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;258&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “max-width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;258&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transform”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;265&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;271&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;275&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;278&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;278&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;278&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;278&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;278&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;278&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;281&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;281&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;281&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+                    
+                    &lt;/m:warninglist&gt;
+            
+                    &lt;m:warninglist&gt;
+                        &lt;m:uri&gt;$sfe&lt;/m:uri&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition-property”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-left-width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-color”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-style”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-left-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-right-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-bottom-left-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-bottom-right-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “animation-fill-mode”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition-property”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
                         &lt;/m:warning&gt;
     
                     &lt;/m:warninglist&gt;
@@ -38,24 +1691,24 @@
     &lt;/env:Body&gt;
 &lt;/env:Envelope&gt;
 
-</pre></section><section id="css1"><h2>practice/practice.css — 오류 0개 / 경고 27개</h2><p>W3C CSS3 검사기의 원본 SOAP 응답입니다.</p><p><a href="https://jigsaw.w3.org/css-validator/">공식 CSS 검사기</a></p><pre>&lt;?xml version='1.0' encoding="utf-8"?&gt;
-&lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;
+</pre></section><section id="css1"><h2>practice/practice.css — 오류 0개 / 경고 153개</h2><p>CSS3 · warning=2 · 상단 돌아가기 버튼 수정 후 전체 파일 검사</p><pre>&lt;?xml version=&#x27;1.0&#x27; encoding=&quot;utf-8&quot;?&gt;
+&lt;env:Envelope xmlns:env=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
     &lt;env:Body&gt;
         &lt;m:cssvalidationresponse
-            env:encodingStyle="http://www.w3.org/2003/05/soap-encoding"
-            xmlns:m="http://www.w3.org/2005/07/css-validator"&gt;
+            env:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;
+            xmlns:m=&quot;http://www.w3.org/2005/07/css-validator&quot;&gt;
             &lt;m:uri&gt;practice.css&lt;/m:uri&gt;
             &lt;m:checkedby&gt;http://jigsaw.w3.org/css-validator/&lt;/m:checkedby&gt;
             &lt;m:csslevel&gt;css3&lt;/m:csslevel&gt;
-            &lt;m:date&gt;2026-10-14T03:27:12Z&lt;/m:date&gt;
+            &lt;m:date&gt;2026-10-17T02:10:02Z&lt;/m:date&gt;
             &lt;m:validity&gt;true&lt;/m:validity&gt;
             &lt;m:result&gt;
-                &lt;m:errors xml:lang="en"&gt;
+                &lt;m:errors xml:lang=&quot;en&quot;&gt;
                     &lt;m:errorcount&gt;0&lt;/m:errorcount&gt;
     
                 &lt;/m:errors&gt;
-                &lt;m:warnings xml:lang="en"&gt;
-                    &lt;m:warningcount&gt;27&lt;/m:warningcount&gt;
+                &lt;m:warnings xml:lang=&quot;en&quot;&gt;
+                    &lt;m:warningcount&gt;153&lt;/m:warningcount&gt;
             
                     &lt;m:warninglist&gt;
                         &lt;m:uri&gt;file://localhost/practice.css&lt;/m:uri&gt;
@@ -138,6 +1791,146 @@
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;0&lt;/m:level&gt;
+                            &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
+                            &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;0&lt;/m:level&gt;
+                            &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
+                            &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;0&lt;/m:level&gt;
+                            &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
+                            &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;0&lt;/m:level&gt;
+                            &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
+                            &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;1&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;3&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
@@ -149,6 +1942,20 @@
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
                             &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;6&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;6&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
@@ -163,6 +1970,13 @@
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
                             &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;8&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
@@ -173,10 +1987,24 @@
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;9&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;10&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
                             &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;10&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
@@ -194,6 +2022,55 @@
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;15&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “color”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;15&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;16&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;16&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;16&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;16&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;19&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;25&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
@@ -201,6 +2078,27 @@
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;29&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;32&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;34&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;35&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
@@ -212,6 +2110,139 @@
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
                             &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;38&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;39&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;42&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;49&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;52&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;53&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;55&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;56&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;57&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “margin-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;57&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;58&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;59&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;59&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;60&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;60&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;60&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;60&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;61&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;61&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
@@ -222,10 +2253,24 @@
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;70&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;71&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
                             &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;72&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
@@ -236,6 +2281,48 @@
                         &lt;/m:warning&gt;
         
                         &lt;m:warning&gt;
+                            &lt;m:line&gt;82&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;85&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;87&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;89&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;91&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;92&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
                             &lt;m:line&gt;96&lt;/m:line&gt;
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
@@ -247,6 +2334,459 @@
                             &lt;m:level&gt;0&lt;/m:level&gt;
                             &lt;m:message&gt;Due to their dynamic nature, CSS variables are currently not statically checked&lt;/m:message&gt;
                             &lt;m:type&gt;css-variable&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;98&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;99&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;100&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;103&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;105&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;106&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;107&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;111&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;112&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;113&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;114&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;116&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;119&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;126&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;126&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;131&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;141&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;144&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;145&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;146&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;146&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;155&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;155&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;155&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “width”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;155&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “min-height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;163&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;165&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “min-height”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;167&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;167&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;173&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;176&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;185&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-background-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;186&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.&lt;/m:message&gt;
+                            &lt;m:type&gt;no-color&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “grid-template-columns”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-bottom”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-left”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-top”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “padding-right”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;190&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “font-size”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+                    
+                    &lt;/m:warninglist&gt;
+            
+                    &lt;m:warninglist&gt;
+                        &lt;m:uri&gt;$sfe&lt;/m:uri&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “transition-property”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-left-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-top-right-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-bottom-left-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “border-bottom-right-radius”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “column-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
+                        &lt;/m:warning&gt;
+        
+                        &lt;m:warning&gt;
+                            &lt;m:line&gt;0&lt;/m:line&gt;
+                            &lt;m:level&gt;2&lt;/m:level&gt;
+                            &lt;m:message&gt;Redefinition of “row-gap”&lt;/m:message&gt;
+                            &lt;m:type&gt;redefinition&lt;/m:type&gt;
                         &lt;/m:warning&gt;
     
                     &lt;/m:warninglist&gt;

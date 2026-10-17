@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>입력 폼과 도서 검색</title>
+</head>
+<body>
+    <h3>상명대학교 도서관 검색</h3>
+    <!-- action: 검색 요청을 보낼 주소, get: 입력값을 주소에 붙여 전송 -->
+    <form method="get" action="https://lib.smu.ac.kr/search/">
+        캠퍼스:
+        <!-- 같은 name을 사용하면 라디오 버튼 중 하나만 선택할 수 있음 -->
+        <label><input type="radio" name="campuscode" value="00">서울</label>
+        <label><input type="radio" name="campuscode" value="01" checked>천안</label>
+        <!-- checked는 미리 체크 표시 -->
+        <br>
+
+        <label for="keyword">검색어:</label>
+        <input type="text" id="keyword" name="q" placeholder="예: HTML, 인문학" required>
+        <!-- name은 서버가 받는 항목 이름, value는 전달할 값 -->
+        <br><br>
+
+        <input type="submit" value="검색">
+        <input type="reset" value="초기화">
+    </form>
+
+    <hr>
+
+    <h3>다양한 입력 폼</h3>
+    <!-- 입력 폼 연습: form_app.js는 별도의 요청 처리 기능이 필요함 -->
+    <form method="get" action="form_app.js">
+        성명: <input type="text" name="person"> <br>
+        이메일: <input type="email" name="email" placeholder="id@gmail.com"> <br>
+        <!-- 이메일 타입 추가 방법 -->
+
+        성별:
+        <label><input type="radio" name="sex" value="male">남성</label>
+        <label><input type="radio" name="sex" value="female">여성</label>
+        <br>
+
+        직업:
+        <select name="job" size="2">
+            <option>학생</option>
+            <option>회사원</option>
+            <option>공무원</option>
+            <option>기타</option>
+        </select>
+        <br>
+
+        비밀번호: <input type="password" name="password">
+        <!-- password는 입력 내용을 가려서 표시 -->
+
+        <p>
+            구입희망분야(복수선택 가능)<br>
+            - 분야:
+            <label><input type="checkbox" name="books" value="computer">컴퓨터</label>
+            <label><input type="checkbox" name="books" value="economy">경제</label>
+            <label><input type="checkbox" name="books" value="common">상식</label>
+            <br>
+            비고: <br>
+            <textarea name="comments" rows="4" cols="40"></textarea>
+        </p>
+        <hr>
+
+        <input type="submit" value="신청">
+        <input type="reset" value="취소">
+        <input type="button" value="버튼" onclick="alert('버튼 클릭')">
+        <!-- 버튼 추가: onclick은 큰따옴표로, 문자열은 작은따옴표로 -->
+    </form>
+</body>
+</html>
