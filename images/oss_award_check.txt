@@ -2,3 +2,5 @@
 시기 2022.09.22·분류 수상·장려상·대학교 2학년·역할 ROS 1 (rospy) Coding 유지. 명칭은 오픈소스 소프트웨어(OSS) 활용 해커톤. 제목은 images/oss-training-camp.png → oss-award-dialog, GitHub 배지는 https://github.com/Magician-Park/OSS_teamK-T.
 사용자 제공 사진은 1195×896. 검정 가림과 표시 픽셀을 원본과 동일하게 보존, PNG 텍스트 메타데이터만 제외.
 10행·4열, 고유 ID, 9개 사진 링크와 5개 dialog 및 내부 파일·앵커 일치 확인. 기존 공통 dialog 스크립트·CSS 유지. 실제 브라우저 화면·네이티브 Esc/Tab은 미검수. 외부 HTML·사진 전송 없음.
+
+2026-10-17 — 사용자가 새로 첨부한 OSS 활용 해커톤 사진으로 교체. images/oss-training-camp.png, 1448×1086. 원본 표시 픽셀·개인정보 가림 유지, PNG 텍스트·EXIF 메타데이터만 제외. 기존 사진 아이콘·dialog 연결 유지.
