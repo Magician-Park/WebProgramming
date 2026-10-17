@@ -30,3 +30,6 @@ Q-CSS: W3C 문법 검사·인라인 미사용은 충족. 최종 결과는 Fail (
 2026-10-18 — Q-CSS 실제 배포 화면 최종 검수
 공통·주차 CSS 해시가 기존 W3C 오류 0개 검사본과 동일하다. HTML 8개에 style 요소·style 속성이 없다. HTTPS 배포 사이트의 메인 및 1~7주차를 1280×800, 390×844로 바꾸어 전체 화면을 캡처하고 확인했다. 각 문서 scrollWidth는 viewport와 같고 외부로 넘치는 주요 컨테이너가 없다. 표와 코드의 내부 스크롤을 구분했다. 실적 표는 clientWidth 354px/scrollWidth 840px이며 ArrowRight 실제 입력으로 scrollLeft 411.5px까지 이동했다. 사진 dialog 폭 352px(390px 화면), 이미지·캡션·닫기 버튼 정상. 7개 주차의 카드·폼·실행 예제·편집 버튼·하단 링크·TOP을 확인했다. 소스 수정이 필요한 겹침·잘림은 발견되지 않았다. Q-CSS: Pass.
 근거: responsive_actual_20261018.json 및 check_20261018_*.jpg. 이전 file:// 접근 실패와 이번 정상 HTTPS 검수는 별개의 범위다.
+
+2026-10-18 — 사용자 승인 후 clip-path 교체본 style.css 전체 재검사.
+CSS3+SVG(profile=css3svg): 오류 0, 전체 경고 235, validity=true. 주요 경고 2개(same-colors, noexistence-media), 세부 level=2 경고 233개. deprecatedproperty 경고 제거. 기본 CSS3 프로필은 clip-path 미인식 오류 1개를 반환했다. 두 프로필의 원본 응답·해시를 css_check_summary.json에서 구분한다.

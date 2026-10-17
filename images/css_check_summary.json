@@ -1,27 +1,45 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "checker": "https://jigsaw.w3.org/css-validator/validator",
   "checks": [
     {
       "file": "style.css",
-      "source_sha256": "6291ddf63fad654b918328f3114a97d0a623fb275e0021e769102afe9c64defa",
-      "validated_source_sha256": "6291ddf63fad654b918328f3114a97d0a623fb275e0021e769102afe9c64defa",
+      "source_sha256": "faaad7a1cdb1221e615cd7eeafdbb2ac4df85d35dfc6a64483adebcee21cef70",
+      "validated_source_sha256": "faaad7a1cdb1221e615cd7eeafdbb2ac4df85d35dfc6a64483adebcee21cef70",
       "latest_source_validated": true,
       "errors": 0,
-      "warnings": 236,
+      "warnings": 235,
       "warning_level": 2,
       "warning_types": {
         "no-background-color": 33,
         "redefinition": 186,
         "no-color": 14,
-        "deprecatedproperty": 1,
         "same-colors": 1,
         "noexistence-media": 1
       },
-      "profile": "css3",
-      "checked_at_utc": "2026-10-17T14:20:45Z",
+      "profile": "css3svg",
+      "checked_at_utc": "2026-10-17T16:39:18.017762+00:00",
       "original_response": "w3c_css_response.xml",
-      "note": "실적 분류의 이동 밑줄·숫자 배지·작은 화면 간격·동작 줄이기 스타일 포함 전체 style.css W3C CSS3 오류 0개. warning=2 전체 경고. 2026-10-18 배포 HTTPS 사이트 1280px·390px 실제 화면 검수 완료."
+      "note": "2026-10-18 사용자 승인으로 clip-path 교체 후 style.css 전체 재검사. CSS3+SVG(profile=css3svg) 오류 0·validity=true, warning=2 전체 235개. clip deprecated 경고 제거. 기본 CSS3(profile=css3)는 clip-path 미인식 오류 1개를 반환해 별도 원본 보관. 로컬 Chrome의 clip-path·대상 6개 숨김 유지 확인. CSS3+SVG 응답 csslevel은 css3로 표시됨.",
+      "response_csslevel": "css3",
+      "warning_levels": {
+        "2": 233,
+        "1": 1,
+        "0": 1
+      },
+      "profile_comparison": {
+        "css3": {
+          "errors": 1,
+          "warnings": 235,
+          "original_response": "w3c_css_clip_path_css3_response.xml",
+          "reason": "clip-path property not recognized in this profile"
+        },
+        "css3svg": {
+          "errors": 0,
+          "warnings": 235,
+          "original_response": "w3c_css_response.xml"
+        }
+      }
     },
     {
       "file": "practice/practice.css",

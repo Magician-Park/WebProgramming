@@ -1,0 +1,1706 @@
+<?xml version='1.0' encoding="utf-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Body>
+        <m:cssvalidationresponse
+            env:encodingStyle="http://www.w3.org/2003/05/soap-encoding"
+            xmlns:m="http://www.w3.org/2005/07/css-validator">
+            <m:uri>TextArea</m:uri>
+            <m:checkedby>http://jigsaw.w3.org/css-validator/</m:checkedby>
+            <m:csslevel>css3</m:csslevel>
+            <m:date>2026-10-17T04:38:12Z</m:date>
+            <m:validity>false</m:validity>
+            <m:result>
+                <m:errors xml:lang="en">
+                    <m:errorcount>1</m:errorcount>
+            
+                <m:errorlist>
+                    <m:uri>file://localhost/TextArea</m:uri>
+        
+                        <m:error>
+                            <m:line>103</m:line>
+                            <m:errortype>parse-error</m:errortype>
+<m:context>.sr-only</m:context>
+                            <m:errorsubtype>
+                                exp
+                            </m:errorsubtype>
+                            <m:skippedstring>
+                                inset(50%)
+                            </m:skippedstring>
+                            <m:type>noexistence-at-all</m:type>
+
+                            <m:message>
+
+                                Property “clip-path” doesn&apos;t exist : 
+                            </m:message>
+                        </m:error>
+    
+                    </m:errorlist>
+    
+                </m:errors>
+                <m:warnings xml:lang="en">
+                    <m:warningcount>235</m:warningcount>
+            
+                    <m:warninglist>
+                        <m:uri>file://localhost/TextArea</m:uri>
+        
+                        <m:warning>
+                            <m:line>13</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>23</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>23</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>25</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “display”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>27</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>31</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>33</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>35</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>36</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>37</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>40</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>41</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>42</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>46</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>47</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>55</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>56</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>57</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>66</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>66</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>71</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>73</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>75</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>80</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>82</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>83</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>85</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>88</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>89</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>90</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>93</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>94</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>97</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>99</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>102</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>105</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>106</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>107</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>108</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>109</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>113</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “text-align”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>114</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>115</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>116</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>117</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>117</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “letter-spacing”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>117</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>117</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “letter-spacing”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>118</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>119</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>119</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>119</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>119</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>119</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>120</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “display”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>121</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>121</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “letter-spacing”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>122</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>123</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>124</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>125</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>126</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “display”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>126</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>127</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>128</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>128</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “text-align”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>128</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “max-width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>128</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>129</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>132</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “scroll-behavior”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>140</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-color”</m:message>
+                            <m:context>.page-loader-spinner</m:context>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>142</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>144</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>144</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “animation”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>147</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>147</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>148</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “flex-direction”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>148</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>149</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>150</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>151</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>152</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>152</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>152</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>152</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “margin-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>152</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>152</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>155</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>156</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “min-height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>156</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>156</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>156</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>156</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “flex-direction”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “align-items”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>157</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>158</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>158</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>158</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>158</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>158</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>158</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>166</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>166</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>166</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>166</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “min-height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>170</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>171</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “max-height”</m:message>
+                            <m:context>.certificate-dialog</m:context>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>172</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>177</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>179</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “max-height”</m:message>
+                            <m:context>.certificate-image</m:context>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>180</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>182</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>182</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>182</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>182</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>182</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>182</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>187</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>189</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>191</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>194</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>199</m:line>
+                            <m:level>1</m:level>
+                            <m:message>Same color for “background-color” and “border-color”</m:message>
+                            <m:context>.completed</m:context>
+                            <m:type>same-colors</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>200</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>200</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>230</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>230</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “background-image”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>232</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “position”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>232</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>232</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>232</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transform”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>233</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “position”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>233</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>233</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>233</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>233</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>239</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “min-height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>242</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>243</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>244</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>244</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>245</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>246</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “min-height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>246</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>246</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>246</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>246</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>247</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>248</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>251</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “animation”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>254</m:line>
+                            <m:level>0</m:level>
+                            <m:message>Property “animation” doesn&apos;t exist for media “print (braille, handheld, projection, screen, speech, tty, tv)”</m:message>
+                            <m:type>noexistence-media</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>254</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “animation”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>254</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transform”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>254</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “box-shadow”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>255</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “height”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>255</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “background-image”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>256</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “display”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>256</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “display”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>257</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “position”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>257</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “display”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>257</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “grid-template-columns”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>257</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>258</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “position”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>258</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>258</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>258</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>258</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “max-width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>258</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transform”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>265</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>271</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>275</m:line>
+                            <m:level>2</m:level>
+                            <m:message>You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.</m:message>
+                            <m:type>no-background-color</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>278</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>278</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-bottom”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>278</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-left”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>278</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-top”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>278</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “padding-right”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>278</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “font-size”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>281</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>281</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>281</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+                    
+                    </m:warninglist>
+            
+                    <m:warninglist>
+                        <m:uri>$sfe</m:uri>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition-property”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-left-width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-width”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-color”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-style”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-left-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-top-right-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-bottom-left-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “border-bottom-right-radius”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “animation-fill-mode”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “column-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “row-gap”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+        
+                        <m:warning>
+                            <m:line>0</m:line>
+                            <m:level>2</m:level>
+                            <m:message>Redefinition of “transition-property”</m:message>
+                            <m:type>redefinition</m:type>
+                        </m:warning>
+    
+                    </m:warninglist>
+                </m:warnings>
+            </m:result>
+        </m:cssvalidationresponse>
+    </env:Body>
+</env:Envelope>
+
