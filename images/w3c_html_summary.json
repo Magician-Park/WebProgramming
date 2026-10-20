@@ -8,7 +8,7 @@
       "original_response": "w3c_html_response.json",
       "checker_version": "26.10.12",
       "latest_source_validated": false,
-      "source_sha256": "c1fde26fc306abc7fff5db70ef77258fa0d52fc900fbd412fa4d4452de87cc50",
+      "source_sha256": "80f020940a598896cbb3ce3d75be164353ea6b20fb1fefd7f0a2ea817697f1ab",
       "validated_source_sha256": "006c5fa800579deb48f39186bbf47384199211606f4d9f076cf5ff42b754edba",
       "note": "2026-10-18 사용자 요청으로 최신 HTML 전체를 W3C Nu에 전송하여 검사. 사진 파일은 전송하지 않음. 2026-10-18 메인 그림 전체를 기존 GitHub 프로필 링크 하나로 연결하고 CSS로 노트북 스티커를 표시. 모바일 버튼과 접근성 이름 유지. 최신 변경은 로컬 화면 검사이며 기존 W3C 응답은 이번 디자인 변경 전 기준. 그림 GitHub 링크 변경 후 배포 CSS 캐시 불일치를 확인해 style.css 주소에 내용 해시 버전 쿼리를 추가. 버전 주소는 최신 CSS를 반환함을 확인. 이번 href 변경은 외부 HTML 재검사 전."
     },
@@ -46,17 +46,6 @@
       "note": "2026-10-18 사용자 요청으로 최신 HTML 전체를 W3C Nu에 전송하여 검사. 사진 파일은 전송하지 않음."
     },
     {
-      "file": "practice/week04.html",
-      "errors": 0,
-      "warnings": 0,
-      "original_response": "w3c_week04_response.json",
-      "checker_version": "26.10.12",
-      "latest_source_validated": true,
-      "source_sha256": "6011ac71d3dddb5439dcaf34298ff0ab2344a4d2c81aa18711f96fc0d72cb5c1",
-      "validated_source_sha256": "6011ac71d3dddb5439dcaf34298ff0ab2344a4d2c81aa18711f96fc0d72cb5c1",
-      "note": "2026-10-18 사용자 요청으로 최신 HTML 전체를 W3C Nu에 전송하여 검사. 사진 파일은 전송하지 않음."
-    },
-    {
       "file": "practice/week05.html",
       "errors": 0,
       "warnings": 0,
@@ -89,5 +78,10 @@
       "validated_source_sha256": "c3cde2733e1fe7427287caf6b336f00b5dd6c5f86688667ad4c9103a1f4adb2a",
       "note": "2026-10-18 사용자 요청으로 최신 HTML 전체를 W3C Nu에 전송하여 검사. 사진 파일은 전송하지 않음."
     }
-  ]
+  ],
+  "current_local_validation": {
+    "date": "2026-10-20",
+    "summary": "nu_summary_20261020.json",
+    "note": "최신 소스는 로컬 Nu로 검사 완료. 기존 외부 응답은 과거 검사 이력이다."
+  }
 }

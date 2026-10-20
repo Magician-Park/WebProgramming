@@ -4,7 +4,7 @@
   "checks": [
     {
       "file": "style.css",
-      "source_sha256": "5ee9f3259084515b8380b0c095aa08aee4aaf2463fa9c87600dc304b226d789b",
+      "source_sha256": "24533ca174935f6b6b905afe6c8914498935458b0e7ba6527743132cff9a5e73",
       "validated_source_sha256": "faaad7a1cdb1221e615cd7eeafdbb2ac4df85d35dfc6a64483adebcee21cef70",
       "latest_source_validated": false,
       "errors": 0,
@@ -104,5 +104,10 @@
     "scope": "쌓아온 경험 분류 탭 및 표 전환 효과의 실제 화면",
     "user_response": "실제 화면 검수도 통과했어.",
     "responsive_resize_confirmed": false
+  },
+  "current_local_validation": {
+    "date": "2026-10-20",
+    "summary": "nu_summary_20261020.json",
+    "note": "최신 소스는 로컬 Nu로 검사 완료. 기존 외부 응답은 과거 검사 이력이다."
   }
 }

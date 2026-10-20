@@ -36,20 +36,6 @@
     "restored": true
   },
   {
-    "week": "04",
-    "original": {
-      "body": "추석연휴",
-      "code": null,
-      "docWidth": 390,
-      "title": "추석연휴",
-      "width": 390
-    },
-    "cancelRestored": true,
-    "saveReload": true,
-    "downloadPath": "/Users/magician-park/Downloads/week04.html",
-    "restored": true
-  },
-  {
     "week": "05",
     "original": {
       "body": "HTML의 구조를 유지하면서 선택자와 속성으로 색상·글꼴·간격·상태를 지정한다.",

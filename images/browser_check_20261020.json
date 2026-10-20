@@ -1,0 +1,420 @@
+{
+  "date": "2026-10-20",
+  "environment": "Local HTTP, Chrome headless",
+  "viewports": [
+    {
+      "width": 1280,
+      "pageWidth": 1265,
+      "filtersWidth": 600,
+      "buttons": [
+        {
+          "x": 92.5,
+          "width": 120,
+          "height": 56,
+          "text": "전체\n11\n건",
+          "textFits": true
+        },
+        {
+          "x": 212.5,
+          "width": 120,
+          "height": 56,
+          "text": "교육\n1\n건",
+          "textFits": true
+        },
+        {
+          "x": 332.5,
+          "width": 120,
+          "height": 56,
+          "text": "자격\n3\n건",
+          "textFits": true
+        },
+        {
+          "x": 452.5,
+          "width": 120,
+          "height": 56,
+          "text": "수상\n6\n건",
+          "textFits": true
+        },
+        {
+          "x": 572.5,
+          "width": 120,
+          "height": 56,
+          "text": "활동\n1\n건",
+          "textFits": true
+        }
+      ],
+      "indicatorWidth": 120
+    },
+    {
+      "width": 1000,
+      "pageWidth": 985,
+      "filtersWidth": 600,
+      "buttons": [
+        {
+          "x": 48,
+          "width": 120,
+          "height": 56,
+          "text": "전체\n11\n건",
+          "textFits": true
+        },
+        {
+          "x": 168,
+          "width": 120,
+          "height": 56,
+          "text": "교육\n1\n건",
+          "textFits": true
+        },
+        {
+          "x": 288,
+          "width": 120,
+          "height": 56,
+          "text": "자격\n3\n건",
+          "textFits": true
+        },
+        {
+          "x": 408,
+          "width": 120,
+          "height": 56,
+          "text": "수상\n6\n건",
+          "textFits": true
+        },
+        {
+          "x": 528,
+          "width": 120,
+          "height": 56,
+          "text": "활동\n1\n건",
+          "textFits": true
+        }
+      ],
+      "indicatorWidth": 120
+    },
+    {
+      "width": 800,
+      "pageWidth": 785,
+      "filtersWidth": 600,
+      "buttons": [
+        {
+          "x": 24,
+          "width": 120,
+          "height": 56,
+          "text": "전체\n11\n건",
+          "textFits": true
+        },
+        {
+          "x": 144,
+          "width": 120,
+          "height": 56,
+          "text": "교육\n1\n건",
+          "textFits": true
+        },
+        {
+          "x": 264,
+          "width": 120,
+          "height": 56,
+          "text": "자격\n3\n건",
+          "textFits": true
+        },
+        {
+          "x": 384,
+          "width": 120,
+          "height": 56,
+          "text": "수상\n6\n건",
+          "textFits": true
+        },
+        {
+          "x": 504,
+          "width": 120,
+          "height": 56,
+          "text": "활동\n1\n건",
+          "textFits": true
+        }
+      ],
+      "indicatorWidth": 120
+    },
+    {
+      "width": 560,
+      "pageWidth": 560,
+      "filtersWidth": 524,
+      "buttons": [
+        {
+          "x": 18,
+          "width": 104.796875,
+          "height": 56,
+          "text": "전체\n11\n건",
+          "textFits": true
+        },
+        {
+          "x": 122.796875,
+          "width": 104.796875,
+          "height": 56,
+          "text": "교육\n1\n건",
+          "textFits": true
+        },
+        {
+          "x": 227.59375,
+          "width": 104.796875,
+          "height": 56,
+          "text": "자격\n3\n건",
+          "textFits": true
+        },
+        {
+          "x": 332.390625,
+          "width": 104.796875,
+          "height": 56,
+          "text": "수상\n6\n건",
+          "textFits": true
+        },
+        {
+          "x": 437.1875,
+          "width": 104.8125,
+          "height": 56,
+          "text": "활동\n1\n건",
+          "textFits": true
+        }
+      ],
+      "indicatorWidth": 104.797
+    },
+    {
+      "width": 390,
+      "pageWidth": 390,
+      "filtersWidth": 354,
+      "buttons": [
+        {
+          "x": 18,
+          "width": 70.796875,
+          "height": 56,
+          "text": "전체\n11\n건",
+          "textFits": true
+        },
+        {
+          "x": 88.796875,
+          "width": 70.796875,
+          "height": 56,
+          "text": "교육\n1\n건",
+          "textFits": true
+        },
+        {
+          "x": 159.59375,
+          "width": 70.796875,
+          "height": 56,
+          "text": "자격\n3\n건",
+          "textFits": true
+        },
+        {
+          "x": 230.390625,
+          "width": 70.796875,
+          "height": 56,
+          "text": "수상\n6\n건",
+          "textFits": true
+        },
+        {
+          "x": 301.1875,
+          "width": 70.8125,
+          "height": 56,
+          "text": "활동\n1\n건",
+          "textFits": true
+        }
+      ],
+      "indicatorWidth": 70.7969
+    },
+    {
+      "width": 320,
+      "pageWidth": 320,
+      "filtersWidth": 284,
+      "buttons": [
+        {
+          "x": 18,
+          "width": 56.796875,
+          "height": 66.875,
+          "text": "전체\n11\n건",
+          "textFits": true
+        },
+        {
+          "x": 74.796875,
+          "width": 56.796875,
+          "height": 66.875,
+          "text": "교육\n1\n건",
+          "textFits": true
+        },
+        {
+          "x": 131.59375,
+          "width": 56.796875,
+          "height": 66.875,
+          "text": "자격\n3\n건",
+          "textFits": true
+        },
+        {
+          "x": 188.390625,
+          "width": 56.796875,
+          "height": 66.875,
+          "text": "수상\n6\n건",
+          "textFits": true
+        },
+        {
+          "x": 245.1875,
+          "width": 56.796875,
+          "height": 66.875,
+          "text": "활동\n1\n건",
+          "textFits": true
+        }
+      ],
+      "indicatorWidth": 56.7969
+    }
+  ],
+  "filters": [
+    {
+      "category": "all",
+      "visible": 11,
+      "pressed": "true",
+      "status": "전체 11건 표시 중 · 최신순",
+      "busy": null
+    },
+    {
+      "category": "교육",
+      "visible": 1,
+      "pressed": "true",
+      "status": "교육 1건 표시 중 · 최신순",
+      "busy": null
+    },
+    {
+      "category": "자격",
+      "visible": 3,
+      "pressed": "true",
+      "status": "자격 3건 표시 중 · 최신순",
+      "busy": null
+    },
+    {
+      "category": "수상",
+      "visible": 6,
+      "pressed": "true",
+      "status": "수상 6건 표시 중 · 최신순",
+      "busy": null
+    },
+    {
+      "category": "활동",
+      "visible": 1,
+      "pressed": "true",
+      "status": "활동 1건 표시 중 · 최신순",
+      "busy": null
+    },
+    {
+      "category": "all",
+      "visible": 11,
+      "pressed": "true",
+      "status": "전체 11건 표시 중 · 최신순",
+      "busy": null
+    }
+  ],
+  "dialog": {
+    "open": true,
+    "title": "2025 APEC 경호경비작전",
+    "caption": "2025 APEC 경호경비작전 · 이수 기간: 2025.10.25 ~ 2025.11.02",
+    "imageAlt": "2025 APEC 경호경비작전 · 이수 기간: 2025.10.25 ~ 2025.11.02",
+    "imageComplete": true,
+    "naturalWidth": 1712,
+    "naturalHeight": 196,
+    "width": 680,
+    "focusInside": true,
+    "escape": {
+      "closed": true,
+      "focusReturned": true,
+      "scrollUnlocked": true
+    },
+    "mobile": {
+      "open": true,
+      "width": 352,
+      "left": 19,
+      "right": 371,
+      "imageWidth": 318,
+      "imageHeight": 36.40625,
+      "ratioPreserved": true
+    },
+    "closeButton": true
+  },
+  "no_javascript": {
+    "visible": 11,
+    "controlsHidden": true,
+    "fallback": "images/apec-security-operation.png"
+  },
+  "images": {
+    "total": 12,
+    "broken": []
+  },
+  "structure": {
+    "rows": 11,
+    "order": [
+      {
+        "category": "교육",
+        "date": "2026-07",
+        "title": "중소벤처기업진흥공단 AX 교육 프로그램\n대학교 3학년 · 2026.07.14 ~ 2026.07.16"
+      },
+      {
+        "category": "자격",
+        "date": "2026-04",
+        "title": "버스운전자격증 취득\n대학교 3학년 · 2026.04.07"
+      },
+      {
+        "category": "자격",
+        "date": "2026-02",
+        "title": "1종 대형면허 갱신\n대학교 3학년 · 2026.02.11"
+      },
+      {
+        "category": "활동",
+        "date": "2025-10-25",
+        "title": "2025 APEC 경호경비작전\n24살 · 2025.10.25 ~ 2025.11.02"
+      },
+      {
+        "category": "수상",
+        "date": "2022-09",
+        "title": "오픈소스 소프트웨어(OSS) 활용 해커톤\n대학교 2학년 · 2022.09.22"
+      },
+      {
+        "category": "자격",
+        "date": "2021-07",
+        "title": "1종 보통면허 취득\n대학교 1학년 · 2021.07.30"
+      },
+      {
+        "category": "수상",
+        "date": "2020-08",
+        "title": "통계 활용 발표회\n고등학교 3학년 · 2020.08.31"
+      },
+      {
+        "category": "수상",
+        "date": "2019-11",
+        "title": "2학년 UCC 공모전\n고등학교 2학년 · 2019.11.26"
+      },
+      {
+        "category": "수상",
+        "date": "2019-11",
+        "title": "창의적체험활동 동아리 발표회\n고등학교 2학년 · 2019.11.07"
+      },
+      {
+        "category": "수상",
+        "date": "2019-06",
+        "title": "소논문대회(자연과학기타분야)\n고등학교 2학년 · 2019.06.24"
+      },
+      {
+        "category": "수상",
+        "date": "2018-12",
+        "title": "1학년 UCC 공모전\n고등학교 1학년 · 2018.12.03"
+      }
+    ],
+    "dialogs": 11,
+    "idsUnique": true
+  },
+  "rapidSelection": {
+    "index": "4",
+    "visible": [
+      "활동"
+    ]
+  },
+  "mobileTableScroll": {
+    "scrollLeft": 486,
+    "clientWidth": 354,
+    "scrollWidth": 840
+  },
+  "reducedMotion": {
+    "visible": 11,
+    "busy": null
+  }
+}

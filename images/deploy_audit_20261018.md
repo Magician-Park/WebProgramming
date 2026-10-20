@@ -1,12 +1,12 @@
 # Q-DEPLOY 배포 링크 최종 검수 (2026-10-18)
 
-대상: https://magician-park.smu.ai.kr/ 및 practice/week01.html~week07.html.
+대상: https://magician-park.smu.ai.kr/ 및 practice/week01.html·week02.html·week03.html·week05.html·week06.html·week07.html.
 
 결과: **Pass**. 기존 실제 배포 브라우저 검수의 내부 이동·사진 표시 확인에 이번 전체 URL 검사와 외부 링크 활성화 검사를 추가했다.
 
-- 메인·1~7주차 8개 HTML에서 href/src 참조 260건(링크 191, script 32, img 22, stylesheet 등 link 15)을 추출했다.
-- 검사한 문서를 포함하여 중복·fragment를 제외한 URL 83개 모두 GET HTTP 200으로 응답했다. 리다이렉트를 따라 최종 주소·응답 형식·크기를 기록했으며 TLS 검증을 유지했다.
-- fragment가 있는 참조 107건 모두 대상 문서의 id/name이 존재한다.
+- 메인·1·2·3·5·6·7주차 7개 HTML의 보관 참조 251건(링크 187, script 29, img 22, stylesheet 등 link 13)을 포함한다.
+- 검사한 문서를 포함하여 중복·fragment를 제외한 URL 82개 모두 GET HTTP 200으로 응답했다. 리다이렉트를 따라 최종 주소·응답 형식·크기를 기록했으며 TLS 검증을 유지했다.
+- fragment가 있는 참조 103건 모두 대상 문서의 id/name이 존재한다.
 - 외부 링크 참조 72건은 중복을 제외하면 fragment 포함 59개 목적지(문서 URL 기준 55개)다. 각 목적지를 Chrome headless에서 실제 배포 원본 페이지의 a 요소로 활성화하여 최종 HTTPS URL·document.readyState·제목/본문을 확인했다. 59건 모두 정상 로드됐다. 같은 목적지의 반복 링크는 HTTP·앵커 검사로 대조했다.
 - GitHub 프로필·프로젝트 저장소 3개가 정상 열렸다.
 - 배포 이미지·CSS·JavaScript의 응답 형식도 확인했다. 사진의 실제 표시·팝업 10개는 기존 배포 브라우저 기록의 정상 로드 결과를 함께 사용한다.

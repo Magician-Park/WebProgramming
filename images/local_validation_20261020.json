@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-20",
+  "scope": "offline; no project source uploaded",
+  "htmlValidator": "html-validate:standard",
+  "checks": [
+    {
+      "file": "index.html",
+      "sha256": "80f020940a598896cbb3ce3d75be164353ea6b20fb1fefd7f0a2ea817697f1ab",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/week01.html",
+      "sha256": "3331d1818aff67949dfbd42d675d655bce8d74401779c78de4e457ff65e2ae74",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/week02.html",
+      "sha256": "8800650cfc1e18fec6bdc15ad0e9c328a46eb3cf163f0af9b4ed27d85165e39e",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/week03.html",
+      "sha256": "8bee60b5676458b892e88065798e44bb5e5a5b5dff84b9f3af6d3b5e3126e66d",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/week05.html",
+      "sha256": "877f9af2c79fc661936cf51991085ea8af4e914de66d37dd6a99b5a5969ee7fc",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/week06.html",
+      "sha256": "52308f221a612f695560727e7b187c9cd564784e2c4a2b53eeaef09b5daa1f7a",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/week07.html",
+      "sha256": "c3cde2733e1fe7427287caf6b336f00b5dd6c5f86688667ad4c9103a1f4adb2a",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    }
+  ],
+  "cssValidator": "css-tree syntax parser",
+  "css": [
+    {
+      "file": "style.css",
+      "parseErrors": 0,
+      "messages": []
+    },
+    {
+      "file": "practice/practice.css",
+      "parseErrors": 0,
+      "messages": []
+    }
+  ]
+}

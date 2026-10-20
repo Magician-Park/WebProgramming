@@ -163,22 +163,6 @@
       "seconds": 1.28
     },
     {
-      "url": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "content_type": "text/html",
-      "bytes": 3005,
-      "title": "4주차 | 추석연휴",
-      "ids": [
-        "document-editor-title",
-        "holiday-title",
-        "main",
-        "top"
-      ],
-      "sha256": "2e213d40d5a6c4c10851c8a94d97c197dd5e387655f1752497b78d6610ac776a",
-      "seconds": 2.57
-    },
-    {
       "url": "https://magician-park.smu.ai.kr/practice/week05.html",
       "status": 200,
       "final_url": "https://magician-park.smu.ai.kr/practice/week05.html",
@@ -10245,22 +10229,6 @@
       ],
       "sha256": "c139c8883d01d1b0a602b64f6344070d107ac6715bf1d0b3f66a365aea0c3ae1",
       "seconds": 1.28
-    },
-    {
-      "url": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "content_type": "text/html",
-      "bytes": 3005,
-      "title": "4주차 | 추석연휴",
-      "ids": [
-        "document-editor-title",
-        "holiday-title",
-        "main",
-        "top"
-      ],
-      "sha256": "2e213d40d5a6c4c10851c8a94d97c197dd5e387655f1752497b78d6610ac776a",
-      "seconds": 2.57
     },
     {
       "url": "https://magician-park.smu.ai.kr/practice/week05.html",
@@ -25231,113 +25199,6 @@
     },
     {
       "page": "https://magician-park.smu.ai.kr/practice/week03.html",
-      "tag": "script",
-      "attr": "src",
-      "value": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
-      "target": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
-      "result": "pass"
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "link",
-      "attr": "href",
-      "value": "../style.css",
-      "target": "https://magician-park.smu.ai.kr/style.css",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/style.css",
-      "result": "pass"
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "link",
-      "attr": "href",
-      "value": "practice.css",
-      "target": "https://magician-park.smu.ai.kr/practice/practice.css",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/practice/practice.css",
-      "result": "pass"
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "script",
-      "attr": "src",
-      "value": "editor.js",
-      "target": "https://magician-park.smu.ai.kr/practice/editor.js",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/practice/editor.js",
-      "result": "pass"
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "script",
-      "attr": "src",
-      "value": "../page-loader.js",
-      "target": "https://magician-park.smu.ai.kr/page-loader.js",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/page-loader.js",
-      "result": "pass"
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "a",
-      "attr": "href",
-      "value": "#main",
-      "target": "https://magician-park.smu.ai.kr/practice/week04.html#main",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "result": "pass",
-      "fragment": "main",
-      "fragment_found": true
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "a",
-      "attr": "href",
-      "value": "../index.html#weekly",
-      "target": "https://magician-park.smu.ai.kr/index.html#weekly",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/index.html",
-      "result": "pass",
-      "fragment": "weekly",
-      "fragment_found": true
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "a",
-      "attr": "href",
-      "value": "../index.html#weekly",
-      "target": "https://magician-park.smu.ai.kr/index.html#weekly",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/index.html",
-      "result": "pass",
-      "fragment": "weekly",
-      "fragment_found": true
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "tag": "a",
-      "attr": "href",
-      "value": "#top",
-      "target": "https://magician-park.smu.ai.kr/practice/week04.html#top",
-      "fetchable": true,
-      "status": 200,
-      "final_url": "https://magician-park.smu.ai.kr/practice/week04.html",
-      "result": "pass",
-      "fragment": "top",
-      "fragment_found": true
-    },
-    {
-      "page": "https://magician-park.smu.ai.kr/practice/week04.html",
       "tag": "script",
       "attr": "src",
       "value": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
