@@ -23,7 +23,7 @@
   "checks": [
     {
       "file": "index.html",
-      "sha256": "80f020940a598896cbb3ce3d75be164353ea6b20fb1fefd7f0a2ea817697f1ab",
+      "sha256": "b55f6dc9e87c2f881f4579308c99563208f05f7cda159458b3bcd89af39b1868",
       "errors": 0,
       "warnings": 0
     },
@@ -65,7 +65,7 @@
     },
     {
       "file": "style.css",
-      "sha256": "24533ca174935f6b6b905afe6c8914498935458b0e7ba6527743132cff9a5e73",
+      "sha256": "c97b298be77419e57e3ab133fecf6dcba5f067fa26b485520aaaaa9e95f597f6",
       "errors": 0,
       "warnings": 0
     },

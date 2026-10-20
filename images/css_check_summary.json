@@ -4,7 +4,7 @@
   "checks": [
     {
       "file": "style.css",
-      "source_sha256": "24533ca174935f6b6b905afe6c8914498935458b0e7ba6527743132cff9a5e73",
+      "source_sha256": "c97b298be77419e57e3ab133fecf6dcba5f067fa26b485520aaaaa9e95f597f6",
       "validated_source_sha256": "faaad7a1cdb1221e615cd7eeafdbb2ac4df85d35dfc6a64483adebcee21cef70",
       "latest_source_validated": false,
       "errors": 0,

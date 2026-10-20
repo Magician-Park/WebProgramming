@@ -416,5 +416,35 @@
   "reducedMotion": {
     "visible": 11,
     "busy": null
+  },
+  "app_demo": {
+    "date": "2026-10-20",
+    "local": true,
+    "link": {
+      "href": "https://magician-park.github.io/Claude_AI_APP/app-demo.html",
+      "label": "AX 교육 프로그램 팜카고 앱 데모 열기",
+      "title": "팜카고 앱 데모 보기",
+      "oldGithub": false,
+      "titleHref": "https://magician-park.github.io/Claude_AI_APP/app-demo.html",
+      "width": 34,
+      "height": 26,
+      "iconWidth": 16,
+      "color": "rgb(52, 98, 72)",
+      "photoColor": "rgb(52, 98, 72)",
+      "background": "rgb(229, 237, 221)",
+      "photoBackground": "rgb(229, 237, 221)"
+    },
+    "destination": {
+      "url": "https://magician-park.github.io/Claude_AI_APP/app-demo.html",
+      "title": "팜카고 — 농업 화물 배차 데모",
+      "ready": "complete"
+    },
+    "mobile": {
+      "left": 177.9375,
+      "right": 211.9375,
+      "visible": true,
+      "overflow": false
+    },
+    "keyboardEnterNavigation": true
   }
 }

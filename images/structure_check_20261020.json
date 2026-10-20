@@ -22,14 +22,14 @@
   "image_byte_identical_to_original": true,
   "image_sha256": "ef8acf63b7ebd70b3c772cc9fa1d2deace7701d03568aeb98e36c57948de27b8",
   "source_sha256": {
-    "index.html": "80f020940a598896cbb3ce3d75be164353ea6b20fb1fefd7f0a2ea817697f1ab",
+    "index.html": "b55f6dc9e87c2f881f4579308c99563208f05f7cda159458b3bcd89af39b1868",
     "practice/week01.html": "3331d1818aff67949dfbd42d675d655bce8d74401779c78de4e457ff65e2ae74",
     "practice/week02.html": "8800650cfc1e18fec6bdc15ad0e9c328a46eb3cf163f0af9b4ed27d85165e39e",
     "practice/week03.html": "8bee60b5676458b892e88065798e44bb5e5a5b5dff84b9f3af6d3b5e3126e66d",
     "practice/week05.html": "877f9af2c79fc661936cf51991085ea8af4e914de66d37dd6a99b5a5969ee7fc",
     "practice/week06.html": "52308f221a612f695560727e7b187c9cd564784e2c4a2b53eeaef09b5daa1f7a",
     "practice/week07.html": "c3cde2733e1fe7427287caf6b336f00b5dd6c5f86688667ad4c9103a1f4adb2a",
-    "style.css": "24533ca174935f6b6b905afe6c8914498935458b0e7ba6527743132cff9a5e73"
+    "style.css": "c97b298be77419e57e3ab133fecf6dcba5f067fa26b485520aaaaa9e95f597f6"
   },
   "css_cache_hash_matches": true
 }

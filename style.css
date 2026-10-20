@@ -63,9 +63,9 @@ td:first-child { font-family: monospace; color: var(--muted); white-space: nowra
 #achievements th:last-child { width: 32%; }
 #achievements .achievement-title { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 #achievements .achievement-title .category { flex-shrink: 0; }
-#achievements .repository-link, #achievements .photo-link { color: var(--accent); text-decoration: none; }
-#achievements .repository-link .github-icon, #achievements .photo-link .photo-icon { width: 16px; height: 16px; }
-#achievements .repository-link:hover, #achievements .photo-link:hover { background: var(--accent); color: #fff; }
+#achievements .repository-link, #achievements .photo-link, #achievements .demo-link { color: var(--accent); text-decoration: none; }
+#achievements .repository-link .github-icon, #achievements .photo-link .photo-icon, #achievements .demo-link .demo-icon { width: 16px; height: 16px; }
+#achievements .repository-link:hover, #achievements .photo-link:hover, #achievements .demo-link:hover { background: var(--accent); color: #fff; }
 .learning-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 22px; align-items: stretch; }
 .semester-panel { display: flex; flex-direction: column; gap: 36px; padding: 28px; border-radius: 12px; background: var(--accent); color: #fff; }
 .semester-year { margin: 0 0 18px; color: #e5eddd; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; }
